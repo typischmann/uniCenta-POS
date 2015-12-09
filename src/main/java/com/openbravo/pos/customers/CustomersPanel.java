@@ -104,14 +104,6 @@ public class CustomersPanel extends JPanelTable {
         return tcustomers.getComparatorCreator(new int[] {1, 2, 3, 4});
     }
     
-    /**
-     *
-     * @return
-     */
-    @Override
-    public ListCellRenderer getListCellRenderer() {
-        return new ListCellRendererBasic(tcustomers.getRenderStringBasic(new int[]{3}));
-    }
     
     /**
      *

@@ -38,11 +38,17 @@ public class JNavigator extends javax.swing.JPanel implements BrowseListener, St
      *
      */
     public final static int BUTTONS_ALL = 0;
+    
 
     /**
      *
      */
     public final static int BUTTONS_NONAVIGATE = 1;
+    
+    /**
+     * 
+     */
+    public final static int BUTTONS_NO_LIST = 2;
     
     /**
      *
@@ -106,19 +112,21 @@ public class JNavigator extends javax.swing.JPanel implements BrowseListener, St
             });
             add(jbtnPrev);
         }
-
-        jbtnRefresh = new javax.swing.JButton();
-        jbtnRefresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/1downarrow.png")));
-        jbtnRefresh.setMargin(new java.awt.Insets(2, 8, 2, 8));
-        jbtnRefresh.setFocusPainted(false);
-        jbtnRefresh.setFocusable(false);
-        jbtnRefresh.setRequestFocusEnabled(false);
-        jbtnRefresh.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jbtnRefreshActionPerformed(evt);
-            }
-        });
-        add(jbtnRefresh);
+        
+        if (iButtons != BUTTONS_NO_LIST) {
+            jbtnRefresh = new javax.swing.JButton();
+            jbtnRefresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/1downarrow.png")));
+            jbtnRefresh.setMargin(new java.awt.Insets(2, 8, 2, 8));
+            jbtnRefresh.setFocusPainted(false);
+            jbtnRefresh.setFocusable(false);
+            jbtnRefresh.setRequestFocusEnabled(false);
+            jbtnRefresh.addActionListener(new java.awt.event.ActionListener() {
+                public void actionPerformed(java.awt.event.ActionEvent evt) {
+                    jbtnRefreshActionPerformed(evt);
+                }
+            });
+            add(jbtnRefresh);
+        }
 
         if (iButtons == BUTTONS_ALL) {
             jbtnNext = new javax.swing.JButton();

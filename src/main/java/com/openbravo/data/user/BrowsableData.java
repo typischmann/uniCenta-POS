@@ -243,8 +243,8 @@ public class BrowsableData implements ListModel {
      * @throws BasicException
      */
     public final int findNext(int index, Finder f) throws BasicException {
-        int i = index + 1;
-        
+        //int i = index + 1;
+        int i = index;
         // search up to the end of the recordset
         while (i < m_aData.size()) {
             if (f.match(this.getElementAt(i))) {
