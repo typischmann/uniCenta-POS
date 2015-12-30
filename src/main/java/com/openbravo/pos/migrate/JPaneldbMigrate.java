@@ -319,7 +319,7 @@ public class JPaneldbMigrate extends JPanel implements JPanelView {
 
         setPreferredSize(new java.awt.Dimension(600, 300));
 
-        jbtnMigrate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jbtnMigrate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jbtnMigrate.setText(AppLocal.getIntString("button.migrate")); // NOI18N
         jbtnMigrate.setMaximumSize(new java.awt.Dimension(70, 33));
         jbtnMigrate.setMinimumSize(new java.awt.Dimension(70, 33));
@@ -330,7 +330,7 @@ public class JPaneldbMigrate extends JPanel implements JPanelView {
             }
         });
 
-        jbtnExit.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jbtnExit.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jbtnExit.setText(AppLocal.getIntString("Button.Exit")); // NOI18N
         jbtnExit.setMaximumSize(new java.awt.Dimension(70, 33));
         jbtnExit.setMinimumSize(new java.awt.Dimension(70, 33));
@@ -344,12 +344,12 @@ public class JPaneldbMigrate extends JPanel implements JPanelView {
         jPanel1.setLayout(null);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "New Database details", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 11))); // NOI18N
-        jPanel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        jLabel18.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel18.setText(AppLocal.getIntString("label.dbdriverlib")); // NOI18N
 
-        jtxtDbDriverLib.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtDbDriverLib.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtDbDriverLib.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxtDbDriverLibActionPerformed(evt);
@@ -361,35 +361,35 @@ public class JPaneldbMigrate extends JPanel implements JPanelView {
         jbtnDbDriverLib.setMinimumSize(new java.awt.Dimension(64, 32));
         jbtnDbDriverLib.setPreferredSize(new java.awt.Dimension(64, 32));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("Label.DbDriver")); // NOI18N
 
-        jtxtDbDriver.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtDbDriver.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("Label.DbURL")); // NOI18N
 
-        jtxtDbURL.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtDbURL.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtDbURL.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxtDbURLActionPerformed(evt);
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("Label.DbUser")); // NOI18N
 
-        jtxtDbUser.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtDbUser.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtDbUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxtDbUserActionPerformed(evt);
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("Label.DbPassword")); // NOI18N
 
-        jtxtDbPassword.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtDbPassword.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         jLabel5.setText("New  Database ");
 
@@ -399,7 +399,7 @@ public class JPaneldbMigrate extends JPanel implements JPanelView {
             }
         });
 
-        jButtonTest.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jButtonTest.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jButtonTest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/database.png"))); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
         jButtonTest.setText(bundle.getString("Button.Test")); // NOI18N

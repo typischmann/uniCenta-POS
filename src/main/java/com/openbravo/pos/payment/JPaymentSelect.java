@@ -18,11 +18,13 @@
 //    along with uniCenta oPOS.  If not, see <http://www.gnu.org/licenses/>.
 package com.openbravo.pos.payment;
 
+import com.openbravo.basic.BasicException;
 import com.openbravo.format.Formats;
 import com.openbravo.pos.customers.CustomerInfoExt;
 import com.openbravo.pos.forms.AppLocal;
 import com.openbravo.pos.forms.AppView;
 import com.openbravo.pos.forms.DataLogicSystem;
+import com.openbravo.pos.inventory.LocationInfo;
 import java.awt.*;
 import java.util.HashMap;
 import java.util.List;
@@ -97,6 +99,20 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
         this.app = app;
         dlSystem = (DataLogicSystem) app.getBean("com.openbravo.pos.forms.DataLogicSystem");
         printselected = true;
+        try{
+            List locations = dlSystem.listLocations();
+            for (int i = 0; i < locations.size(); i++) {
+                if(!((LocationInfo)locations.get(i)).getID().equals(app.getInventoryLocation())){
+                    this.warehouses.addItem(((LocationInfo)locations.get(i)).getName());
+                }
+            }
+        }catch(BasicException be){
+            
+        }
+        
+        this.warehouses.setEnabled(false);
+        this.isWarehouse.setSelected(false);
+        
     }
 
     /**
@@ -774,7 +790,21 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
         this.m_sTransactionID = tID;
     }
     
+    /**
+     * 
+     * @return 
+     */
+    public boolean getWarehouseSelected(){
+        return this.isWarehouse.isSelected();
+    }
     
+    /**
+     * 
+     * @return 
+     */
+    public String getWarehouseId() throws BasicException{
+        return dlSystem.findLocationIdByName(this.warehouses.getSelectedItem().toString());
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -796,10 +826,12 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
         m_jTabPayment = new javax.swing.JTabbedPane();
         jPanel5 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
+        isWarehouse = new javax.swing.JCheckBox();
         m_jButtonCancel = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         m_jButtonOK = new javax.swing.JButton();
         m_jButtonPrint = new javax.swing.JToggleButton();
+        warehouses = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle(AppLocal.getIntString("payment.title")); // NOI18N
@@ -870,6 +902,14 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
 
         jPanel5.setLayout(new java.awt.BorderLayout());
 
+        isWarehouse.setText(AppLocal.getIntString("button.warehouse")); // NOI18N
+        isWarehouse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                isWarehouseActionPerformed(evt);
+            }
+        });
+        jPanel2.add(isWarehouse);
+
         m_jButtonCancel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         m_jButtonCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/cancel.png"))); // NOI18N
         m_jButtonCancel.setText(AppLocal.getIntString("Button.Cancel")); // NOI18N
@@ -916,6 +956,8 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
             }
         });
         jPanel5.add(m_jButtonPrint, java.awt.BorderLayout.LINE_START);
+
+        jPanel5.add(warehouses, java.awt.BorderLayout.CENTER);
 
         getContentPane().add(jPanel5, java.awt.BorderLayout.SOUTH);
 
@@ -987,7 +1029,13 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
     private void m_jButtonPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_m_jButtonPrintActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_m_jButtonPrintActionPerformed
+
+    private void isWarehouseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_isWarehouseActionPerformed
+        this.warehouses.setEnabled(isWarehouse.isSelected());
+    }//GEN-LAST:event_isWarehouseActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBox isWarehouse;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -1004,5 +1052,6 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
     private javax.swing.JLabel m_jPayTotal;
     private javax.swing.JLabel m_jRemaininglEuros;
     private javax.swing.JTabbedPane m_jTabPayment;
+    private javax.swing.JComboBox<String> warehouses;
     // End of variables declaration//GEN-END:variables
 }

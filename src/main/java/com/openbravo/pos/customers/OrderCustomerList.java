@@ -25,7 +25,7 @@ import com.openbravo.pos.catalog.JCatalogTab;
 import com.openbravo.pos.forms.AppLocal;
 import com.openbravo.pos.forms.AppView;
 import com.openbravo.pos.sales.DataLogicReceipts;
-import com.openbravo.pos.sales.SharedTicketInfo;
+import com.openbravo.pos.sales.FindTicketsInfo;
 import com.openbravo.pos.sales.TicketsEditor;
 import com.openbravo.pos.ticket.TicketInfo;
 import com.openbravo.pos.util.ThumbNailBuilder;
@@ -129,7 +129,7 @@ public class OrderCustomerList extends JPanel implements TicketSelector {
                 jPanelCustomers.add(flowTab);
 
                 List<CustomerInfoExt> customers = null;
-                List<SharedTicketInfo> ticketList = null;
+                List<FindTicketsInfo> ticketList = null;
                 try {
 
 //                    customers = dataLogicCustomers.getCustomers();
@@ -144,9 +144,9 @@ public class OrderCustomerList extends JPanel implements TicketSelector {
                 } catch (BasicException ex) {
                     Logger.getLogger(OrderCustomerList.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                HashMap<SharedTicketInfo, CustomerInfoExt> orderMap = new HashMap<>();
+                HashMap<FindTicketsInfo, CustomerInfoExt> orderMap = new HashMap<>();
 
-                for (SharedTicketInfo sharedTicketInfo : ticketList) {
+                for (FindTicketsInfo sharedTicketInfo : ticketList) {
 
                     String ticketName = sharedTicketInfo.getName().trim();
 
@@ -172,15 +172,15 @@ public class OrderCustomerList extends JPanel implements TicketSelector {
                 }
                 // sort
                 CustomerComparator bvc = new CustomerComparator(orderMap);
-                TreeMap<SharedTicketInfo, CustomerInfoExt> sortedMap = new TreeMap<>(bvc);
+                TreeMap<FindTicketsInfo, CustomerInfoExt> sortedMap = new TreeMap<>(bvc);
                 sortedMap.putAll(orderMap);
 
                 LOGGER.log(Level.INFO, "Time of orderMap {0}", (System.currentTimeMillis() - time));
                 time = System.currentTimeMillis();
 
                 // set button list
-                for (Map.Entry<SharedTicketInfo, CustomerInfoExt> entry : sortedMap.entrySet()) {
-                    SharedTicketInfo ticket = entry.getKey();
+                for (Map.Entry<FindTicketsInfo, CustomerInfoExt> entry : sortedMap.entrySet()) {
+                    FindTicketsInfo ticket = entry.getKey();
                     CustomerInfoExt customer = entry.getValue();
 
                     String name = ticket.getName();
@@ -324,17 +324,17 @@ public class OrderCustomerList extends JPanel implements TicketSelector {
         }
     }
 
-    class CustomerComparator implements Comparator<SharedTicketInfo> {
+    class CustomerComparator implements Comparator<FindTicketsInfo> {
 
-        Map<SharedTicketInfo, CustomerInfoExt> base;
+        Map<FindTicketsInfo, CustomerInfoExt> base;
 
-        public CustomerComparator(Map<SharedTicketInfo, CustomerInfoExt> base) {
+        public CustomerComparator(Map<FindTicketsInfo, CustomerInfoExt> base) {
             this.base = base;
         }
 
         // Note: this comparator imposes orderings that are inconsistent with equals.    
         @Override
-        public int compare(SharedTicketInfo a, SharedTicketInfo b) {
+        public int compare(FindTicketsInfo a, FindTicketsInfo b) {
             String nameA = base.get(a).getName();
             String nameB = base.get(b).getName();
 

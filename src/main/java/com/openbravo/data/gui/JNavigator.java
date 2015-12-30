@@ -196,7 +196,7 @@ public class JNavigator extends javax.swing.JPanel implements BrowseListener, St
         }
         
         m_cc = cc;
-        if (m_cc != null) {
+        if (m_cc != null && iButtons == BUTTONS_ALL) {
             jbtnSort = new javax.swing.JButton();
             jbtnSort.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sort_incr.png")));
             jbtnSort.setMargin(new java.awt.Insets(2, 8, 2, 8));
@@ -362,7 +362,7 @@ public class JNavigator extends javax.swing.JPanel implements BrowseListener, St
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
     }// </editor-fold>//GEN-END:initComponents
    
     // Variables declaration - do not modify//GEN-BEGIN:variables

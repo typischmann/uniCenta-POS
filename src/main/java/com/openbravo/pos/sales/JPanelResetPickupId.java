@@ -193,7 +193,7 @@ public class JPanelResetPickupId extends JPanel implements JPanelView {
 
         jPanel1.setPreferredSize(new java.awt.Dimension(342, 80));
 
-        jbtnUpdate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jbtnUpdate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jbtnUpdate.setText(AppLocal.getIntString("label.resetpickup")); // NOI18N
         jbtnUpdate.setMaximumSize(new java.awt.Dimension(70, 33));
         jbtnUpdate.setMinimumSize(new java.awt.Dimension(70, 33));
@@ -204,7 +204,7 @@ public class JPanelResetPickupId extends JPanel implements JPanelView {
             }
         });
 
-        jbtnExit.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jbtnExit.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jbtnExit.setText(AppLocal.getIntString("Button.Exit")); // NOI18N
         jbtnExit.setMaximumSize(new java.awt.Dimension(70, 33));
         jbtnExit.setMinimumSize(new java.awt.Dimension(70, 33));

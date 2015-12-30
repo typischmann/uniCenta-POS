@@ -203,7 +203,7 @@ public class DeviceFiscalPrinterJavaPOS extends javax.swing.JPanel implements De
 
         setLayout(null);
 
-        jButton1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jButton1.setText("*X Report");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -214,70 +214,70 @@ public class DeviceFiscalPrinterJavaPOS extends javax.swing.JPanel implements De
         jButton1.setBounds(30, 10, 130, 23);
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("*Receipt Title"));
-        jPanel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel1.setLayout(null);
 
-        jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTextField1.setText("jTextField1");
         jPanel1.add(jTextField1);
         jTextField1.setBounds(20, 30, 260, 25);
 
-        jCheckBox1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jCheckBox1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jCheckBox1.setText("jCheckBox1");
         jCheckBox1.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jCheckBox1.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jPanel1.add(jCheckBox1);
         jCheckBox1.setBounds(290, 30, 110, 25);
 
-        jTextField2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTextField2.setText("jTextField2");
         jPanel1.add(jTextField2);
         jTextField2.setBounds(20, 60, 260, 25);
 
-        jCheckBox2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jCheckBox2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jCheckBox2.setText("jCheckBox2");
         jCheckBox2.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jCheckBox2.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jPanel1.add(jCheckBox2);
         jCheckBox2.setBounds(290, 60, 110, 25);
 
-        jTextField3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTextField3.setText("jTextField3");
         jPanel1.add(jTextField3);
         jTextField3.setBounds(20, 90, 260, 25);
 
-        jTextField4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTextField4.setText("jTextField4");
         jPanel1.add(jTextField4);
         jTextField4.setBounds(20, 120, 260, 25);
 
-        jTextField5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTextField5.setText("jTextField5");
         jPanel1.add(jTextField5);
         jTextField5.setBounds(20, 150, 260, 25);
 
-        jCheckBox3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jCheckBox3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jCheckBox3.setText("jCheckBox3");
         jCheckBox3.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jCheckBox3.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jPanel1.add(jCheckBox3);
         jCheckBox3.setBounds(290, 90, 110, 25);
 
-        jCheckBox4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jCheckBox4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jCheckBox4.setText("jCheckBox4");
         jCheckBox4.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jCheckBox4.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jPanel1.add(jCheckBox4);
         jCheckBox4.setBounds(290, 120, 110, 25);
 
-        jCheckBox5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jCheckBox5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jCheckBox5.setText("jCheckBox5");
         jCheckBox5.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         jCheckBox5.setMargin(new java.awt.Insets(0, 0, 0, 0));
         jPanel1.add(jCheckBox5);
         jCheckBox5.setBounds(290, 150, 110, 25);
 
-        jButton2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jButton2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jButton2.setText("*Z Report");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -311,61 +311,61 @@ public class JCustomerFinder extends javax.swing.JDialog implements EditorCreato
 
         jPanel5.setLayout(new java.awt.BorderLayout());
 
-        jLblTaxID.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLblTaxID.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLblTaxID.setText(AppLocal.getIntString("label.taxid")); // NOI18N
         jLblTaxID.setMaximumSize(new java.awt.Dimension(120, 25));
         jLblTaxID.setMinimumSize(new java.awt.Dimension(120, 25));
         jLblTaxID.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtTaxID.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtTaxID.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtTaxID.setPreferredSize(new java.awt.Dimension(220, 25));
 
-        jLblSearchKey.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLblSearchKey.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLblSearchKey.setText(AppLocal.getIntString("label.searchkey")); // NOI18N
         jLblSearchKey.setMaximumSize(new java.awt.Dimension(120, 25));
         jLblSearchKey.setMinimumSize(new java.awt.Dimension(120, 25));
         jLblSearchKey.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtSearchKey.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtSearchKey.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtSearchKey.setPreferredSize(new java.awt.Dimension(220, 25));
 
-        jLblPostal.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLblPostal.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLblPostal.setText("Postal");
         jLblPostal.setMaximumSize(new java.awt.Dimension(120, 25));
         jLblPostal.setMinimumSize(new java.awt.Dimension(120, 25));
         jLblPostal.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtPostal.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtPostal.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtPostal.setPreferredSize(new java.awt.Dimension(220, 25));
 
-        jLblName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLblName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLblName.setText(AppLocal.getIntString("label.prodname")); // NOI18N
         jLblName.setMaximumSize(new java.awt.Dimension(120, 25));
         jLblName.setMinimumSize(new java.awt.Dimension(120, 25));
         jLblName.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtName.setPreferredSize(new java.awt.Dimension(220, 25));
 
-        jLblPhone.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLblPhone.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
         jLblPhone.setText(bundle.getString("label.phone")); // NOI18N
         jLblPhone.setMaximumSize(new java.awt.Dimension(120, 25));
         jLblPhone.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        jLblEmail.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLblEmail.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLblEmail.setText(bundle.getString("label.companyemail")); // NOI18N
         jLblEmail.setMaximumSize(new java.awt.Dimension(120, 25));
         jLblEmail.setMinimumSize(new java.awt.Dimension(120, 25));
         jLblEmail.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtEmail.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtEmail.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtEmail.setPreferredSize(new java.awt.Dimension(220, 25));
 
-        m_jtxtPhone.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtPhone.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtPhone.setPreferredSize(new java.awt.Dimension(220, 25));
 
-        jcmdReset.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdReset.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdReset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/reload.png"))); // NOI18N
         jcmdReset.setText(bundle.getString("button.reset")); // NOI18N
         jcmdReset.setToolTipText("Clear Filter");
@@ -379,7 +379,7 @@ public class JCustomerFinder extends javax.swing.JDialog implements EditorCreato
         jPanel6.add(jcmdReset);
         jcmdReset.getAccessibleContext().setAccessibleDescription("");
 
-        jcmdExecute.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdExecute.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdExecute.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/ok.png"))); // NOI18N
         jcmdExecute.setText(AppLocal.getIntString("button.executefilter")); // NOI18N
         jcmdExecute.setToolTipText("Execute Filter");
@@ -464,7 +464,7 @@ public class JCustomerFinder extends javax.swing.JDialog implements EditorCreato
         jPanel4.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jPanel4.setLayout(new java.awt.BorderLayout());
 
-        jListCustomers.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jListCustomers.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jListCustomers.setFocusable(false);
         jListCustomers.setRequestFocusEnabled(false);
         jListCustomers.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -485,7 +485,7 @@ public class JCustomerFinder extends javax.swing.JDialog implements EditorCreato
 
         jPanel8.setLayout(new java.awt.BorderLayout());
 
-        jcmdCancel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdCancel.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/cancel.png"))); // NOI18N
         jcmdCancel.setText(AppLocal.getIntString("Button.Cancel")); // NOI18N
         jcmdCancel.setFocusPainted(false);

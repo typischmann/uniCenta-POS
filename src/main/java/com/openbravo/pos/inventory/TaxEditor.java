@@ -273,62 +273,62 @@ public class TaxEditor extends JPanel implements EditorRecord {
 
         setLayout(null);
 
-        m_jName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(m_jName);
         m_jName.setBounds(240, 20, 200, 25);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("Label.Name")); // NOI18N
         add(jLabel2);
         jLabel2.setBounds(20, 20, 220, 25);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.dutyrate")); // NOI18N
         add(jLabel3);
         jLabel3.setBounds(20, 140, 220, 25);
 
-        m_jRate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jRate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(m_jRate);
         m_jRate.setBounds(240, 140, 60, 25);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.taxcategory")); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(20, 50, 220, 25);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.custtaxcategory")); // NOI18N
         add(jLabel4);
         jLabel4.setBounds(20, 80, 220, 25);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.taxparent")); // NOI18N
         add(jLabel5);
         jLabel5.setBounds(20, 110, 220, 25);
 
-        jCascade.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jCascade.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jCascade.setText(AppLocal.getIntString("label.cascade")); // NOI18N
         add(jCascade);
         jCascade.setBounds(320, 140, 110, 25);
 
-        m_jTaxCategory.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jTaxCategory.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         add(m_jTaxCategory);
         m_jTaxCategory.setBounds(240, 50, 200, 25);
 
-        m_jTaxParent.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jTaxParent.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         add(m_jTaxParent);
         m_jTaxParent.setBounds(240, 110, 200, 25);
 
-        m_jCustTaxCategory.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCustTaxCategory.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         add(m_jCustTaxCategory);
         m_jCustTaxCategory.setBounds(240, 80, 200, 25);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText(AppLocal.getIntString("label.order")); // NOI18N
         add(jLabel6);
         jLabel6.setBounds(20, 170, 220, 25);
 
-        jOrder.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jOrder.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(jOrder);
         jOrder.setBounds(240, 170, 60, 25);
     }// </editor-fold>//GEN-END:initComponents

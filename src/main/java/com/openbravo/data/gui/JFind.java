@@ -133,34 +133,34 @@ public class JFind extends JDialog {
 
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(LocalRes.getIntString("label.findwhat")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(10, 20, 100, 25);
 
-        m_jFind.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jFind.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel1.add(m_jFind);
         m_jFind.setBounds(110, 20, 230, 25);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(LocalRes.getIntString("label.where")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(10, 50, 100, 25);
 
-        m_jWhere.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jWhere.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jPanel1.add(m_jWhere);
         m_jWhere.setBounds(110, 50, 230, 25);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(LocalRes.getIntString("label.match")); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(10, 80, 100, 25);
 
-        m_jMatch.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jMatch.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jPanel1.add(m_jMatch);
         m_jMatch.setBounds(110, 80, 230, 25);
 
-        m_jMatchCase.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jMatchCase.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jMatchCase.setText(LocalRes.getIntString("label.casesensitive")); // NOI18N
         jPanel1.add(m_jMatchCase);
         m_jMatchCase.setBounds(110, 110, 230, 25);

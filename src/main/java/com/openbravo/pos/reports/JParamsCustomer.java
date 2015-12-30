@@ -136,12 +136,12 @@ public class JParamsCustomer extends javax.swing.JPanel implements ReportEditorC
         setPreferredSize(new java.awt.Dimension(400, 60));
         setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.customer")); // NOI18N
         add(jLabel1);
         jLabel1.setBounds(20, 20, 120, 25);
 
-        jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(jTextField1);
         jTextField1.setBounds(140, 20, 200, 25);
 

@@ -566,7 +566,7 @@ public class JPrincipalApp extends javax.swing.JPanel implements AppUserView {
 
         jPanel1.setLayout(new java.awt.BorderLayout());
 
-        jPanel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.Y_AXIS));
 
         jButton1.setToolTipText("Open/Close Menu");
@@ -594,13 +594,13 @@ public class JPrincipalApp extends javax.swing.JPanel implements AppUserView {
 
         m_jPanelTitle.setLayout(new java.awt.BorderLayout());
 
-        m_jTitle.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        m_jTitle.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
         m_jTitle.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, java.awt.Color.darkGray), javax.swing.BorderFactory.createEmptyBorder(10, 10, 10, 10)));
         m_jPanelTitle.add(m_jTitle, java.awt.BorderLayout.NORTH);
 
         m_jPanelRight.add(m_jPanelTitle, java.awt.BorderLayout.NORTH);
 
-        m_jPanelContainer.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jPanelContainer.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jPanelContainer.setLayout(new java.awt.CardLayout());
         m_jPanelRight.add(m_jPanelContainer, java.awt.BorderLayout.CENTER);
 

@@ -97,25 +97,25 @@ public class ConfigPaymentPanelBluePay20POST extends javax.swing.JPanel implemen
 
         setPreferredSize(new java.awt.Dimension(400, 116));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.storename")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.certificatepwd")); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.certificatepath")); // NOI18N
         jLabel4.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jtxtURL.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtURL.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtURL.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jtxtAccountID.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtAccountID.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtAccountID.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jtxtSecretKey.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtSecretKey.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtSecretKey.setPreferredSize(new java.awt.Dimension(300, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

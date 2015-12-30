@@ -269,13 +269,13 @@ public class AuxiliarEditor extends javax.swing.JPanel implements EditorRecord {
         setPreferredSize(new java.awt.Dimension(700, 100));
         setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.prodref")); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(70, 25));
         add(jLabel3);
         jLabel3.setBounds(10, 11, 70, 25);
 
-        m_jReference.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jReference.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jReference.setPreferredSize(new java.awt.Dimension(150, 25));
         m_jReference.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -322,7 +322,7 @@ public class AuxiliarEditor extends javax.swing.JPanel implements EditorRecord {
         add(m_jProduct);
         m_jProduct.setBounds(90, 50, 217, 25);
 
-        m_jBarcode.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jBarcode.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jBarcode.setPreferredSize(new java.awt.Dimension(150, 25));
         m_jBarcode.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -332,7 +332,7 @@ public class AuxiliarEditor extends javax.swing.JPanel implements EditorRecord {
         add(m_jBarcode);
         m_jBarcode.setBounds(397, 11, 150, 25);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.prodbarcode")); // NOI18N
         jLabel4.setPreferredSize(new java.awt.Dimension(70, 25));
         add(jLabel4);

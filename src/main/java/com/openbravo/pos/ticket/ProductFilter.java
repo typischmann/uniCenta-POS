@@ -146,48 +146,48 @@ public class ProductFilter extends javax.swing.JPanel implements ReportEditorCre
         m_jPriceBuy = new javax.swing.JTextField();
         m_jPriceSell = new javax.swing.JTextField();
 
-        m_jBarcode.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jBarcode.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jBarcode.setPreferredSize(new java.awt.Dimension(150, 30));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.prodbarcode")); // NOI18N
         jLabel5.setPreferredSize(new java.awt.Dimension(110, 30));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.prodcategory")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(110, 30));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.prodname")); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(110, 30));
 
-        m_jCategory.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCategory.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jCategory.setPreferredSize(new java.awt.Dimension(250, 30));
 
-        m_jCboName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCboName.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jCboName.setPreferredSize(new java.awt.Dimension(250, 30));
 
-        m_jName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jName.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jName.setPreferredSize(new java.awt.Dimension(250, 30));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.prodpricebuy")); // NOI18N
         jLabel4.setPreferredSize(new java.awt.Dimension(110, 30));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.prodpricesell")); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(110, 30));
 
-        m_jCboPriceBuy.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCboPriceBuy.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jCboPriceBuy.setPreferredSize(new java.awt.Dimension(150, 30));
 
-        m_jCboPriceSell.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCboPriceSell.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jCboPriceSell.setPreferredSize(new java.awt.Dimension(150, 30));
 
-        m_jPriceBuy.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jPriceBuy.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jPriceBuy.setPreferredSize(new java.awt.Dimension(150, 30));
 
-        m_jPriceSell.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jPriceSell.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jPriceSell.setPreferredSize(new java.awt.Dimension(150, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

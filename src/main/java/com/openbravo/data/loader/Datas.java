@@ -74,6 +74,11 @@ public abstract class Datas {
      *
      */
     public final static Datas SERIALIZABLE = new DatasSERIALIZABLE();
+    
+    /**
+     * 
+     */
+    public final static Datas XMLSERIALIZABLE = new DataXmlSERIALIZABLE();
 
     /**
      *
@@ -325,6 +330,35 @@ public abstract class Datas {
             throw new UnsupportedOperationException();
         }   
     }       
+    
+    private static final class DataXmlSERIALIZABLE extends Datas {
+
+        @Override
+        public Object getValue(DataRead dr, int i) throws BasicException {
+            return dr.getString(i);
+        }
+
+        @Override
+        public void setValue(DataWrite dw, int i, Object value) throws BasicException {
+            //dw.setString(i, value);
+        }
+
+        @Override
+        public Class getClassValue() {
+            return java.lang.Object.class;
+        }
+
+        @Override
+        protected String toStringAbstract(Object value) {
+            return "0x" + ImageUtils.bytes2hex(ImageUtils.writeSerializable(value));
+        }
+
+        @Override
+        protected int compareAbstract(Object o1, Object o2) {
+            throw new UnsupportedOperationException("Comparision for DataXmlSERIALIZABLE is not supported yet.");
+        }
+        
+    }
     
     private static final class DatasNULL extends Datas {
         public Object getValue(DataRead dr, int i) throws BasicException {

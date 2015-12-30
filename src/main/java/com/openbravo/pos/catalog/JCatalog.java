@@ -475,16 +475,16 @@ public class JCatalog extends JPanel implements ListSelectionListener, CatalogSe
         m_jCategories.setPreferredSize(new java.awt.Dimension(275, 600));
         m_jCategories.setLayout(new java.awt.CardLayout());
 
-        m_jRootCategories.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        m_jRootCategories.setFont(new java.awt.Font("MS Song", 0, 11)); // NOI18N
         m_jRootCategories.setMinimumSize(new java.awt.Dimension(200, 100));
         m_jRootCategories.setPreferredSize(new java.awt.Dimension(400, 130));
         m_jRootCategories.setLayout(new java.awt.BorderLayout());
 
         m_jscrollcat.setHorizontalScrollBarPolicy(javax.swing.ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         m_jscrollcat.setVerticalScrollBarPolicy(javax.swing.ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
-        m_jscrollcat.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        m_jscrollcat.setFont(new java.awt.Font("MS Song", 0, 11)); // NOI18N
 
-        m_jListCategories.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jListCategories.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jListCategories.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
         m_jListCategories.setFocusable(false);
         m_jListCategories.addListSelectionListener(new javax.swing.event.ListSelectionListener() {

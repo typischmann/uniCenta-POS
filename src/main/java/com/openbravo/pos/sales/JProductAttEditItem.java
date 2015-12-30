@@ -92,10 +92,10 @@ public class JProductAttEditItem extends javax.swing.JPanel implements JProductA
         jLabel1 = new javax.swing.JLabel();
         jValue = new com.openbravo.editor.JEditorString();
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText("jLabel1");
 
-        jValue.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jValue.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

@@ -81,7 +81,7 @@ public JRefundLines(DataLogicSystem dlSystem, JPanelTicketEdits jTicketEdit) {
         m_jbtnAddLine = new javax.swing.JButton();
         m_jbtnAddAll = new javax.swing.JButton();
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setPreferredSize(new java.awt.Dimension(15, 200));
         setLayout(new java.awt.BorderLayout());
 
@@ -92,7 +92,7 @@ public JRefundLines(DataLogicSystem dlSystem, JPanelTicketEdits jTicketEdit) {
 
         jPanel2.setLayout(new java.awt.GridLayout(0, 1, 0, 5));
 
-        m_jbtnAddOne.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jbtnAddOne.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jbtnAddOne.setText(AppLocal.getIntString("button.refundone")); // NOI18N
         m_jbtnAddOne.setToolTipText("Refund An Item");
         m_jbtnAddOne.setFocusPainted(false);
@@ -107,7 +107,7 @@ public JRefundLines(DataLogicSystem dlSystem, JPanelTicketEdits jTicketEdit) {
         });
         jPanel2.add(m_jbtnAddOne);
 
-        m_jbtnAddLine.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jbtnAddLine.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jbtnAddLine.setText(AppLocal.getIntString("button.refundline")); // NOI18N
         m_jbtnAddLine.setToolTipText("Refund A Line");
         m_jbtnAddLine.setFocusPainted(false);
@@ -122,7 +122,7 @@ public JRefundLines(DataLogicSystem dlSystem, JPanelTicketEdits jTicketEdit) {
         });
         jPanel2.add(m_jbtnAddLine);
 
-        m_jbtnAddAll.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jbtnAddAll.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jbtnAddAll.setText(AppLocal.getIntString("button.refundall")); // NOI18N
         m_jbtnAddAll.setToolTipText("Refund Everything");
         m_jbtnAddAll.setFocusPainted(false);

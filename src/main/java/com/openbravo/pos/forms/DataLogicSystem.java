@@ -22,6 +22,7 @@ package com.openbravo.pos.forms;
 import com.openbravo.basic.BasicException;
 import com.openbravo.data.loader.*;
 import com.openbravo.format.Formats;
+import com.openbravo.pos.inventory.LocationInfo;
 import com.openbravo.pos.util.ThumbNailBuilder;
 import java.awt.image.BufferedImage;
 import java.io.ByteArrayInputStream;
@@ -49,6 +50,11 @@ public class DataLogicSystem extends BeanFactoryDataSingle {
      *
      */
     protected SentenceList m_peoplevisible;  
+    
+    /**
+     * 
+     */
+    protected SentenceList m_locations;
 
     /**
      *
@@ -74,6 +80,7 @@ public class DataLogicSystem extends BeanFactoryDataSingle {
     private SentenceFind m_rolepermissions; 
     private SentenceExec m_changepassword;    
     private SentenceFind m_locationfind;
+    private SentenceFind m_locationfindid;
     private SentenceExec m_insertCSVEntry;
     private SentenceFind m_getProductAllFields;
     private SentenceFind m_getProductRefAndCode;    
@@ -190,6 +197,15 @@ public class DataLogicSystem extends BeanFactoryDataSingle {
             , "SELECT ID, NAME, APPPASSWORD, CARD, ROLE, IMAGE FROM PEOPLE WHERE VISIBLE = " + s.DB.TRUE() + " ORDER BY NAME"
             , null
             , peopleread);
+        
+        m_locations = new StaticSentence(s
+            , "SELECT "
+                + "ID, "
+                + "NAME, "
+                + "ADDRESS FROM LOCATIONS "
+                + "ORDER BY NAME"
+            , null
+            , new SerializerReadClass(LocationInfo.class));
 
         m_peoplebycard = new PreparedSentence(s
             , "SELECT ID, NAME, APPPASSWORD, CARD, ROLE, IMAGE FROM PEOPLE WHERE CARD = ? AND VISIBLE = " + s.DB.TRUE()
@@ -259,6 +275,11 @@ public class DataLogicSystem extends BeanFactoryDataSingle {
                 , "SELECT NAME FROM LOCATIONS WHERE ID = ?"
                 , SerializerWriteString.INSTANCE
                 , SerializerReadString.INSTANCE);   
+        
+        m_locationfindid = new StaticSentence(s
+                , "SELECT ID FROM LOCATIONS WHERE NAME = ?"
+                , SerializerWriteString.INSTANCE
+                , SerializerReadString.INSTANCE);
         
 //Add 13.2.14 JDL for new gui based permissions                
         m_permissionlist = new StaticSentence(s
@@ -347,6 +368,10 @@ public class DataLogicSystem extends BeanFactoryDataSingle {
      */
     public final List listPeopleVisible() throws BasicException {
         return m_peoplevisible.list();
+    }
+    
+    public final List listLocations() throws BasicException {
+        return m_locations.list();
     }
 
     /**
@@ -591,6 +616,10 @@ public class DataLogicSystem extends BeanFactoryDataSingle {
      */
     public final String findLocationName(String iLocation) throws BasicException {
         return (String) m_locationfind.find(iLocation);
+    }
+    
+    public final String findLocationIdByName(String name) throws BasicException {
+        return (String) m_locationfindid.find(name);  
     }
 
     /**

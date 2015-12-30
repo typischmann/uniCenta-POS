@@ -1379,7 +1379,11 @@ public abstract class JPanelTicket extends JPanel implements JPanelView, BeanFac
                         if (executeEvent(ticket, ticketext, "ticket.save") == null) {
                             // Save the receipt and assign a receipt number
                             try {
-                                dlSales.saveTicket(ticket, m_App.getInventoryLocation());
+                                if(!paymentdialog.getWarehouseSelected()){
+                                    dlSales.saveTicket(ticket, m_App.getInventoryLocation(), false);
+                                }else{
+                                    dlSales.saveTicket(ticket, paymentdialog.getWarehouseId(), true);
+                                }
                             } catch (BasicException eData) {
                                 MessageInf msg = new MessageInf(MessageInf.SGN_NOTICE, AppLocal.getIntString("message.nosaveticket"), eData);
                                 msg.show(this);
@@ -1961,7 +1965,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
 
         jPanel1.setMinimumSize(new java.awt.Dimension(235, 50));
 
-        m_jbtnScale.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        m_jbtnScale.setFont(new java.awt.Font("MS Song", 0, 11)); // NOI18N
         m_jbtnScale.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/scale.png"))); // NOI18N
         m_jbtnScale.setText(AppLocal.getIntString("button.scale")); // NOI18N
         m_jbtnScale.setToolTipText("Scale");
@@ -1979,7 +1983,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
         });
         jPanel1.add(m_jbtnScale);
 
-        jbtnMooring.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        jbtnMooring.setFont(new java.awt.Font("MS Song", 0, 11)); // NOI18N
         jbtnMooring.setText("Moorings");
         jbtnMooring.setMargin(new java.awt.Insets(8, 14, 8, 14));
         jbtnMooring.setMaximumSize(new java.awt.Dimension(80, 40));
@@ -2022,7 +2026,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
         m_jPanTicket.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         m_jPanTicket.setLayout(new java.awt.BorderLayout());
 
-        jPanel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel5.setPreferredSize(new java.awt.Dimension(60, 200));
         jPanel5.setLayout(new java.awt.BorderLayout());
 
@@ -2129,13 +2133,13 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
 
         m_jPanTicket.add(jPanel5, java.awt.BorderLayout.LINE_END);
 
-        m_jPanelCentral.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jPanelCentral.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jPanelCentral.setPreferredSize(new java.awt.Dimension(450, 240));
         m_jPanelCentral.setLayout(new java.awt.BorderLayout());
 
         jPanel4.setLayout(new java.awt.BorderLayout());
 
-        m_jTicketId.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jTicketId.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jTicketId.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         m_jTicketId.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         m_jTicketId.setAutoscrolls(true);
@@ -2149,26 +2153,26 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
         m_jPanTotals.setPreferredSize(new java.awt.Dimension(375, 60));
         m_jPanTotals.setLayout(new java.awt.GridLayout(2, 3, 4, 0));
 
-        m_jLblTotalEuros3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        m_jLblTotalEuros3.setFont(new java.awt.Font("MS Song", 1, 14)); // NOI18N
         m_jLblTotalEuros3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         m_jLblTotalEuros3.setLabelFor(m_jSubtotalEuros);
         m_jLblTotalEuros3.setText(AppLocal.getIntString("label.subtotalcash")); // NOI18N
         m_jPanTotals.add(m_jLblTotalEuros3);
 
-        m_jLblTotalEuros2.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        m_jLblTotalEuros2.setFont(new java.awt.Font("MS Song", 1, 14)); // NOI18N
         m_jLblTotalEuros2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         m_jLblTotalEuros2.setLabelFor(m_jSubtotalEuros);
         m_jLblTotalEuros2.setText(AppLocal.getIntString("label.taxcash")); // NOI18N
         m_jPanTotals.add(m_jLblTotalEuros2);
 
-        m_jLblTotalEuros1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        m_jLblTotalEuros1.setFont(new java.awt.Font("MS Song", 1, 14)); // NOI18N
         m_jLblTotalEuros1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         m_jLblTotalEuros1.setLabelFor(m_jTotalEuros);
         m_jLblTotalEuros1.setText(AppLocal.getIntString("label.totalcash")); // NOI18N
         m_jPanTotals.add(m_jLblTotalEuros1);
 
         m_jSubtotalEuros.setBackground(m_jEditLine.getBackground());
-        m_jSubtotalEuros.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        m_jSubtotalEuros.setFont(new java.awt.Font("MS Song", 0, 18)); // NOI18N
         m_jSubtotalEuros.setForeground(m_jEditLine.getForeground());
         m_jSubtotalEuros.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         m_jSubtotalEuros.setLabelFor(m_jSubtotalEuros);
@@ -2181,7 +2185,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
         m_jPanTotals.add(m_jSubtotalEuros);
 
         m_jTaxesEuros.setBackground(m_jEditLine.getBackground());
-        m_jTaxesEuros.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        m_jTaxesEuros.setFont(new java.awt.Font("MS Song", 0, 18)); // NOI18N
         m_jTaxesEuros.setForeground(m_jEditLine.getForeground());
         m_jTaxesEuros.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         m_jTaxesEuros.setLabelFor(m_jTaxesEuros);
@@ -2194,7 +2198,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
         m_jPanTotals.add(m_jTaxesEuros);
 
         m_jTotalEuros.setBackground(m_jEditLine.getBackground());
-        m_jTotalEuros.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        m_jTotalEuros.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
         m_jTotalEuros.setForeground(m_jEditLine.getForeground());
         m_jTotalEuros.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         m_jTotalEuros.setLabelFor(m_jTotalEuros);
@@ -2214,7 +2218,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
 
         m_jPanContainer.add(m_jPanTicket, java.awt.BorderLayout.CENTER);
 
-        m_jContEntries.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jContEntries.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jContEntries.setLayout(new java.awt.BorderLayout());
 
         m_jPanEntries.setLayout(new javax.swing.BoxLayout(m_jPanEntries, javax.swing.BoxLayout.Y_AXIS));
@@ -2231,7 +2235,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
         jPanel9.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jPanel9.setLayout(new java.awt.GridBagLayout());
 
-        m_jPrice.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jPrice.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jPrice.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         m_jPrice.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(javax.swing.UIManager.getDefaults().getColor("Button.darkShadow")), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
         m_jPrice.setOpaque(true);
@@ -2246,7 +2250,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
         gridBagConstraints.weighty = 1.0;
         jPanel9.add(m_jPrice, gridBagConstraints);
 
-        m_jPor.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jPor.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jPor.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         m_jPor.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(javax.swing.UIManager.getDefaults().getColor("Button.darkShadow")), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
         m_jPor.setOpaque(true);
@@ -2281,7 +2285,7 @@ if (pickupSize!=null && (Integer.parseInt(pickupSize) >= tmpPickupId.length())){
         gridBagConstraints.insets = new java.awt.Insets(0, 5, 0, 0);
         jPanel9.add(m_jEnter, gridBagConstraints);
 
-        m_jTax.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jTax.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jTax.setFocusable(false);
         m_jTax.setPreferredSize(new java.awt.Dimension(28, 25));
         m_jTax.setRequestFocusEnabled(false);

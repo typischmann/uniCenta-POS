@@ -154,7 +154,7 @@ public class JPaymentCheque extends javax.swing.JPanel implements JPaymentInterf
         jPanel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jPanel3.setLayout(new java.awt.BorderLayout());
 
-        m_jTendered.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        m_jTendered.setFont(new java.awt.Font("MS Song", 1, 16)); // NOI18N
         jPanel3.add(m_jTendered, java.awt.BorderLayout.CENTER);
 
         jPanel1.add(jPanel3);
@@ -165,14 +165,14 @@ public class JPaymentCheque extends javax.swing.JPanel implements JPaymentInterf
 
         jPanel4.setLayout(null);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("Label.InputCash")); // NOI18N
         jLabel8.setPreferredSize(new java.awt.Dimension(100, 30));
         jPanel4.add(jLabel8);
         jLabel8.setBounds(10, 4, 100, 30);
 
         m_jMoneyEuros.setBackground(new java.awt.Color(204, 255, 51));
-        m_jMoneyEuros.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        m_jMoneyEuros.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
         m_jMoneyEuros.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         m_jMoneyEuros.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(javax.swing.UIManager.getDefaults().getColor("Button.darkShadow")), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
         m_jMoneyEuros.setOpaque(true);

@@ -152,21 +152,21 @@ public final class LocationsView extends javax.swing.JPanel implements EditorRec
 
         setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.locationname")); // NOI18N
         add(jLabel2);
         jLabel2.setBounds(20, 20, 80, 25);
 
-        m_jName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(m_jName);
         m_jName.setBounds(100, 20, 260, 25);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.locationaddress")); // NOI18N
         add(jLabel3);
         jLabel3.setBounds(20, 50, 80, 25);
 
-        m_jAddress.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jAddress.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(m_jAddress);
         m_jAddress.setBounds(100, 50, 260, 25);
     }// </editor-fold>//GEN-END:initComponents

@@ -98,10 +98,10 @@ public class JProductAttListItem extends javax.swing.JPanel implements JProductA
         jLabel1 = new javax.swing.JLabel();
         jValues = new javax.swing.JComboBox();
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText("jLabel1");
 
-        jValues.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jValues.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

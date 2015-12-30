@@ -21,7 +21,9 @@ package com.openbravo.pos.ticket;
 
 import com.openbravo.basic.BasicException;
 import com.openbravo.data.loader.DataRead;
+import com.openbravo.data.loader.ImageUtils;
 import com.openbravo.data.loader.SerializableRead;
+import com.openbravo.data.loader.SerializerRead;
 import com.openbravo.format.Formats;
 import java.util.Date;
 
@@ -29,7 +31,7 @@ import java.util.Date;
  *
  * @author  Mikel irurita
  */
-public class FindTicketsInfo implements SerializableRead {
+public class FindTicketsInfo implements SerializableRead{
     
     private int ticketid;
     private int tickettype;
@@ -37,8 +39,10 @@ public class FindTicketsInfo implements SerializableRead {
     private String name;
     private String customer;
     private double total;
+    //0 finshed, 1 unfinshed, 2 processing
+    private Integer status;
     
-    /** Creates new ProductInfo */
+    /** Creates new TicketInfo */
     public FindTicketsInfo() {
         
     }
@@ -57,7 +61,10 @@ public class FindTicketsInfo implements SerializableRead {
         name = dr.getString(4);
         customer = dr.getString(5);
         total = (dr.getObject(6) == null) ? 0.0 : dr.getDouble(6);
+        //status = (dr.getObject(7) == null) ? 0 : dr.getInt(7);
     }
+    
+    
     
     @Override
     public String toString(){
@@ -88,6 +95,28 @@ public class FindTicketsInfo implements SerializableRead {
     public int getTicketType(){
         return this.tickettype;
     }
+    
+    
+    public int getTicketStatus(){
+        return this.status;
+    }
+    
+     public static SerializerRead getSerializerRead() {
+        return new SerializerRead() {@Override
+        public Object readValues(DataRead dr) throws BasicException {
+            FindTicketsInfo ti = new FindTicketsInfo();
+            ti.ticketid = dr.getInt(1);
+            ti.tickettype = dr.getInt(2);
+            ti.date = dr.getTimestamp(3);
+            ti.name = dr.getString(4);
+            ti.customer = dr.getString(5);
+            ti.total = (dr.getObject(6) == null) ? 0.0 : dr.getDouble(6);
+            ti.status = (dr.getObject(7) == null) ? 0 : dr.getInt(7);
+            return ti;
+        }};
+    }
+    
+  
     
     
 }

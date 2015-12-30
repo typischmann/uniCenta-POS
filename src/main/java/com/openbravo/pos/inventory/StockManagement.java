@@ -446,21 +446,21 @@ public class StockManagement extends JPanel implements JPanelView {
         m_jcodebar = new javax.swing.JLabel();
         catcontainer = new javax.swing.JPanel();
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setMinimumSize(new java.awt.Dimension(550, 250));
         setPreferredSize(new java.awt.Dimension(550, 270));
         setLayout(new java.awt.BorderLayout());
 
-        jPanel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel8.setPreferredSize(new java.awt.Dimension(780, 270));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.stockdate")); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(40, 25));
         jLabel1.setMinimumSize(new java.awt.Dimension(40, 25));
         jLabel1.setPreferredSize(new java.awt.Dimension(90, 25));
 
-        m_jdate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jdate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jdate.setPreferredSize(new java.awt.Dimension(90, 25));
 
         m_jbtndate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/date.png"))); // NOI18N
@@ -471,13 +471,13 @@ public class StockManagement extends JPanel implements JPanelView {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.stockreason")); // NOI18N
         jLabel2.setMaximumSize(new java.awt.Dimension(40, 25));
         jLabel2.setMinimumSize(new java.awt.Dimension(40, 25));
         jLabel2.setPreferredSize(new java.awt.Dimension(90, 25));
 
-        m_jreason.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jreason.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jreason.setPreferredSize(new java.awt.Dimension(90, 25));
         m_jreason.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -485,19 +485,19 @@ public class StockManagement extends JPanel implements JPanelView {
             }
         });
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("label.warehouse")); // NOI18N
         jLabel8.setMaximumSize(new java.awt.Dimension(40, 25));
         jLabel8.setMinimumSize(new java.awt.Dimension(40, 25));
         jLabel8.setPreferredSize(new java.awt.Dimension(90, 25));
 
-        m_jLocationDes.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jLocationDes.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jLocationDes.setPreferredSize(new java.awt.Dimension(90, 25));
 
-        m_jLocation.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jLocation.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jLocation.setPreferredSize(new java.awt.Dimension(90, 25));
 
-        jPanel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel5.setPreferredSize(new java.awt.Dimension(400, 245));
         jPanel5.setLayout(new java.awt.BorderLayout());
 
@@ -552,7 +552,7 @@ public class StockManagement extends JPanel implements JPanelView {
             }
         });
 
-        btnDownloadProducts.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        btnDownloadProducts.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         btnDownloadProducts.setText("ScanPal");
         btnDownloadProducts.setToolTipText("Download from Mobile Device");
         btnDownloadProducts.setPreferredSize(new java.awt.Dimension(115, 33));
@@ -585,7 +585,7 @@ public class StockManagement extends JPanel implements JPanelView {
 
         jPanel4.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
 
-        jNumberKeys.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jNumberKeys.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jNumberKeys.setMinimumSize(new java.awt.Dimension(150, 150));
         jNumberKeys.setPreferredSize(new java.awt.Dimension(220, 225));
         jNumberKeys.addJNumberEventListener(new com.openbravo.beans.JNumberEventListener() {
@@ -748,7 +748,7 @@ public class StockManagement extends JPanel implements JPanelView {
 
         add(jPanel8, java.awt.BorderLayout.PAGE_START);
 
-        catcontainer.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        catcontainer.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         catcontainer.setMinimumSize(new java.awt.Dimension(0, 250));
         catcontainer.setPreferredSize(new java.awt.Dimension(0, 250));
         catcontainer.setRequestFocusEnabled(false);

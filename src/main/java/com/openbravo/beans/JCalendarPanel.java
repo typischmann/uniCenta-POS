@@ -339,7 +339,7 @@ public class JCalendarPanel extends javax.swing.JPanel {
         m_jMonth.add(m_jWeekDays, java.awt.BorderLayout.NORTH);
 
         m_jDates.setBackground(javax.swing.UIManager.getDefaults().getColor("TextPane.background"));
-        m_jDates.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jDates.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jDates.setLayout(new java.awt.GridLayout(6, 7));
         m_jMonth.add(m_jDates, java.awt.BorderLayout.CENTER);
 

@@ -751,12 +751,12 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
         setOpaque(false);
         setPreferredSize(new java.awt.Dimension(630, 430));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
         jLabel1.setText(bundle.getString("label.csvfile")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jFileName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jFileName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jFileName.setPreferredSize(new java.awt.Dimension(275, 30));
         jFileName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -796,7 +796,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
             .addComponent(jbtnDbDriverLib, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        jComboReference.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboReference.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jComboReference.setEnabled(false);
         jComboReference.setMinimumSize(new java.awt.Dimension(32, 25));
         jComboReference.setOpaque(false);
@@ -812,7 +812,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
             }
         });
 
-        jComboBarcode.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboBarcode.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jComboBarcode.setEnabled(false);
         jComboBarcode.setMinimumSize(new java.awt.Dimension(32, 25));
         jComboBarcode.setPreferredSize(new java.awt.Dimension(275, 30));
@@ -827,27 +827,27 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(bundle.getString("label.prodref")); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(bundle.getString("label.prodbarcode")); // NOI18N
         jLabel4.setPreferredSize(new java.awt.Dimension(100, 30));
 
         jCheckInCatalogue.setEnabled(false);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel8.setText(bundle.getString("label.prodincatalog")); // NOI18N
 
         jCheckSellIncTax.setEnabled(false);
 
-        jLabel12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel12.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel12.setText(bundle.getString("label.csvsellingintax")); // NOI18N
 
-        jComboBuy.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboBuy.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jComboBuy.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "" }));
         jComboBuy.setSelectedIndex(-1);
         jComboBuy.setEnabled(false);
@@ -864,23 +864,23 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
             }
         });
 
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel11.setText(bundle.getString("label.prodcategory")); // NOI18N
         jLabel11.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jComboTax.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboTax.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jComboTax.setEnabled(false);
         jComboTax.setPreferredSize(new java.awt.Dimension(275, 30));
 
-        jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel10.setText(bundle.getString("label.prodpricebuy")); // NOI18N
         jLabel10.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText(bundle.getString("label.prodtaxcode")); // NOI18N
         jLabel7.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jComboSell.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboSell.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jComboSell.setEnabled(false);
         jComboSell.setMinimumSize(new java.awt.Dimension(32, 25));
         jComboSell.setPreferredSize(new java.awt.Dimension(275, 30));
@@ -895,7 +895,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
             }
         });
 
-        jComboDefaultCategory.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboDefaultCategory.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jComboDefaultCategory.setEnabled(false);
         jComboDefaultCategory.setMinimumSize(new java.awt.Dimension(32, 25));
         jComboDefaultCategory.setPreferredSize(new java.awt.Dimension(275, 30));
@@ -910,19 +910,19 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
             }
         });
 
-        jLabel20.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel20.setText(bundle.getString("label.prodpricesell")); // NOI18N
         jLabel20.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(bundle.getString("label.prodname")); // NOI18N
         jLabel5.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText(bundle.getString("label.proddefaultcategory")); // NOI18N
         jLabel6.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jComboCategory.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboCategory.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jComboCategory.setEnabled(false);
         jComboCategory.setMinimumSize(new java.awt.Dimension(32, 25));
         jComboCategory.setName(""); // NOI18N
@@ -938,7 +938,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
             }
         });
 
-        jComboName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboName.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jComboName.setEnabled(false);
         jComboName.setMinimumSize(new java.awt.Dimension(32, 25));
         jComboName.setPreferredSize(new java.awt.Dimension(275, 30));
@@ -1040,15 +1040,15 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
                 .addContainerGap())
         );
 
-        jLabel17.setFont(new java.awt.Font("Arial", 0, 10)); // NOI18N
+        jLabel17.setFont(new java.awt.Font("MS Song", 0, 10)); // NOI18N
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel17.setText("Import Version v2.3");
 
-        jLabel18.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel18.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel18.setText(bundle.getString("label.csvdelimit")); // NOI18N
         jLabel18.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jHeaderRead.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        jHeaderRead.setFont(new java.awt.Font("MS Song", 0, 11)); // NOI18N
         jHeaderRead.setText(bundle.getString("label.csvread")); // NOI18N
         jHeaderRead.setEnabled(false);
         jHeaderRead.setPreferredSize(new java.awt.Dimension(120, 30));
@@ -1058,40 +1058,40 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
             }
         });
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true), bundle.getString("title.CSVImport"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(153, 153, 153), 1, true), bundle.getString("title.CSVImport"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel9.setText(bundle.getString("label.csvrecordsfound")); // NOI18N
         jLabel9.setPreferredSize(new java.awt.Dimension(100, 25));
 
-        jLabel14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel14.setText(bundle.getString("label.csvnewproducts")); // NOI18N
         jLabel14.setMaximumSize(new java.awt.Dimension(77, 14));
         jLabel14.setMinimumSize(new java.awt.Dimension(77, 14));
         jLabel14.setPreferredSize(new java.awt.Dimension(100, 25));
 
-        jLabel16.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel16.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel16.setText(bundle.getString("label.cvsinvalid")); // NOI18N
         jLabel16.setPreferredSize(new java.awt.Dimension(100, 25));
 
-        jTextUpdates.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextUpdates.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTextUpdates.setText(bundle.getString("label.csvpriceupdated")); // NOI18N
         jTextUpdates.setPreferredSize(new java.awt.Dimension(100, 25));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(bundle.getString("label.csvmissing")); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(100, 25));
 
-        jLabel15.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel15.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel15.setText(bundle.getString("label.csvbad")); // NOI18N
         jLabel15.setPreferredSize(new java.awt.Dimension(100, 25));
 
-        jLabel13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel13.setText(bundle.getString("label.cvsnotchanged")); // NOI18N
         jLabel13.setPreferredSize(new java.awt.Dimension(100, 25));
 
         jTextRecords.setBackground(new java.awt.Color(224, 223, 227));
-        jTextRecords.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jTextRecords.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jTextRecords.setForeground(new java.awt.Color(102, 102, 102));
         jTextRecords.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextRecords.setBorder(null);
@@ -1100,7 +1100,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
         jTextRecords.setPreferredSize(new java.awt.Dimension(70, 25));
 
         jTextNew.setBackground(new java.awt.Color(224, 223, 227));
-        jTextNew.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jTextNew.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jTextNew.setForeground(new java.awt.Color(102, 102, 102));
         jTextNew.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextNew.setBorder(null);
@@ -1109,7 +1109,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
         jTextNew.setPreferredSize(new java.awt.Dimension(70, 25));
 
         jTextInvalid.setBackground(new java.awt.Color(224, 223, 227));
-        jTextInvalid.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jTextInvalid.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jTextInvalid.setForeground(new java.awt.Color(102, 102, 102));
         jTextInvalid.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextInvalid.setBorder(null);
@@ -1118,7 +1118,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
         jTextInvalid.setPreferredSize(new java.awt.Dimension(70, 25));
 
         jTextUpdate.setBackground(new java.awt.Color(224, 223, 227));
-        jTextUpdate.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jTextUpdate.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jTextUpdate.setForeground(new java.awt.Color(102, 102, 102));
         jTextUpdate.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextUpdate.setBorder(null);
@@ -1132,7 +1132,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
         });
 
         jTextMissing.setBackground(new java.awt.Color(224, 223, 227));
-        jTextMissing.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jTextMissing.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jTextMissing.setForeground(new java.awt.Color(102, 102, 102));
         jTextMissing.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextMissing.setBorder(null);
@@ -1141,7 +1141,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
         jTextMissing.setPreferredSize(new java.awt.Dimension(70, 25));
 
         jTextBadPrice.setBackground(new java.awt.Color(224, 223, 227));
-        jTextBadPrice.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jTextBadPrice.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jTextBadPrice.setForeground(new java.awt.Color(102, 102, 102));
         jTextBadPrice.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextBadPrice.setBorder(null);
@@ -1150,7 +1150,7 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
         jTextBadPrice.setPreferredSize(new java.awt.Dimension(70, 25));
 
         jTextNoChange.setBackground(new java.awt.Color(224, 223, 227));
-        jTextNoChange.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jTextNoChange.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jTextNoChange.setForeground(new java.awt.Color(102, 102, 102));
         jTextNoChange.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextNoChange.setBorder(null);
@@ -1158,12 +1158,12 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
         jTextNoChange.setEnabled(false);
         jTextNoChange.setPreferredSize(new java.awt.Dimension(70, 25));
 
-        jLabel19.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel19.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel19.setText(bundle.getString("label.cvsbadcats")); // NOI18N
         jLabel19.setPreferredSize(new java.awt.Dimension(100, 25));
 
         jTextBadCats.setBackground(new java.awt.Color(224, 223, 227));
-        jTextBadCats.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jTextBadCats.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jTextBadCats.setForeground(new java.awt.Color(102, 102, 102));
         jTextBadCats.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jTextBadCats.setBorder(null);
@@ -1240,10 +1240,10 @@ public class JPanelCSVImport extends JPanel implements JPanelView {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jComboSeparator.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jComboSeparator.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jComboSeparator.setPreferredSize(new java.awt.Dimension(50, 30));
 
-        jImport.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        jImport.setFont(new java.awt.Font("MS Song", 0, 11)); // NOI18N
         jImport.setText(bundle.getString("label.csvimpostbtn")); // NOI18N
         jImport.setEnabled(false);
         jImport.setPreferredSize(new java.awt.Dimension(120, 30));

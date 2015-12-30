@@ -131,17 +131,17 @@ public class JPanelConfigERP extends javax.swing.JPanel implements PanelConfig {
 
         setPreferredSize(new java.awt.Dimension(700, 500));
 
-        jtxtUrl.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtUrl.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        jtxtId.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtId.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        jTextField1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        jTextField2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTextField2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        jtxtName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        jtxtPassword.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtPassword.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -174,22 +174,22 @@ public class JPanelConfigERP extends javax.swing.JPanel implements PanelConfig {
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jlabelUrl.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlabelUrl.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlabelUrl.setText(AppLocal.getIntString("label.erpurl")); // NOI18N
 
-        jLabelId.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabelId.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabelId.setText(AppLocal.getIntString("label.erpid")); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.erporg")); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.erppos")); // NOI18N
 
-        jLabelName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabelName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabelName.setText(AppLocal.getIntString("label.erpuser")); // NOI18N
 
-        jLabelProperties.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabelProperties.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabelProperties.setText(AppLocal.getIntString("label.erppassword")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

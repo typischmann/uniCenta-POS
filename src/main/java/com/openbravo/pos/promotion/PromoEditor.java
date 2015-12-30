@@ -960,21 +960,21 @@ private void OnCheckCategory(java.awt.event.FocusEvent evt) {
         m_jMax = new javax.swing.JTextField();
         m_jSearch1 = new javax.swing.JButton();
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        m_jName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jName.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
         m_jName.setMaximumSize(new java.awt.Dimension(110, 28));
         m_jName.setMinimumSize(new java.awt.Dimension(110, 28));
         m_jName.setPreferredSize(new java.awt.Dimension(110, 28));
 
-        m_jArticle.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jArticle.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jArticle.setPreferredSize(new java.awt.Dimension(110, 28));
 
-        m_jBonusArticle.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jBonusArticle.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jBonusArticle.setPreferredSize(new java.awt.Dimension(110, 28));
 
-        m_jCategory.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jCategory.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jCategory.setPreferredSize(new java.awt.Dimension(110, 28));
         m_jCategory.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
@@ -982,53 +982,53 @@ private void OnCheckCategory(java.awt.event.FocusEvent evt) {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText("<html><b>Name</b>");
         jLabel1.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jLabel1.setPreferredSize(new java.awt.Dimension(150, 28));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText("Date");
         jLabel2.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText("Time");
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText("Discount");
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText("Product");
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText("Product Category");
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText("Amount");
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel8.setText("Min / Max");
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel9.setText("Step Amount");
 
-        jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel10.setText("Quantity");
 
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel11.setText("Bonus Article");
         jLabel11.setMaximumSize(new java.awt.Dimension(62, 18));
         jLabel11.setMinimumSize(new java.awt.Dimension(62, 18));
         jLabel11.setPreferredSize(new java.awt.Dimension(62, 18));
 
-        m_jStartDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jStartDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        m_jStartHour.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jStartHour.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jStartHour.setPreferredSize(new java.awt.Dimension(110, 28));
 
         m_jType.setPreferredSize(new java.awt.Dimension(210, 25));
 
-        m_jProdName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jProdName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         m_jCatName.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         m_jCatName.setPreferredSize(new java.awt.Dimension(56, 25));
@@ -1038,19 +1038,19 @@ private void OnCheckCategory(java.awt.event.FocusEvent evt) {
             }
         });
 
-        m_jAmount.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jAmount.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jAmount.setPreferredSize(new java.awt.Dimension(110, 28));
 
-        m_jMin.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jMin.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jMin.setPreferredSize(new java.awt.Dimension(68, 28));
 
-        m_jStepAmount.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jStepAmount.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jStepAmount.setPreferredSize(new java.awt.Dimension(110, 28));
 
-        m_jStepQty.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jStepQty.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jStepQty.setPreferredSize(new java.awt.Dimension(110, 28));
 
-        m_jBonusProd.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jBonusProd.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         btnValidTo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/date.png"))); // NOI18N
         btnValidTo.addActionListener(new java.awt.event.ActionListener() {
@@ -1059,7 +1059,7 @@ private void OnCheckCategory(java.awt.event.FocusEvent evt) {
             }
         });
 
-        m_jEndDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jEndDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         btnValidFrom.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/date.png"))); // NOI18N
         btnValidFrom.addActionListener(new java.awt.event.ActionListener() {
@@ -1068,7 +1068,7 @@ private void OnCheckCategory(java.awt.event.FocusEvent evt) {
             }
         });
 
-        m_jEndHour.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jEndHour.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jEndHour.setPreferredSize(new java.awt.Dimension(110, 28));
 
         m_jSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/search24.png"))); // NOI18N
@@ -1078,7 +1078,7 @@ private void OnCheckCategory(java.awt.event.FocusEvent evt) {
             }
         });
 
-        m_jMax.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jMax.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         m_jSearch1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/search24.png"))); // NOI18N
         m_jSearch1.addActionListener(new java.awt.event.ActionListener() {

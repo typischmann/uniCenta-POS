@@ -190,7 +190,7 @@ public class DevicePrinterPanel extends javax.swing.JPanel implements DevicePrin
 
         setLayout(new java.awt.BorderLayout());
 
-        m_jScrollView.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jScrollView.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(m_jScrollView, java.awt.BorderLayout.CENTER);
     }// </editor-fold>//GEN-END:initComponents
     

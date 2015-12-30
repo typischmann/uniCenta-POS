@@ -94,7 +94,7 @@ public class JTicketsBagSimple extends JTicketsBag {
 
         m_jDelTicket = new javax.swing.JButton();
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
         m_jDelTicket.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sale_delete.png"))); // NOI18N

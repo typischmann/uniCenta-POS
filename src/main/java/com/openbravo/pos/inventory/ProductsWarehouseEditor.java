@@ -200,33 +200,33 @@ public class ProductsWarehouseEditor extends javax.swing.JPanel implements Edito
         add(m_jTitle);
         m_jTitle.setBounds(10, 10, 320, 30);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.units")); // NOI18N
         add(jLabel3);
         jLabel3.setBounds(10, 50, 150, 25);
 
-        m_jQuantity.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jQuantity.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jQuantity.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         m_jQuantity.setEnabled(false);
         add(m_jQuantity);
         m_jQuantity.setBounds(160, 50, 80, 25);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.minimum")); // NOI18N
         add(jLabel4);
         jLabel4.setBounds(10, 80, 150, 25);
 
-        m_jMinimum.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jMinimum.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jMinimum.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         add(m_jMinimum);
         m_jMinimum.setBounds(160, 80, 80, 25);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.maximum")); // NOI18N
         add(jLabel5);
         jLabel5.setBounds(10, 110, 150, 25);
 
-        m_jMaximum.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jMaximum.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jMaximum.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         add(m_jMaximum);
         m_jMaximum.setBounds(160, 110, 80, 25);

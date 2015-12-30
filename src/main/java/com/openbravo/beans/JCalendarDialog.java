@@ -185,7 +185,7 @@ public class JCalendarDialog extends javax.swing.JDialog {
 
         jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
-        jcmdOK.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdOK.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdOK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/ok.png"))); // NOI18N
         jcmdOK.setText(m_resources.getString("button.ok")); // NOI18N
         jcmdOK.setMargin(new java.awt.Insets(8, 16, 8, 16));
@@ -196,7 +196,7 @@ public class JCalendarDialog extends javax.swing.JDialog {
         });
         jPanel1.add(jcmdOK);
 
-        jcmdCancel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdCancel.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/cancel.png"))); // NOI18N
         jcmdCancel.setText(m_resources.getString("button.cancel")); // NOI18N
         jcmdCancel.setMargin(new java.awt.Insets(8, 16, 8, 16));
@@ -212,7 +212,7 @@ public class JCalendarDialog extends javax.swing.JDialog {
         jPanel2.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jPanel2.setLayout(new java.awt.BorderLayout());
 
-        jPanelGrid.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanelGrid.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanelGrid.setLayout(new java.awt.GridLayout(1, 0, 5, 0));
         jPanel2.add(jPanelGrid, java.awt.BorderLayout.CENTER);
 

@@ -137,28 +137,28 @@ public class ConfigPaymentPanelLinkPoint extends javax.swing.JPanel implements P
 
         setPreferredSize(new java.awt.Dimension(400, 116));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.storename")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.certificatepwd")); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.certificatepath")); // NOI18N
         jLabel4.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jtxtStoreName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtStoreName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtStoreName.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jtxtCertificatePass.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtCertificatePass.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtCertificatePass.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jtxtCertificatePath.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtCertificatePath.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtCertificatePath.setPreferredSize(new java.awt.Dimension(300, 30));
 
-        jButton1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/fileopen.png"))); // NOI18N
         jButton1.setToolTipText("Open Folder");
         jButton1.setMaximumSize(new java.awt.Dimension(64, 40));

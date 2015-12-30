@@ -90,7 +90,7 @@ public class NewOkCancelDialog extends javax.swing.JDialog {
             }
         });
 
-        jLabel.setFont(new java.awt.Font("Arial", 0, 36)); // NOI18N
+        jLabel.setFont(new java.awt.Font("MS Song", 0, 36)); // NOI18N
         jLabel.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel.setText("jLabel1");
 

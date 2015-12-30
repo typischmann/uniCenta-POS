@@ -86,7 +86,7 @@ public class JPaymentRefund extends javax.swing.JPanel implements JPaymentInterf
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 1, 16)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("message.paymentcashneg")); // NOI18N
         add(jLabel1);
     }// </editor-fold>//GEN-END:initComponents

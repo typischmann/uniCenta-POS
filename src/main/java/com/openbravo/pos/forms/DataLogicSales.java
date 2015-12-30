@@ -878,11 +878,53 @@ public class DataLogicSales extends BeanFactoryDataSingle {
                 Datas.OBJECT, Datas.STRING})
             , new SerializerReadClass(FindTicketsInfo.class));
     }
+        
+        
+    public final List getUnfinishedList() throws BasicException {
+        return new PreparedSentence(s
+            , 
+            "SELECT "
+                 + "T.TICKETID, "
+                 + "T.TICKETTYPE, "
+                 + "R.DATENEW, "
+                 + "P.NAME, "
+                 + "C.NAME, "
+                 + "SUM(PM.TOTAL), "
+                 + "T.STATUS "
+                 + "FROM RECEIPTS "
+                 + "R JOIN TICKETS T ON R.ID = T.ID LEFT OUTER JOIN PAYMENTS PM "
+                 + "ON R.ID = PM.RECEIPT LEFT OUTER JOIN CUSTOMERS C "
+                 + "ON C.ID = T.CUSTOMER LEFT OUTER JOIN PEOPLE P ON T.PERSON = P.ID "
+                 + "WHERE T.STATUS in (?,?) "
+                 + "GROUP BY "
+                 + "T.ID, "
+                 + "T.TICKETID, "
+                 + "T.TICKETTYPE, "
+                 + "R.DATENEW, "
+                 + "P.NAME, "
+                 + "C.NAME "
+                 + "ORDER BY R.DATENEW DESC, T.TICKETID",
+                SerializerWriteParams.INSTANCE, 
+                FindTicketsInfo.getSerializerRead()).list(new DataParams() {@Override
+                public void writeValues() throws BasicException {
+                    setInt(1, 1);
+                    setInt(2, 2);
+                }});
+    }
     
-    //User list
+    /**
+     * @param id the id of the given ticket
+     * @param status the new status
+     * @return the number of affected rows for update operation 
+     */
+    public int updateTicketStatus(Integer id, Integer status) throws BasicException{
+        return new PreparedSentence(s, "UPDATE TICKETS SET STATUS = ? WHERE TICKETID = ? AND STATUS in (1,2) ", 
+                                    new SerializerWriteBasicExt(
+                                        new Datas[]{Datas.INT, Datas.INT}, new int[] {0,1})).exec(status, id);
+    }
 
     /**
-     *
+     *User list
      * @return
      */
         public final SentenceList getUserList() {
@@ -1214,7 +1256,7 @@ public class DataLogicSales extends BeanFactoryDataSingle {
      * @param location
      * @throws BasicException
      */
-    public final void saveTicket(final TicketInfo ticket, final String location) throws BasicException {
+    public final void saveTicket(final TicketInfo ticket, final String location, final boolean isWarehouse) throws BasicException {
 
         Transaction t;
         t = new Transaction(s) {
@@ -1264,9 +1306,10 @@ public Object transact() throws BasicException {
    }
             );
 
+    final Integer status = (isWarehouse ? 1 : 0);
     // new ticket
     new PreparedSentence(s
-        , "INSERT INTO TICKETS (ID, TICKETTYPE, TICKETID, PERSON, CUSTOMER) VALUES (?, ?, ?, ?, ?)"
+        , "INSERT INTO TICKETS (ID, TICKETTYPE, TICKETID, PERSON, CUSTOMER, STATUS) VALUES (?, ?, ?, ?, ?, ?)"
         , SerializerWriteParams.INSTANCE
         ).exec(new DataParams() {
             @Override
@@ -1276,6 +1319,7 @@ public Object transact() throws BasicException {
             setInt(3, ticket.getTicketId());
             setString(4, ticket.getUser().getId());
             setString(5, ticket.getCustomerId());
+            setInt(6, status);
         }
     }
             );

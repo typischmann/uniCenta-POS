@@ -246,23 +246,23 @@ public final class CategoriesEditor extends JPanel implements EditorRecord {
 
         setLayout(null);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("Label.Name")); // NOI18N
         add(jLabel2);
         jLabel2.setBounds(20, 30, 80, 25);
 
-        m_jName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(m_jName);
         m_jName.setBounds(200, 30, 180, 25);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.image")); // NOI18N
         add(jLabel3);
         jLabel3.setBounds(20, 170, 80, 15);
         add(m_jImage);
         m_jImage.setBounds(200, 170, 250, 190);
 
-        m_jCatalogAdd.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jCatalogAdd.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jCatalogAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/editnew.png"))); // NOI18N
         m_jCatalogAdd.setText(AppLocal.getIntString("button.catalogadd")); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
@@ -277,7 +277,7 @@ public final class CategoriesEditor extends JPanel implements EditorRecord {
         add(m_jCatalogAdd);
         m_jCatalogAdd.setBounds(540, 40, 80, 30);
 
-        m_jCatalogDelete.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jCatalogDelete.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jCatalogDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/editdelete.png"))); // NOI18N
         m_jCatalogDelete.setText(AppLocal.getIntString("button.catalogdel")); // NOI18N
         m_jCatalogDelete.setToolTipText(bundle.getString("button.catalogdel")); // NOI18N
@@ -291,12 +291,12 @@ public final class CategoriesEditor extends JPanel implements EditorRecord {
         add(m_jCatalogDelete);
         m_jCatalogDelete.setBounds(540, 78, 80, 33);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.prodcategory")); // NOI18N
         add(jLabel5);
         jLabel5.setBounds(20, 60, 80, 25);
 
-        m_jCategory.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCategory.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         add(m_jCategory);
         m_jCategory.setBounds(200, 60, 180, 25);
 
@@ -306,26 +306,26 @@ public final class CategoriesEditor extends JPanel implements EditorRecord {
         add(jLabel4);
         jLabel4.setBounds(510, 34, 30, 70);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText(bundle.getString("label.texttip")); // NOI18N
         add(jLabel6);
         jLabel6.setBounds(20, 95, 100, 15);
 
-        m_jTextTip.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jTextTip.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(m_jTextTip);
         m_jTextTip.setBounds(200, 90, 180, 25);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText(bundle.getString("label.subcategorytitle")); // NOI18N
         add(jLabel7);
         jLabel7.setBounds(20, 130, 130, 15);
 
-        m_jCatNameShow.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jCatNameShow.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jCatNameShow.setSelected(true);
         add(m_jCatNameShow);
         m_jCatNameShow.setBounds(195, 130, 30, 21);
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 1, 12)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel8.setText(bundle.getString("label.CatalogueStatusYes")); // NOI18N
         add(jLabel8);

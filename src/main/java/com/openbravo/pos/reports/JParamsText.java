@@ -213,12 +213,12 @@ public final class JParamsText extends javax.swing.JPanel implements ReportEdito
         setPreferredSize(new java.awt.Dimension(0, 30));
         setLayout(null);
 
-        lblField.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        lblField.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         lblField.setText("***");
         add(lblField);
         lblField.setBounds(20, 10, 120, 25);
 
-        txtField.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        txtField.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         add(txtField);
         txtField.setBounds(140, 10, 200, 25);
     }// </editor-fold>//GEN-END:initComponents

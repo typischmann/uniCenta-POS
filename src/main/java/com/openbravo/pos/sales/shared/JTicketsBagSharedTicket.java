@@ -26,7 +26,7 @@ import com.openbravo.pos.forms.AppView;
 import com.openbravo.pos.forms.JRootApp;
 import com.openbravo.pos.sales.DataLogicReceipts;
 import com.openbravo.pos.sales.JTicketsBag;
-import com.openbravo.pos.sales.SharedTicketInfo;
+import com.openbravo.pos.sales.FindTicketsInfo;
 import com.openbravo.pos.sales.TicketsEditor;
 import com.openbravo.pos.ticket.TicketInfo;
 import java.util.List;
@@ -40,7 +40,7 @@ import javax.swing.SwingUtilities;
  *
  * @author JG uniCenta
  */
-public class JTicketsBagShared extends JTicketsBag {
+public class JTicketsBagSharedTicket extends JTicketsBag {
     
     private String m_sCurrentTicket = null;
     private DataLogicReceipts dlReceipts = null;
@@ -49,7 +49,7 @@ public class JTicketsBagShared extends JTicketsBag {
     /** Creates new form JTicketsBagShared
      * @param app
      * @param panelticket */
-    public JTicketsBagShared(AppView app, TicketsEditor panelticket) {
+    public JTicketsBagSharedTicket(AppView app, TicketsEditor panelticket) {
         
         super(app, panelticket);
         
@@ -156,7 +156,7 @@ public class JTicketsBagShared extends JTicketsBag {
         newTicket();
         
         try {
-            List<SharedTicketInfo> l = dlReceipts.getSharedTicketList();
+            List<FindTicketsInfo> l = dlReceipts.getSharedTicketList();
             if (l.isEmpty()) {
                 m_jListTickets.setText("");                
                  newTicket();
@@ -275,11 +275,11 @@ public class JTicketsBagShared extends JTicketsBag {
             public void run() {
                 
                 try {
-                    List<SharedTicketInfo> l = dlReceipts.getSharedTicketList();
+                    List<FindTicketsInfo> l = dlReceipts.getSharedTicketList();
 //                    String itemCount = Integer.toString(l.size());
 //                    m_jListTickets.setText(itemCount);
 //                    m_jListTickets.setIcon(null);
-                    JTicketsBagSharedList listDialog = JTicketsBagSharedList.newJDialog(JTicketsBagShared.this);
+                    JTicketsBagSharedList listDialog = JTicketsBagSharedList.newJDialog(JTicketsBagSharedTicket.this);
                     String id = listDialog.showTicketsList(l); 
 
                     if (id != null) {
@@ -287,7 +287,7 @@ public class JTicketsBagShared extends JTicketsBag {
                         setActiveTicket(id); 
                     }
                 } catch (BasicException e) {
-                    new MessageInf(e).show(JTicketsBagShared.this);
+                    new MessageInf(e).show(JTicketsBagSharedTicket.this);
                     newTicket();
                 }                    
             }

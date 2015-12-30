@@ -136,13 +136,13 @@ public class JParamsLocation extends javax.swing.JPanel implements ReportEditorC
         m_jLocation = new javax.swing.JComboBox();
         jLabel8 = new javax.swing.JLabel();
 
-        setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.bywarehouse"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 12))); // NOI18N
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.bywarehouse"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 0, 12))); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setPreferredSize(new java.awt.Dimension(370, 60));
 
-        m_jLocation.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jLocation.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("label.warehouse")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

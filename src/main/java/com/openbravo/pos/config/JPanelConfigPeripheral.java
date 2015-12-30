@@ -962,52 +962,52 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         jlblPrinterPort5 = new javax.swing.JLabel();
         jcboSerialScanner = new javax.swing.JComboBox();
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setPreferredSize(new java.awt.Dimension(700, 400));
 
         jPanel13.setPreferredSize(new java.awt.Dimension(700, 400));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("Label.MachineDisplay")); // NOI18N
         jLabel5.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText(AppLocal.getIntString("Label.MachinePrinter")); // NOI18N
         jLabel6.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText(AppLocal.getIntString("Label.MachinePrinter2")); // NOI18N
         jLabel7.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("Label.MachinePrinter3")); // NOI18N
         jLabel8.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel9.setText(AppLocal.getIntString("Label.MachinePrinter4")); // NOI18N
         jLabel9.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel10.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel10.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel10.setText(AppLocal.getIntString("Label.MachinePrinter5")); // NOI18N
         jLabel10.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel11.setText(AppLocal.getIntString("Label.MachinePrinter6")); // NOI18N
         jLabel11.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel12.setText(AppLocal.getIntString("label.scale")); // NOI18N
         jLabel12.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel13.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel13.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel13.setText(AppLocal.getIntString("label.scanner")); // NOI18N
         jLabel13.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jLabel14.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel14.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel14.setText(AppLocal.getIntString("label.reportsprinter")); // NOI18N
         jLabel14.setPreferredSize(new java.awt.Dimension(110, 25));
 
-        jcboMachineDisplay.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachineDisplay.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachineDisplay.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachineDisplay.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachineDisplay.addActionListener(new java.awt.event.ActionListener() {
@@ -1016,7 +1016,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        jcboMachinePrinter.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachinePrinter.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachinePrinter.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachinePrinter.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachinePrinter.addActionListener(new java.awt.event.ActionListener() {
@@ -1025,7 +1025,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        jcboMachinePrinter2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachinePrinter2.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachinePrinter2.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachinePrinter2.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachinePrinter2.addActionListener(new java.awt.event.ActionListener() {
@@ -1034,7 +1034,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        jcboMachinePrinter3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachinePrinter3.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachinePrinter3.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachinePrinter3.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachinePrinter3.addActionListener(new java.awt.event.ActionListener() {
@@ -1043,7 +1043,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        jcboMachinePrinter4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachinePrinter4.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachinePrinter4.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachinePrinter4.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachinePrinter4.addActionListener(new java.awt.event.ActionListener() {
@@ -1052,7 +1052,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        jcboMachinePrinter5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachinePrinter5.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachinePrinter5.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachinePrinter5.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachinePrinter5.addActionListener(new java.awt.event.ActionListener() {
@@ -1061,7 +1061,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        jcboMachinePrinter6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachinePrinter6.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachinePrinter6.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachinePrinter6.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachinePrinter6.addActionListener(new java.awt.event.ActionListener() {
@@ -1070,7 +1070,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        jcboMachineScale.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachineScale.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachineScale.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachineScale.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachineScale.addActionListener(new java.awt.event.ActionListener() {
@@ -1079,7 +1079,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        jcboMachineScanner.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMachineScanner.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboMachineScanner.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachineScanner.setPreferredSize(new java.awt.Dimension(200, 23));
         jcboMachineScanner.addActionListener(new java.awt.event.ActionListener() {
@@ -1088,7 +1088,7 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
             }
         });
 
-        cboPrinters.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        cboPrinters.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         cboPrinters.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         cboPrinters.setPreferredSize(new java.awt.Dimension(200, 23));
 
@@ -1096,19 +1096,19 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         m_jDisplayParams.setLayout(new java.awt.CardLayout());
         m_jDisplayParams.add(jPanel2, "empty");
 
-        jlblConnDisplay.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblConnDisplay.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblConnDisplay.setText(AppLocal.getIntString("label.machinedisplayconn")); // NOI18N
         jlblConnDisplay.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jcboConnDisplay.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboConnDisplay.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboConnDisplay.setPreferredSize(new java.awt.Dimension(100, 23));
 
-        jlblDisplayPort.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblDisplayPort.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblDisplayPort.setText(AppLocal.getIntString("label.machinedisplayport")); // NOI18N
         jlblDisplayPort.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialDisplay.setEditable(true);
-        jcboSerialDisplay.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialDisplay.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialDisplay.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -1139,11 +1139,11 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
 
         m_jDisplayParams.add(jPanel1, "comm");
 
-        jLabel20.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel20.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel20.setText(AppLocal.getIntString("Label.Name")); // NOI18N
         jLabel20.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        m_jtxtJPOSName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSName.setPreferredSize(new java.awt.Dimension(120, 25));
         m_jtxtJPOSName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1179,19 +1179,19 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         jPanel5.setPreferredSize(new java.awt.Dimension(10, 25));
         m_jPrinterParams1.add(jPanel5, "empty");
 
-        jlblConnPrinter.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblConnPrinter.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblConnPrinter.setText(AppLocal.getIntString("label.machinedisplayconn")); // NOI18N
         jlblConnPrinter.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jcboConnPrinter.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboConnPrinter.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboConnPrinter.setPreferredSize(new java.awt.Dimension(100, 23));
 
-        jlblPrinterPort.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblPrinterPort.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblPrinterPort.setText(AppLocal.getIntString("label.machineprinterport")); // NOI18N
         jlblPrinterPort.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialPrinter.setEditable(true);
-        jcboSerialPrinter.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialPrinter.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialPrinter.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -1222,17 +1222,17 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
 
         m_jPrinterParams1.add(jPanel6, "comm");
 
-        jLabel21.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel21.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel21.setText(AppLocal.getIntString("label.javapos.drawer")); // NOI18N
         jLabel21.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        m_jtxtJPOSPrinter.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSPrinter.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSPrinter.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtJPOSDrawer.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSDrawer.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSDrawer.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        jLabel24.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel24.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel24.setText(AppLocal.getIntString("label.javapos.printer")); // NOI18N
         jLabel24.setPreferredSize(new java.awt.Dimension(50, 25));
 
@@ -1268,19 +1268,19 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         m_jPrinterParams2.setLayout(new java.awt.CardLayout());
         m_jPrinterParams2.add(jPanel7, "empty");
 
-        jlblConnPrinter2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblConnPrinter2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblConnPrinter2.setText(AppLocal.getIntString("label.machinedisplayconn")); // NOI18N
         jlblConnPrinter2.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jcboConnPrinter2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboConnPrinter2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboConnPrinter2.setPreferredSize(new java.awt.Dimension(100, 23));
 
-        jlblPrinterPort2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblPrinterPort2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblPrinterPort2.setText(AppLocal.getIntString("label.machineprinterport")); // NOI18N
         jlblPrinterPort2.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialPrinter2.setEditable(true);
-        jcboSerialPrinter2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialPrinter2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialPrinter2.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -1311,17 +1311,17 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
 
         m_jPrinterParams2.add(jPanel8, "comm");
 
-        m_jtxtJPOSPrinter2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSPrinter2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSPrinter2.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtJPOSDrawer2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSDrawer2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSDrawer2.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        jLabel27.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel27.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel27.setText(AppLocal.getIntString("label.javapos.printer")); // NOI18N
         jLabel27.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jLabel22.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel22.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel22.setText(AppLocal.getIntString("label.javapos.drawer")); // NOI18N
         jLabel22.setPreferredSize(new java.awt.Dimension(50, 25));
 
@@ -1357,19 +1357,19 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         m_jPrinterParams3.setLayout(new java.awt.CardLayout());
         m_jPrinterParams3.add(jPanel9, "empty");
 
-        jlblConnPrinter3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblConnPrinter3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblConnPrinter3.setText(AppLocal.getIntString("label.machinedisplayconn")); // NOI18N
         jlblConnPrinter3.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jcboConnPrinter3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboConnPrinter3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboConnPrinter3.setPreferredSize(new java.awt.Dimension(100, 23));
 
-        jlblPrinterPort3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblPrinterPort3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblPrinterPort3.setText(AppLocal.getIntString("label.machineprinterport")); // NOI18N
         jlblPrinterPort3.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialPrinter3.setEditable(true);
-        jcboSerialPrinter3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialPrinter3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialPrinter3.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
@@ -1400,17 +1400,17 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
 
         m_jPrinterParams3.add(jPanel10, "comm");
 
-        m_jtxtJPOSPrinter3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSPrinter3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSPrinter3.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtJPOSDrawer3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSDrawer3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSDrawer3.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        jLabel28.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel28.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel28.setText(AppLocal.getIntString("label.javapos.printer")); // NOI18N
         jLabel28.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jLabel23.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel23.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel23.setText(AppLocal.getIntString("label.javapos.drawer")); // NOI18N
         jLabel23.setPreferredSize(new java.awt.Dimension(50, 25));
 
@@ -1446,19 +1446,19 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         m_jPrinterParams4.setLayout(new java.awt.CardLayout());
         m_jPrinterParams4.add(jPanel14, "empty");
 
-        jlblConnPrinter4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblConnPrinter4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblConnPrinter4.setText(AppLocal.getIntString("label.machinedisplayconn")); // NOI18N
         jlblConnPrinter4.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jcboConnPrinter4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboConnPrinter4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboConnPrinter4.setPreferredSize(new java.awt.Dimension(100, 23));
 
-        jlblPrinterPort6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblPrinterPort6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblPrinterPort6.setText(AppLocal.getIntString("label.machineprinterport")); // NOI18N
         jlblPrinterPort6.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialPrinter4.setEditable(true);
-        jcboSerialPrinter4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialPrinter4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialPrinter4.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
@@ -1489,17 +1489,17 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
 
         m_jPrinterParams4.add(jPanel15, "comm");
 
-        m_jtxtJPOSPrinter4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSPrinter4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSPrinter4.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtJPOSDrawer4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSDrawer4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSDrawer4.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        jLabel30.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel30.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel30.setText(AppLocal.getIntString("label.javapos.printer")); // NOI18N
         jLabel30.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jLabel31.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel31.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel31.setText(AppLocal.getIntString("label.javapos.drawer")); // NOI18N
         jLabel31.setPreferredSize(new java.awt.Dimension(50, 25));
 
@@ -1535,19 +1535,19 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         m_jPrinterParams5.setLayout(new java.awt.CardLayout());
         m_jPrinterParams5.add(jPanel20, "empty");
 
-        jlblConnPrinter5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblConnPrinter5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblConnPrinter5.setText(AppLocal.getIntString("label.machinedisplayconn")); // NOI18N
         jlblConnPrinter5.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jcboConnPrinter5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboConnPrinter5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboConnPrinter5.setPreferredSize(new java.awt.Dimension(100, 23));
 
-        jlblPrinterPort7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblPrinterPort7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblPrinterPort7.setText(AppLocal.getIntString("label.machineprinterport")); // NOI18N
         jlblPrinterPort7.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialPrinter5.setEditable(true);
-        jcboSerialPrinter5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialPrinter5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialPrinter5.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel21Layout = new javax.swing.GroupLayout(jPanel21);
@@ -1578,17 +1578,17 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
 
         m_jPrinterParams5.add(jPanel21, "comm");
 
-        m_jtxtJPOSPrinter5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSPrinter5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSPrinter5.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtJPOSDrawer5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSDrawer5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSDrawer5.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        jLabel33.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel33.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel33.setText(AppLocal.getIntString("label.javapos.printer")); // NOI18N
         jLabel33.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jLabel34.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel34.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel34.setText(AppLocal.getIntString("label.javapos.drawer")); // NOI18N
         jLabel34.setPreferredSize(new java.awt.Dimension(50, 25));
 
@@ -1624,19 +1624,19 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         m_jPrinterParams6.setLayout(new java.awt.CardLayout());
         m_jPrinterParams6.add(jPanel23, "empty");
 
-        jlblConnPrinter6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblConnPrinter6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblConnPrinter6.setText(AppLocal.getIntString("label.machinedisplayconn")); // NOI18N
         jlblConnPrinter6.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jcboConnPrinter6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboConnPrinter6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboConnPrinter6.setPreferredSize(new java.awt.Dimension(100, 23));
 
-        jlblPrinterPort8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblPrinterPort8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblPrinterPort8.setText(AppLocal.getIntString("label.machineprinterport")); // NOI18N
         jlblPrinterPort8.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialPrinter6.setEditable(true);
-        jcboSerialPrinter6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialPrinter6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialPrinter6.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
@@ -1667,17 +1667,17 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
 
         m_jPrinterParams6.add(jPanel25, "comm");
 
-        m_jtxtJPOSPrinter6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSPrinter6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSPrinter6.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        m_jtxtJPOSDrawer6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jtxtJPOSDrawer6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jtxtJPOSDrawer6.setPreferredSize(new java.awt.Dimension(120, 25));
 
-        jLabel36.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel36.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel36.setText(AppLocal.getIntString("label.javapos.printer")); // NOI18N
         jLabel36.setPreferredSize(new java.awt.Dimension(50, 25));
 
-        jLabel37.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel37.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel37.setText(AppLocal.getIntString("label.javapos.drawer")); // NOI18N
         jLabel37.setPreferredSize(new java.awt.Dimension(50, 25));
 
@@ -1713,12 +1713,12 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         m_jScaleParams.setLayout(new java.awt.CardLayout());
         m_jScaleParams.add(jPanel16, "empty");
 
-        jlblPrinterPort4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblPrinterPort4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblPrinterPort4.setText(AppLocal.getIntString("label.machineprinterport")); // NOI18N
         jlblPrinterPort4.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialScale.setEditable(true);
-        jcboSerialScale.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialScale.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialScale.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
@@ -1747,12 +1747,12 @@ public class JPanelConfigPeripheral extends javax.swing.JPanel implements PanelC
         m_jScannerParams.setLayout(new java.awt.CardLayout());
         m_jScannerParams.add(jPanel24, "empty");
 
-        jlblPrinterPort5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblPrinterPort5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblPrinterPort5.setText(AppLocal.getIntString("label.machineprinterport")); // NOI18N
         jlblPrinterPort5.setPreferredSize(new java.awt.Dimension(50, 25));
 
         jcboSerialScanner.setEditable(true);
-        jcboSerialScanner.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcboSerialScanner.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcboSerialScanner.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout jPanel19Layout = new javax.swing.GroupLayout(jPanel19);

@@ -315,10 +315,10 @@ public class JInventoryLines extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         m_tableinventory = new javax.swing.JTable();
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setLayout(new java.awt.BorderLayout());
 
-        jScrollPane1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jScrollPane1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         m_tableinventory.setAutoCreateColumnsFromModel(false);
         m_tableinventory.setAutoResizeMode(javax.swing.JTable.AUTO_RESIZE_OFF);

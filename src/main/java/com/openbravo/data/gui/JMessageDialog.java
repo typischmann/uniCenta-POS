@@ -150,7 +150,7 @@ public class JMessageDialog extends javax.swing.JDialog {
         jlblErrorCode.setText("jlblErrorCode");
         jPanel4.add(jlblErrorCode);
 
-        jlblMessage.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jlblMessage.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jlblMessage.setText("jlblMessage");
         jlblMessage.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jlblMessage.setMinimumSize(new java.awt.Dimension(200, 100));

@@ -125,20 +125,20 @@ public class JParamsDatesInterval extends javax.swing.JPanel implements ReportEd
         btnDateStart = new javax.swing.JButton();
         btnDateEnd = new javax.swing.JButton();
 
-        setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.bydates"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 12))); // NOI18N
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.bydates"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 0, 12))); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setPreferredSize(new java.awt.Dimension(0, 60));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("Label.StartDate")); // NOI18N
 
-        jTxtStartDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTxtStartDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTxtStartDate.setPreferredSize(new java.awt.Dimension(150, 25));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("Label.EndDate")); // NOI18N
 
-        jTxtEndDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTxtEndDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTxtEndDate.setPreferredSize(new java.awt.Dimension(150, 25));
 
         btnDateStart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/date.png"))); // NOI18N

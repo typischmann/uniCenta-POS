@@ -359,7 +359,7 @@ public class JTimePanel extends javax.swing.JPanel {
         add(jPanel1, java.awt.BorderLayout.LINE_END);
 
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        jPanel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel2.setLayout(new java.awt.BorderLayout());
 
         m_jtime.add(m_jlblTime);

@@ -172,24 +172,24 @@ public class PaymentPanelType extends javax.swing.JPanel implements PaymentPanel
 
         jPanel4.setPreferredSize(new java.awt.Dimension(350, 105));
 
-        m_jCardNumber.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jCardNumber.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jCardNumber.setPreferredSize(new java.awt.Dimension(180, 25));
 
-        m_jExpirationDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jExpirationDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        m_jHolderName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jHolderName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jHolderName.setPreferredSize(new java.awt.Dimension(180, 25));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("label.cardholder")); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText(AppLocal.getIntString("label.cardnumber")); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText(AppLocal.getIntString("label.cardexpdate")); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText("MMYY");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -234,7 +234,7 @@ public class PaymentPanelType extends javax.swing.JPanel implements PaymentPanel
 
         add(jPanel4, java.awt.BorderLayout.CENTER);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("message.paymentgatewaytype")); // NOI18N
         jPanel5.add(jLabel1);
 

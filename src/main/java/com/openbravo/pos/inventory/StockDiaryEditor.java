@@ -466,23 +466,23 @@ public final class StockDiaryEditor extends javax.swing.JPanel implements Editor
         m_jprice = new javax.swing.JTextField();
         catcontainer = new javax.swing.JPanel();
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setMinimumSize(new java.awt.Dimension(550, 250));
         setPreferredSize(new java.awt.Dimension(550, 270));
         setLayout(new java.awt.BorderLayout());
 
-        jPanel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel1.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         jPanel1.setMinimumSize(new java.awt.Dimension(780, 260));
         jPanel1.setPreferredSize(new java.awt.Dimension(780, 200));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.stockdate")); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(23, 20));
         jLabel1.setMinimumSize(new java.awt.Dimension(23, 20));
         jLabel1.setPreferredSize(new java.awt.Dimension(80, 25));
 
-        m_jdate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jdate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jdate.setMinimumSize(new java.awt.Dimension(40, 20));
         m_jdate.setPreferredSize(new java.awt.Dimension(200, 25));
 
@@ -494,22 +494,22 @@ public final class StockDiaryEditor extends javax.swing.JPanel implements Editor
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.stockreason")); // NOI18N
         jLabel2.setMaximumSize(new java.awt.Dimension(36, 20));
         jLabel2.setMinimumSize(new java.awt.Dimension(36, 20));
         jLabel2.setPreferredSize(new java.awt.Dimension(36, 20));
 
-        m_jreason.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jreason.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
 
-        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("label.prodname")); // NOI18N
         jLabel8.setMaximumSize(new java.awt.Dimension(40, 20));
         jLabel8.setMinimumSize(new java.awt.Dimension(40, 20));
         jLabel8.setPreferredSize(new java.awt.Dimension(80, 25));
 
         jproduct.setEditable(false);
-        jproduct.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jproduct.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jproduct.setPreferredSize(new java.awt.Dimension(200, 25));
 
         jEditProduct.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/search24.png"))); // NOI18N
@@ -520,18 +520,18 @@ public final class StockDiaryEditor extends javax.swing.JPanel implements Editor
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText("Location");
 
-        m_jLocation.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jLocation.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText(AppLocal.getIntString("label.prodbarcode")); // NOI18N
         jLabel7.setMaximumSize(new java.awt.Dimension(40, 20));
         jLabel7.setMinimumSize(new java.awt.Dimension(40, 20));
         jLabel7.setPreferredSize(new java.awt.Dimension(80, 25));
 
-        m_jcodebar.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jcodebar.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jcodebar.setPreferredSize(new java.awt.Dimension(200, 25));
         m_jcodebar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -553,13 +553,13 @@ public final class StockDiaryEditor extends javax.swing.JPanel implements Editor
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.prodref")); // NOI18N
         jLabel3.setMaximumSize(new java.awt.Dimension(40, 20));
         jLabel3.setMinimumSize(new java.awt.Dimension(40, 20));
         jLabel3.setPreferredSize(new java.awt.Dimension(80, 25));
 
-        m_jreference.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jreference.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jreference.setPreferredSize(new java.awt.Dimension(200, 25));
         m_jreference.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -581,14 +581,14 @@ public final class StockDiaryEditor extends javax.swing.JPanel implements Editor
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel9.setText(AppLocal.getIntString("label.attributes")); // NOI18N
         jLabel9.setMaximumSize(new java.awt.Dimension(48, 20));
         jLabel9.setMinimumSize(new java.awt.Dimension(48, 20));
         jLabel9.setPreferredSize(new java.awt.Dimension(48, 20));
 
         jattributes.setEditable(false);
-        jattributes.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jattributes.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         jEditAttributes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/attributes.png"))); // NOI18N
         jEditAttributes.setToolTipText("Product Attributes");
@@ -601,21 +601,21 @@ public final class StockDiaryEditor extends javax.swing.JPanel implements Editor
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.units")); // NOI18N
         jLabel4.setMaximumSize(new java.awt.Dimension(40, 20));
         jLabel4.setMinimumSize(new java.awt.Dimension(40, 20));
         jLabel4.setPreferredSize(new java.awt.Dimension(80, 25));
 
-        m_junits.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_junits.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_junits.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         m_junits.setPreferredSize(new java.awt.Dimension(60, 25));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.price")); // NOI18N
         jLabel5.setPreferredSize(new java.awt.Dimension(40, 25));
 
-        m_jprice.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jprice.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jprice.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         m_jprice.setPreferredSize(new java.awt.Dimension(80, 25));
 
@@ -725,7 +725,7 @@ public final class StockDiaryEditor extends javax.swing.JPanel implements Editor
 
         add(jPanel1, java.awt.BorderLayout.PAGE_START);
 
-        catcontainer.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        catcontainer.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         catcontainer.setMaximumSize(new java.awt.Dimension(2147483647, 2147483647));
         catcontainer.setMinimumSize(new java.awt.Dimension(0, 250));
         catcontainer.setPreferredSize(new java.awt.Dimension(0, 250));

@@ -101,32 +101,32 @@ public class ConfigPaymentPanelCaixa extends javax.swing.JPanel implements Payme
         jCheckBox1 = new javax.swing.JCheckBox();
         jtxtCommerceTerminal = new javax.swing.JTextField();
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.merchantcode")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.terminal")); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.commercesign")); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.sha")); // NOI18N
         jLabel4.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jtxtCommerceCode.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtCommerceCode.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtCommerceCode.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jtxtCommerceSign.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtCommerceSign.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtCommerceSign.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jCheckBox1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jCheckBox1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jCheckBox1.setText("Ampliado");
 
-        jtxtCommerceTerminal.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtCommerceTerminal.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtCommerceTerminal.setPreferredSize(new java.awt.Dimension(200, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

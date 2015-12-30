@@ -233,7 +233,7 @@ public final class ResourcesView extends JPanel implements EditorRecord {
 
         m_jContainer.setLayout(new java.awt.CardLayout());
 
-        m_jText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jText.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jScrollPane1.setViewportView(m_jText);
 
         m_jContainer.add(jScrollPane1, "text");
@@ -242,12 +242,12 @@ public final class ResourcesView extends JPanel implements EditorRecord {
 
         jPanel3.add(m_jContainer, java.awt.BorderLayout.CENTER);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.resname")); // NOI18N
 
-        m_jName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        m_jType.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jType.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jType.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 m_jTypeActionPerformed(evt);

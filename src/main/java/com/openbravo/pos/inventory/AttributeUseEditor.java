@@ -203,15 +203,15 @@ public class AttributeUseEditor extends javax.swing.JPanel implements EditorReco
 
         setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.order")); // NOI18N
 
-        jLineno.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLineno.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.attribute")); // NOI18N
 
-        jAttribute.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jAttribute.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

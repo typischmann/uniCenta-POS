@@ -17,11 +17,13 @@
 //    You should have received a copy of the GNU General Public License
 //    along with uniCenta oPOS.  If not, see <http://www.gnu.org/licenses/>.
 
-package com.openbravo.pos.sales.shared;
+package com.openbravo.pos.ticket;
 
-
+import com.openbravo.basic.BasicException;
+import com.openbravo.pos.sales.JTicketsBagTicket;
+import com.openbravo.pos.sales.shared.*;
 import com.openbravo.pos.forms.AppLocal;
-import com.openbravo.pos.sales.FindTicketsInfo;
+import com.openbravo.pos.forms.DataLogicSales;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -32,17 +34,21 @@ import javax.swing.JFrame;
  *
  * @author JG uniCenta
  */
-public class JTicketsBagSharedList extends javax.swing.JDialog {
+public class JTicketsUnfinishedList extends javax.swing.JDialog {
     
-    private String m_sDialogTicket;
+    private FindTicketsInfo m_sDialogTicket;
+    
+    private final DataLogicSales m_dlSales; 
     
     /** Creates new form JTicketsBagSharedList */
-    private JTicketsBagSharedList(java.awt.Frame parent, boolean modal) {
+    private JTicketsUnfinishedList(java.awt.Frame parent, boolean modal, DataLogicSales dlSales) {
         super(parent, modal);
+        m_dlSales = dlSales;        
     }
     /** Creates new form JTicketsBagSharedList */
-    private JTicketsBagSharedList(java.awt.Dialog parent, boolean modal) {
+    private JTicketsUnfinishedList(java.awt.Dialog parent, boolean modal, DataLogicSales dlSales) {
         super(parent, modal);
+        m_dlSales = dlSales; 
     }
 
     /**
@@ -50,7 +56,7 @@ public class JTicketsBagSharedList extends javax.swing.JDialog {
      * @param atickets
      * @return
      */
-    public String showTicketsList(java.util.List<FindTicketsInfo> atickets) {
+    public FindTicketsInfo showTicketsList(java.util.List<FindTicketsInfo> atickets) {
         
         for (FindTicketsInfo aticket : atickets) {
             m_jtickets.add(new JButtonTicket(aticket));
@@ -61,20 +67,21 @@ public class JTicketsBagSharedList extends javax.swing.JDialog {
         setVisible(true);
         return m_sDialogTicket;
     }
-
+    
+   
     /**
      *
-     * @param ticketsbagshared
+     * @param ticket
      * @return
      */
-    public static JTicketsBagSharedList newJDialog(JTicketsBagSharedTicket ticketsbagshared) {
+    public static JTicketsUnfinishedList newJDialog(JTicketsBagTicket ticket, DataLogicSales dlSales) {
         
-        Window window = getWindow(ticketsbagshared);
-        JTicketsBagSharedList mydialog;
+        Window window = getWindow(ticket);
+        JTicketsUnfinishedList mydialog;
         if (window instanceof Frame) { 
-            mydialog = new JTicketsBagSharedList((Frame) window, true);
+            mydialog = new JTicketsUnfinishedList((Frame) window, true, dlSales);
         } else {
-            mydialog = new JTicketsBagSharedList((Dialog) window, true);
+            mydialog = new JTicketsUnfinishedList((Dialog) window, true, dlSales);
         } 
         
         mydialog.initComponents();
@@ -113,7 +120,7 @@ public class JTicketsBagSharedList extends javax.swing.JDialog {
             setBackground(new java.awt.Color (220, 220, 220));
             addActionListener(new ActionListenerImpl());
             
-            setText(ticket.getName());
+            setText(ticket.getTicketId()+","+ticket.getTicketType()+ "," + ticket.getTicketStatus());
             
         }
 
@@ -125,11 +132,22 @@ public class JTicketsBagSharedList extends javax.swing.JDialog {
             @Override
             public void actionPerformed(ActionEvent evt) {
                         
-                        // Selecciono el ticket
-                        m_sDialogTicket = m_Ticket.getId();
-       
-                        // y oculto la ventana
-                        JTicketsBagSharedList.this.setVisible(false);
+                        
+                        try{
+                            if(m_dlSales.updateTicketStatus(m_Ticket.getTicketId(), 2) > 0){
+                                // Selecciono el ticket
+                                m_sDialogTicket = m_Ticket;
+                                // y oculto la ventana
+                                //JTicketsUnfinishedList.this.setVisible(false);
+                            }else{
+                                m_jtickets.removeAll();
+                                java.util.List<FindTicketsInfo> l = m_dlSales.getUnfinishedList();
+                                showTicketsList(l);
+                            }
+                        }catch(BasicException be){
+                            return;
+                        }
+                        JTicketsUnfinishedList.this.setVisible(false);                       
                     }
         }
     }
@@ -151,7 +169,6 @@ public class JTicketsBagSharedList extends javax.swing.JDialog {
         m_jButtonCancel = new javax.swing.JButton();
 
         setTitle(AppLocal.getIntString("caption.tickets")); // NOI18N
-        setPreferredSize(new java.awt.Dimension(400, 100));
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jPanel1.setLayout(new java.awt.BorderLayout());

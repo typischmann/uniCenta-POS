@@ -348,29 +348,29 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
 
         jPanel1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.datestitle"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.datestitle"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 14))); // NOI18N
 
-        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel11.setText(AppLocal.getIntString("label.sequence")); // NOI18N
 
         m_jSequence.setEditable(false);
-        m_jSequence.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jSequence.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jSequence.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel2.setText(AppLocal.getIntString("Label.StartDate")); // NOI18N
 
         m_jMinDate.setEditable(false);
-        m_jMinDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jMinDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jMinDate.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText(AppLocal.getIntString("Label.EndDate")); // NOI18N
 
         m_jMaxDate.setEditable(false);
-        m_jMaxDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jMaxDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jMaxDate.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -413,14 +413,14 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
                 .addContainerGap())
         );
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.paymentstitle"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 14))); // NOI18N
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.paymentstitle"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 14))); // NOI18N
 
         m_jScrollTableTicket.setBorder(null);
-        m_jScrollTableTicket.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        m_jScrollTableTicket.setFont(new java.awt.Font("MS Song", 0, 11)); // NOI18N
         m_jScrollTableTicket.setMinimumSize(new java.awt.Dimension(350, 140));
         m_jScrollTableTicket.setPreferredSize(new java.awt.Dimension(350, 140));
 
-        m_jTicketTable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jTicketTable.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jTicketTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -435,38 +435,38 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
         m_jTicketTable.setShowVerticalLines(false);
         m_jScrollTableTicket.setViewportView(m_jTicketTable);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("Label.Tickets")); // NOI18N
 
         m_jCount.setEditable(false);
-        m_jCount.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jCount.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jCount.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 1, 14)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.Money")); // NOI18N
 
         m_jCash.setEditable(false);
-        m_jCash.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        m_jCash.setFont(new java.awt.Font("MS Song", 1, 14)); // NOI18N
         m_jCash.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.sales")); // NOI18N
 
         m_jSales.setEditable(false);
-        m_jSales.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jSales.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jSales.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jLabel6.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText(AppLocal.getIntString("label.totalnet")); // NOI18N
 
         m_jSalesSubtotal.setEditable(false);
-        m_jSalesSubtotal.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jSalesSubtotal.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jSalesSubtotal.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         m_jScrollSales.setBorder(null);
-        m_jScrollSales.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        m_jScrollSales.setFont(new java.awt.Font("MS Song", 0, 11)); // NOI18N
 
-        m_jsalestable.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jsalestable.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jsalestable.setFocusable(false);
         m_jsalestable.setIntercellSpacing(new java.awt.Dimension(0, 1));
         m_jsalestable.setRequestFocusEnabled(false);
@@ -474,27 +474,27 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
         m_jScrollSales.setViewportView(m_jsalestable);
 
         m_jSalesTaxes.setEditable(false);
-        m_jSalesTaxes.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jSalesTaxes.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jSalesTaxes.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jLabel12.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel12.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel12.setText(AppLocal.getIntString("label.taxes")); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("MS Song", 1, 14)); // NOI18N
         jLabel7.setText(AppLocal.getIntString("label.total")); // NOI18N
 
         m_jSalesTotal.setEditable(false);
-        m_jSalesTotal.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        m_jSalesTotal.setFont(new java.awt.Font("MS Song", 1, 14)); // NOI18N
         m_jSalesTotal.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         m_jSalesTotal.setPreferredSize(new java.awt.Dimension(6, 21));
 
-        jLabel8.setFont(new java.awt.Font("Arial", 1, 11)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("MS Song", 1, 11)); // NOI18N
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
         jLabel8.setText(bundle.getString("label.nocashsales")); // NOI18N
 
         m_jNoCashSales.setEditable(false);
-        m_jNoCashSales.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jNoCashSales.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jNoCashSales.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -576,7 +576,7 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
 
         jPanelTop.setEnabled(false);
 
-        m_jCloseCashTop.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jCloseCashTop.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jCloseCashTop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/calculator.png"))); // NOI18N
         m_jCloseCashTop.setText(AppLocal.getIntString("Button.CloseCash")); // NOI18N
         m_jCloseCashTop.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -591,7 +591,7 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
             }
         });
 
-        m_jPrintCashTop.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jPrintCashTop.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jPrintCashTop.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/printer.png"))); // NOI18N
         m_jPrintCashTop.setText(AppLocal.getIntString("Button.PrintCash")); // NOI18N
         m_jPrintCashTop.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -624,7 +624,7 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
                 .addContainerGap())
         );
 
-        m_jCloseCash.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jCloseCash.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jCloseCash.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/calculator.png"))); // NOI18N
         m_jCloseCash.setText(AppLocal.getIntString("Button.CloseCash")); // NOI18N
         m_jCloseCash.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -639,7 +639,7 @@ public class JPanelCloseMoney extends JPanel implements JPanelView, BeanFactoryA
             }
         });
 
-        m_jPrintCash.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jPrintCash.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jPrintCash.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/printer.png"))); // NOI18N
         m_jPrintCash.setText(AppLocal.getIntString("Button.PrintCash")); // NOI18N
         m_jPrintCash.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);

@@ -83,7 +83,7 @@ public class JPaymentFree extends javax.swing.JPanel implements JPaymentInterfac
 
         jLabel1 = new javax.swing.JLabel();
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 1, 36)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText(AppLocal.getIntString("message.paymentfree")); // NOI18N
         add(jLabel1);

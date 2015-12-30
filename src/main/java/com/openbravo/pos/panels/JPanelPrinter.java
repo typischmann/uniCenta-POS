@@ -113,7 +113,7 @@ public class JPanelPrinter extends JPanel implements JPanelView {
         jPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jPanel1.setLayout(new java.awt.BorderLayout());
 
-        m_jPrinters.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jPrinters.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel1.add(m_jPrinters, java.awt.BorderLayout.CENTER);
 
         add(jPanel1, java.awt.BorderLayout.CENTER);

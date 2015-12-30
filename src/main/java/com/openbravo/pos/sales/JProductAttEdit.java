@@ -305,7 +305,7 @@ public class JProductAttEdit extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel5.setLayout(new java.awt.BorderLayout());
 
         jPanel2.setLayout(new javax.swing.BoxLayout(jPanel2, javax.swing.BoxLayout.PAGE_AXIS));
@@ -313,7 +313,7 @@ public class JProductAttEdit extends javax.swing.JDialog {
 
         jPanel1.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
 
-        m_jButtonOK.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jButtonOK.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jButtonOK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/ok.png"))); // NOI18N
         m_jButtonOK.setText(AppLocal.getIntString("Button.OK")); // NOI18N
         m_jButtonOK.setFocusPainted(false);
@@ -327,7 +327,7 @@ public class JProductAttEdit extends javax.swing.JDialog {
         });
         jPanel1.add(m_jButtonOK);
 
-        m_jButtonCancel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jButtonCancel.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jButtonCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/cancel.png"))); // NOI18N
         m_jButtonCancel.setText(AppLocal.getIntString("Button.Cancel")); // NOI18N
         m_jButtonCancel.setFocusPainted(false);
@@ -345,7 +345,7 @@ public class JProductAttEdit extends javax.swing.JDialog {
 
         getContentPane().add(jPanel5, java.awt.BorderLayout.CENTER);
 
-        jPanel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jPanel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel3.setLayout(new java.awt.BorderLayout());
 
         jPanel4.setLayout(new javax.swing.BoxLayout(jPanel4, javax.swing.BoxLayout.Y_AXIS));

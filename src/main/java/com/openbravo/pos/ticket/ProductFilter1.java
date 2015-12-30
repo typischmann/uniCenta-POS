@@ -135,28 +135,28 @@ public class ProductFilter1 extends javax.swing.JPanel implements ReportEditorCr
         m_jCboName = new javax.swing.JComboBox();
         m_jName = new javax.swing.JTextField();
 
-        m_jBarcode.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jBarcode.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jBarcode.setPreferredSize(new java.awt.Dimension(150, 30));
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.prodbarcode")); // NOI18N
         jLabel5.setPreferredSize(new java.awt.Dimension(110, 30));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.prodcategory")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(110, 30));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.prodname")); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(110, 30));
 
-        m_jCategory.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCategory.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jCategory.setPreferredSize(new java.awt.Dimension(250, 30));
 
-        m_jCboName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCboName.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jCboName.setPreferredSize(new java.awt.Dimension(250, 30));
 
-        m_jName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jName.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jName.setPreferredSize(new java.awt.Dimension(250, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

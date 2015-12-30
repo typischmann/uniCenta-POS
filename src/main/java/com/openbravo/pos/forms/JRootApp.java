@@ -34,6 +34,7 @@ import com.openbravo.pos.printer.TicketPrinterException;
 import com.openbravo.pos.scale.DeviceScale;
 import com.openbravo.pos.scanpal2.DeviceScanner;
 import com.openbravo.pos.scanpal2.DeviceScannerFactory;
+import com.openbravo.pos.inventory.LocationInfo;
 import java.awt.CardLayout;
 import java.awt.ComponentOrientation;
 import java.awt.Cursor;
@@ -72,6 +73,8 @@ public class JRootApp extends JPanel implements AppView {
     private Date m_dActiveCashDateEnd;
     
     private String m_sInventoryLocation;
+    
+    private String clientCode;
     
     private StringBuilder inputtext;
    
@@ -191,6 +194,17 @@ public class JRootApp extends JPanel implements AppView {
                         if (l.size() > 0) {
                             JMessageDialog.showMessage(this, new MessageInf(MessageInf.SGN_WARNING, AppLocal.getIntString("Database.ScriptWarning"), l.toArray(new Throwable[l.size()])));
                         }
+                        
+                        //the extended script should be executed after the creation of a new database, if the script exists.               
+                        sScript =   m_dlSystem.getInitScript() + "-extension.sql";
+                        if(sDBVersion == null &&
+                                JRootApp.class.getResource("") != null){
+                            BatchSentence batchSentence = new BatchSentenceResource(session, sScript);
+                            if(batchSentence.list().size()>0){
+                                JMessageDialog.showMessage(this, new MessageInf(MessageInf.SGN_WARNING, AppLocal.getIntString("Database.ScriptWarning"), l.toArray(new Throwable[l.size()])));
+                            }
+                        }
+                        
                    } catch (BasicException e) {
                         JMessageDialog.showMessage(this, new MessageInf(MessageInf.SGN_DANGER, AppLocal.getIntString("Database.ScriptError"), e));
                         session.close();
@@ -202,6 +216,9 @@ public class JRootApp extends JPanel implements AppView {
                 }
             }
         }
+        
+        //initialize client code
+        clientCode = m_props.getProperty("user.client");
         
         // Cargamos las propiedades de base de datos
         m_propsdb = m_dlSystem.getResourceAsProperties(m_props.getHost() + "/properties");
@@ -575,7 +592,9 @@ public class JRootApp extends JPanel implements AppView {
         }        
     }
   
-    private void listPeople() {
+    
+    
+    private void listLocationAndPeople() {
         
         try {
            
@@ -583,6 +602,33 @@ public class JRootApp extends JPanel implements AppView {
 
             JFlowPanel jPeople = new JFlowPanel();
             jPeople.applyComponentOrientation(getComponentOrientation());
+            
+            try {
+                List locations = m_dlSystem.listLocations();
+                final JComboBox locationComboBox = new JComboBox();
+                locationComboBox.applyComponentOrientation(getComponentOrientation());
+
+                locationComboBox.setFocusable(false);
+                locationComboBox.setRequestFocusEnabled(false);
+
+                locationComboBox.setMaximumSize(new Dimension(220, 30));
+                locationComboBox.setPreferredSize(new Dimension(220, 30));
+                locationComboBox.setMinimumSize(new Dimension(220, 30));
+    // Added: JG 27 Jul 13
+
+                jPeople.add(locationComboBox);                    
+                for (int i = 0; i < locations.size(); i++) {
+                    locationComboBox.addItem(((LocationInfo)locations.get(i)).getName());
+                }
+                locationComboBox.addActionListener(new java.awt.event.ActionListener() {
+                        @Override
+                        public void actionPerformed(java.awt.event.ActionEvent evt) {
+                            locationComboBoxActionPerformed(evt, (String)locationComboBox.getSelectedItem());
+                        }
+                });
+            }catch (BasicException ee) {
+            }
+            
            
             java.util.List people = m_dlSystem.listPeopleVisible();
                      
@@ -710,7 +756,7 @@ public class JRootApp extends JPanel implements AppView {
     private void showLogin() {
         
         // Show Login
-        listPeople();
+        listLocationAndPeople();
         showView("login");     
 
         // show welcome message
@@ -820,7 +866,7 @@ public class JRootApp extends JPanel implements AppView {
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/unicenta.png"))); // NOI18N
         jLabel1.setText("<html><center>uniCenta oPOS - Touch Friendly Point of Sale<br>" +
-            "Copyright \u00A9 2009-2015 uniCenta <br>" +
+            "Copyright \u00A9 2009-2014 uniCenta <br>" +
             "http://www.unicenta.com<br>" +
             "<br>" +
             "uniCenta oPOS is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br>" +
@@ -915,16 +961,15 @@ public class JRootApp extends JPanel implements AppView {
         jPanel5Layout.setVerticalGroup(
             jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
             .add(jPanel5Layout.createSequentialGroup()
-                .add(15, 15, 15)
                 .add(jPanel5Layout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
                     .add(jPanel5Layout.createSequentialGroup()
-                        .add(m_jLogonName, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .add(434, 434, 434))
+                        .add(15, 15, 15)
+                        .add(m_jLogonName, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
                     .add(jPanel5Layout.createSequentialGroup()
-                        .add(jScrollPane1)
+                        .add(jScrollPane1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, 621, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
-                        .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
+                        .add(jPanel1, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         m_jPanelLogin.add(jPanel5, java.awt.BorderLayout.EAST);
@@ -962,6 +1007,26 @@ public class JRootApp extends JPanel implements AppView {
 
     }//GEN-LAST:event_m_txtKeysKeyTyped
 
+    
+    private void locationComboBoxActionPerformed(java.awt.event.ActionEvent evt, String location) {                                                 
+        
+        try {
+            m_sInventoryLocation = m_dlSystem.findLocationIdByName(location);
+        } catch (BasicException e) {
+            
+        }
+
+        m_propsdb.setProperty("location", m_sInventoryLocation);
+
+        // Show Hostname, Warehouse and URL in taskbar
+        String url;
+        try {
+            url = session.getURL();
+        } catch (SQLException e) {
+            url = "";
+        }
+        m_jHost.setText("<html>" + m_props.getHost() + " - " + location + "<br>" + url);
+    }                                      
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.Box.Filler filler2;

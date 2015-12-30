@@ -30,6 +30,7 @@ import com.openbravo.pos.forms.DataLogicSales;
 import com.openbravo.pos.forms.DataLogicSystem;
 import com.openbravo.pos.panels.JTicketsFinder;
 import com.openbravo.pos.printer.*;
+import com.openbravo.pos.ticket.JTicketsUnfinishedList;
 import com.openbravo.pos.scripting.ScriptEngine;
 import com.openbravo.pos.scripting.ScriptException;
 import com.openbravo.pos.scripting.ScriptFactory;
@@ -221,6 +222,10 @@ public class JTicketsBagTicket extends JTicketsBag {
                 JOptionPane.showMessageDialog(frame,AppLocal.getIntString("message.notexiststicket"),AppLocal.getIntString("message.notexiststickettitle"),JOptionPane.WARNING_MESSAGE);
                 
             } else {
+                //check the ticket status, set unfinished status
+                if(m_ticket != null){
+                    
+                }
                 m_ticket = ticket;
                 m_ticketCopy = null; // se asigna al pulsar el boton de editar o devolver
                 
@@ -292,6 +297,8 @@ public class JTicketsBagTicket extends JTicketsBag {
         jButton2 = new javax.swing.JButton();
         m_jEdit = new javax.swing.JButton();
         m_jRefund = new javax.swing.JButton();
+        listTickets = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         m_jPrint = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         m_jPanelTicket = new javax.swing.JPanel();
@@ -370,6 +377,30 @@ public class JTicketsBagTicket extends JTicketsBag {
             }
         });
         m_jButtons.add(m_jRefund);
+
+        listTickets.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/sale_pending.png"))); // NOI18N
+        listTickets.setMargin(new java.awt.Insets(0, 4, 0, 4));
+        listTickets.setMaximumSize(new java.awt.Dimension(50, 40));
+        listTickets.setMinimumSize(new java.awt.Dimension(50, 40));
+        listTickets.setPreferredSize(new java.awt.Dimension(50, 40));
+        listTickets.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                listTicketsActionPerformed(evt);
+            }
+        });
+        m_jButtons.add(listTickets);
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/stockmaint.png"))); // NOI18N
+        jButton3.setToolTipText("Send");
+        jButton3.setMaximumSize(new java.awt.Dimension(50, 40));
+        jButton3.setMinimumSize(new java.awt.Dimension(50, 40));
+        jButton3.setPreferredSize(new java.awt.Dimension(50, 40));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        m_jButtons.add(jButton3);
 
         m_jPrint.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         m_jPrint.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/printer24.png"))); // NOI18N
@@ -542,11 +573,46 @@ private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
             readTicket(selectedTicket.getTicketId(), selectedTicket.getTicketType());
         }
 }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void listTicketsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_listTicketsActionPerformed
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                
+                try {
+                    //java.util.List<com.openbravo.pos.sales.FindTicketsInfo> l = dlReceipts.getSharedTicketList();
+                    java.util.List<FindTicketsInfo> l = m_dlSales.getUnfinishedList();
+                    JTicketsUnfinishedList listDialog = JTicketsUnfinishedList.newJDialog(JTicketsBagTicket.this, m_dlSales);
+                    //listDialog.showTicketsList(l);
+                    
+                    FindTicketsInfo ticket = listDialog.showTicketsList(l); 
+                    
+
+                    if (ticket != null) {
+                        readTicket(ticket.getTicketId(), ticket.getTicketType());
+                    }
+                } catch (BasicException e) {
+                    new MessageInf(e).show(JTicketsBagTicket.this);
+                }                    
+            }
+        });
+    }//GEN-LAST:event_listTicketsActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        if(m_ticket != null){
+            try{
+                m_dlSales.updateTicketStatus(m_ticket.getTicketId(), 0);
+            }catch(BasicException be){
+                
+            }
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -554,6 +620,7 @@ private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRS
     private javax.swing.JPanel jPanel5;
     private javax.swing.JRadioButton jrbRefunds;
     private javax.swing.JRadioButton jrbSales;
+    private javax.swing.JButton listTickets;
     private javax.swing.JPanel m_jButtons;
     private javax.swing.JButton m_jEdit;
     private com.openbravo.editor.JEditorKeys m_jKeys;

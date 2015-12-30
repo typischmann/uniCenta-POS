@@ -31,7 +31,7 @@ import com.openbravo.data.loader.SerializableWrite;
  * JG - Aug 2014 Add Customer
  * Format is CustomerName : Ticket : User
  */
-public class SharedTicketInfo implements SerializableRead, SerializableWrite {
+public class FindTicketsInfo implements SerializableRead, SerializableWrite {
     
     private static final long serialVersionUID = 7640633837719L;
     private String id;
@@ -40,7 +40,7 @@ public class SharedTicketInfo implements SerializableRead, SerializableWrite {
     private String CustomerName;    
     
     /** Creates a new instance of SharedTicketInfo */
-    public SharedTicketInfo() {
+    public FindTicketsInfo() {
     }
     
     /**

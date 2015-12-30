@@ -330,7 +330,7 @@ public class JTicketsFinder extends javax.swing.JDialog implements EditorCreator
 
         jPanel7.setPreferredSize(new java.awt.Dimension(0, 210));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.ticketid")); // NOI18N
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -341,30 +341,30 @@ public class JTicketsFinder extends javax.swing.JDialog implements EditorCreator
 
         jtxtMoney.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
-        jcboUser.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboUser.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jcboUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jcboUserActionPerformed(evt);
             }
         });
 
-        jcboMoney.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jcboMoney.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
 
-        jtxtTicketID.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtTicketID.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        labelCustomer.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        labelCustomer.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         labelCustomer.setText(AppLocal.getIntString("label.customer")); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("Label.StartDate")); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("Label.EndDate")); // NOI18N
 
-        jTxtStartDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTxtStartDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTxtStartDate.setPreferredSize(new java.awt.Dimension(200, 25));
 
-        jTxtEndDate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTxtEndDate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTxtEndDate.setPreferredSize(new java.awt.Dimension(200, 25));
 
         btnDateStart.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/date.png"))); // NOI18N
@@ -385,7 +385,7 @@ public class JTicketsFinder extends javax.swing.JDialog implements EditorCreator
             }
         });
 
-        jtxtCustomer.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jtxtCustomer.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jtxtCustomer.setPreferredSize(new java.awt.Dimension(200, 25));
 
         btnCustomer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/customer_sml.png"))); // NOI18N
@@ -401,7 +401,7 @@ public class JTicketsFinder extends javax.swing.JDialog implements EditorCreator
             }
         });
 
-        jComboBoxTicket.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jComboBoxTicket.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
@@ -481,7 +481,7 @@ public class JTicketsFinder extends javax.swing.JDialog implements EditorCreator
 
         jPanel5.add(jPanel7, java.awt.BorderLayout.CENTER);
 
-        jButton1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/reload.png"))); // NOI18N
         jButton1.setText(AppLocal.getIntString("button.clean")); // NOI18N
         jButton1.setToolTipText("Clear Filter");
@@ -492,7 +492,7 @@ public class JTicketsFinder extends javax.swing.JDialog implements EditorCreator
         });
         jPanel6.add(jButton1);
 
-        jButton3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jButton3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/ok.png"))); // NOI18N
         jButton3.setText(AppLocal.getIntString("button.executefilter")); // NOI18N
         jButton3.setToolTipText("Execute Filter");
@@ -534,7 +534,7 @@ public class JTicketsFinder extends javax.swing.JDialog implements EditorCreator
 
         jPanel8.setLayout(new java.awt.BorderLayout());
 
-        jcmdCancel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdCancel.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/cancel.png"))); // NOI18N
         jcmdCancel.setText(AppLocal.getIntString("Button.Cancel")); // NOI18N
         jcmdCancel.setFocusPainted(false);
@@ -548,7 +548,7 @@ public class JTicketsFinder extends javax.swing.JDialog implements EditorCreator
         });
         jPanel1.add(jcmdCancel);
 
-        jcmdOK.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdOK.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdOK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/ok.png"))); // NOI18N
         jcmdOK.setText(AppLocal.getIntString("Button.OK")); // NOI18N
         jcmdOK.setEnabled(false);

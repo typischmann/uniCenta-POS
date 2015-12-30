@@ -153,14 +153,14 @@ public class JPaymentPaper extends javax.swing.JPanel implements JPaymentInterfa
 
         jPanel4.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("Label.InputCash")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 30));
         jPanel4.add(jLabel1);
         jLabel1.setBounds(10, 4, 100, 30);
 
         m_jMoneyEuros.setBackground(new java.awt.Color(204, 255, 51));
-        m_jMoneyEuros.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        m_jMoneyEuros.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
         m_jMoneyEuros.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         m_jMoneyEuros.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(javax.swing.UIManager.getDefaults().getColor("Button.darkShadow")), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
         m_jMoneyEuros.setOpaque(true);

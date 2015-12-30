@@ -435,8 +435,8 @@ public class JTicketsBagRestaurantMap extends JTicketsBag {
         Set<String> atickets = new HashSet<>();
         
         try {
-            java.util.List<SharedTicketInfo> l = dlReceipts.getSharedTicketList();
-            for (SharedTicketInfo ticket : l) {
+            java.util.List<FindTicketsInfo> l = dlReceipts.getSharedTicketList();
+            for (FindTicketsInfo ticket : l) {
                 atickets.add(ticket.getId());
             }
         } catch (BasicException e) {
@@ -771,14 +771,14 @@ public class JTicketsBagRestaurantMap extends JTicketsBag {
 
         setLayout(new java.awt.CardLayout());
 
-        m_jPanelMap.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jPanelMap.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jPanelMap.setLayout(new java.awt.BorderLayout());
 
         jPanel1.setLayout(new java.awt.BorderLayout());
 
         jPanel2.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        m_jbtnReservations.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jbtnReservations.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jbtnReservations.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/date.png"))); // NOI18N
         m_jbtnReservations.setText(AppLocal.getIntString("button.reservations")); // NOI18N
         m_jbtnReservations.setToolTipText("Open Reservations screen");
@@ -793,7 +793,7 @@ public class JTicketsBagRestaurantMap extends JTicketsBag {
         });
         jPanel2.add(m_jbtnReservations);
 
-        m_jbtnRefresh.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jbtnRefresh.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jbtnRefresh.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/reload.png"))); // NOI18N
         m_jbtnRefresh.setText(AppLocal.getIntString("button.reloadticket")); // NOI18N
         m_jbtnRefresh.setToolTipText("Reload table information");

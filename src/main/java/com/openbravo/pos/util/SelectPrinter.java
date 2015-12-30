@@ -122,7 +122,7 @@ public class SelectPrinter extends javax.swing.JDialog {
 
         jPanel8.setLayout(new java.awt.BorderLayout());
 
-        jcmdCancel.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdCancel.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/cancel.png"))); // NOI18N
         jcmdCancel.setText(AppLocal.getIntString("Button.Cancel")); // NOI18N
         jcmdCancel.setMargin(new java.awt.Insets(8, 16, 8, 16));
@@ -133,7 +133,7 @@ public class SelectPrinter extends javax.swing.JDialog {
         });
         jPanel1.add(jcmdCancel);
 
-        jcmdOK.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jcmdOK.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jcmdOK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/ok.png"))); // NOI18N
         jcmdOK.setText(AppLocal.getIntString("Button.OK")); // NOI18N
         jcmdOK.setMargin(new java.awt.Insets(8, 16, 8, 16));
@@ -148,10 +148,10 @@ public class SelectPrinter extends javax.swing.JDialog {
 
         getContentPane().add(jPanel8, java.awt.BorderLayout.SOUTH);
 
-        jLabel7.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText(AppLocal.getIntString("Label.MachinePrinter")); // NOI18N
 
-        jPrinters.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jPrinters.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jPrinters.setPreferredSize(new java.awt.Dimension(32, 25));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

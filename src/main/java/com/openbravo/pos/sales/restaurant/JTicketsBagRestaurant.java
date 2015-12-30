@@ -140,7 +140,7 @@ public class JTicketsBagRestaurant extends javax.swing.JPanel {
         m_TablePlan = new javax.swing.JButton();
         m_KitchenPrint = new javax.swing.JButton();
 
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setMinimumSize(new java.awt.Dimension(250, 50));
         setPreferredSize(new java.awt.Dimension(250, 50));
         setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));

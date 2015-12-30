@@ -114,14 +114,14 @@ public class JParamsReason extends javax.swing.JPanel implements ReportEditorCre
         jLabel2 = new javax.swing.JLabel();
         m_jreason = new javax.swing.JComboBox();
 
-        setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.byreason"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 12))); // NOI18N
-        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        setBorder(javax.swing.BorderFactory.createTitledBorder(null, AppLocal.getIntString("label.byreason"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 0, 12))); // NOI18N
+        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         setPreferredSize(new java.awt.Dimension(400, 60));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.stockreason")); // NOI18N
 
-        m_jreason.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jreason.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);

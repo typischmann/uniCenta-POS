@@ -109,38 +109,38 @@ public class MaterialFilter extends javax.swing.JPanel implements EditorCreator 
         jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(null);
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.prodpricebuy")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(20, 50, 130, 25);
 
-        m_jCboName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCboName.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jPanel1.add(m_jCboName);
         m_jCboName.setBounds(150, 20, 150, 25);
 
-        m_jName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel1.add(m_jName);
         m_jName.setBounds(310, 20, 180, 25);
 
-        m_jPriceBuy.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jPriceBuy.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jPanel1.add(m_jPriceBuy);
         m_jPriceBuy.setBounds(310, 50, 60, 25);
 
-        m_jCboPriceBuy.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCboPriceBuy.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jPanel1.add(m_jCboPriceBuy);
         m_jCboPriceBuy.setBounds(150, 50, 150, 25);
 
-        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.prodname")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(20, 20, 130, 25);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.stockproduct")); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(20, 80, 130, 25);
 
-        m_jCboProduct.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jCboProduct.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         jPanel1.add(m_jCboProduct);
         m_jCboProduct.setBounds(150, 80, 220, 25);
 

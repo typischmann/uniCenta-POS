@@ -263,7 +263,7 @@ public abstract class JPanelTable extends JPanel implements JPanelView, BeanFact
         setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         setLayout(new java.awt.BorderLayout());
 
-        container.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        container.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         container.setLayout(new java.awt.BorderLayout());
         container.add(toolbar, java.awt.BorderLayout.NORTH);
 

@@ -77,14 +77,14 @@ public class DataLogicReceipts extends BeanFactoryDataSingle {
      * @return
      * @throws BasicException
      */
-    public final List<SharedTicketInfo> getSharedTicketList() throws BasicException {
+    public final List<FindTicketsInfo> getSharedTicketList() throws BasicException {
         
-        return (List<SharedTicketInfo>) new StaticSentence(s
+        return (List<FindTicketsInfo>) new StaticSentence(s
 // JG 20 Aug 13 Bug Fix: invalid SQL string
 //                , "SELECT ID, NAME, CONTENT PICKUPID FROM SHAREDTICKETS ORDER BY ID"                
                 , "SELECT ID, NAME, CONTENT, PICKUPID FROM SHAREDTICKETS ORDER BY ID"
                 , null
-                , new SerializerReadClass(SharedTicketInfo.class)).list();
+                , new SerializerReadClass(FindTicketsInfo.class)).list();
     }
     
     /**

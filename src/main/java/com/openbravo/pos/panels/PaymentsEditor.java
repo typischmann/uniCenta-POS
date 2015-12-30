@@ -274,18 +274,18 @@ public final class PaymentsEditor extends javax.swing.JPanel implements EditorRe
 
         setLayout(new java.awt.BorderLayout());
 
-        jLabel5.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.paymentreason")); // NOI18N
 
-        m_jreason.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        m_jreason.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
         m_jreason.setFocusable(false);
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.paymenttotal")); // NOI18N
 
-        jTotal.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        jTotal.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
-        m_jNotes.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
+        m_jNotes.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
