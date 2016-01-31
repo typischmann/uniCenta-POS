@@ -1,0 +1,26 @@
+<assembly>
+    <id>bin</id>
+    <!-- START SNIPPET: formats -->
+    <formats>
+        <format>zip</format>
+    </formats>
+    <!-- END SNIPPET: formats -->
+    <!-- START SNIPPET: fileSets -->
+    <fileSets>
+        <fileSet>
+            <includes>
+                <include>README*</include>
+            </includes>
+        </fileSet>
+        
+        <fileSet>
+            <directory>target</directory>
+            <includes>
+                <include>unicentaopos.jar</include>
+                <include>*.sh</include>
+                <include>*.bat</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+    <!-- END SNIPPET: fileSets -->
+</assembly>
