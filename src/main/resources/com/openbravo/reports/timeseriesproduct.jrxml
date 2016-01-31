@@ -100,63 +100,63 @@ ORDER BY
 				<textField>
 					<reportElement x="0" y="0" width="535" height="15"/>
 					<textElement verticalAlignment="Middle">
-						<font fontName="SansSerif" size="12" isBold="true" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="12" isBold="true" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{PRODUCT}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="5" y="15" width="260" height="20"/>
 					<textElement verticalAlignment="Middle">
-						<font fontName="SansSerif" size="11" isBold="true" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="11" isBold="true" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$F{CATNAME}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="5" y="39" width="130" height="15"/>
 					<textElement textAlignment="Left" markup="none">
-						<font fontName="SansSerif" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="10" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$R{label.prodref}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="5" y="59" width="130" height="15"/>
 					<textElement textAlignment="Left" markup="none">
-						<font fontName="SansSerif" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="10" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$R{label.prodpricebuy}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="5" y="99" width="130" height="15"/>
 					<textElement textAlignment="Left" markup="none">
-						<font fontName="SansSerif" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="10" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$R{label.prodpricesell}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="5" y="119" width="130" height="15"/>
 					<textElement textAlignment="Left" markup="none">
-						<font fontName="SansSerif" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="10" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$R{label.taxcategory}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="5" y="139" width="130" height="15"/>
 					<textElement textAlignment="Left" markup="none">
-						<font fontName="SansSerif" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="10" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$R{label.prodpriceselltax}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="5" y="159" width="130" height="15"/>
 					<textElement textAlignment="Left" markup="none">
-						<font fontName="SansSerif" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="10" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$R{label.prodstockcost}]]></textFieldExpression>
 				</textField>
 				<textField>
 					<reportElement x="5" y="179" width="130" height="15"/>
 					<textElement textAlignment="Left" markup="none">
-						<font fontName="SansSerif" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="10" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$R{label.prodstockvol}]]></textFieldExpression>
 				</textField>
@@ -281,7 +281,7 @@ new Double($F{PRICESELL}.doubleValue() * (1.0 + $P{TAXESLOGIC}.getTaxRate($F{TAX
 				<textField>
 					<reportElement x="5" y="81" width="130" height="15"/>
 					<textElement textAlignment="Left" markup="none">
-						<font fontName="SansSerif" size="10" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+						<font fontName="SansSerif" size="10" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 					</textElement>
 					<textFieldExpression class="java.lang.String"><![CDATA[$R{label.margin}]]></textFieldExpression>
 				</textField>
@@ -293,7 +293,7 @@ new Double($F{PRICESELL}.doubleValue() * (1.0 + $P{TAXESLOGIC}.getTaxRate($F{TAX
 					<chart renderType="svg">
 						<reportElement x="0" y="0" width="535" height="339"/>
 						<chartTitle position="Top">
-							<font fontName="SansSerif" size="10" isBold="true" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+							<font fontName="SansSerif" size="10" isBold="true" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 							<titleExpression><![CDATA[$R{label.produnitsales}]]></titleExpression>
 						</chartTitle>
 						<chartSubtitle>
@@ -380,10 +380,10 @@ new Double($F{PRICESELL}.doubleValue() * (1.0 + $P{TAXESLOGIC}.getTaxRate($F{TAX
 					<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 					<bottomPen lineWidth="0.0" lineColor="#000000"/>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#FFFFFF"/>
-				</box>
+                                </box> 
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
-					<font fontName="SansSerif" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
-				</textElement>
+					<font fontName="SansSerif" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
+				</textElement> 
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.title}]]></textFieldExpression>
 			</textField>
 			<textField pattern="" isBlankWhenNull="true">
@@ -434,7 +434,7 @@ new Double($F{PRICESELL}.doubleValue() * (1.0 + $P{TAXESLOGIC}.getTaxRate($F{TAX
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" lineSpacing="Single">
-					<font fontName="SansSerif" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<font fontName="SansSerif" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.printed}]]></textFieldExpression>
 			</textField>
@@ -447,7 +447,7 @@ new Double($F{PRICESELL}.doubleValue() * (1.0 + $P{TAXESLOGIC}.getTaxRate($F{TAX
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Middle" rotation="None" lineSpacing="Single">
-					<font fontName="SansSerif" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica-Bold" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<font fontName="SansSerif" size="10" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H" isPdfEmbedded="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.period}]]></textFieldExpression>
 			</textField>
@@ -503,9 +503,9 @@ new Double($F{PRICESELL}.doubleValue() * (1.0 + $P{TAXESLOGIC}.getTaxRate($F{TAX
 			<staticText>
 				<reportElement x="0" y="10" width="100" height="15"/>
 				<textElement>
-					<font fontName="SansSerif" size="8"/>
+					<font fontName="SansSerif" size="8" pdfFontName="com/openbravo/reports/ms_song.ttf" pdfEncoding="Identity-H"/>
 				</textElement>
-				<text><![CDATA[rpt:timeseriesproduct]]></text>
+				<text><![CDATA[产品日销售曲线]]></text>
 			</staticText>
 		</band>
 	</pageFooter>

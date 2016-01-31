@@ -166,7 +166,7 @@ public class JRootApp extends JPanel implements AppView {
         // Create or upgrade the database if database version is not the expected
         String sDBVersion = readDataBaseVersion();        
         if (!AppLocal.APP_VERSION.equals(sDBVersion)) {
-            
+            /*
             // Create or upgrade database
             String sScript = sDBVersion == null 
                     ? m_dlSystem.getInitScript() + "-create.sql"
@@ -214,7 +214,8 @@ public class JRootApp extends JPanel implements AppView {
                     session.close();
                     return false;
                 }
-            }
+            }*/
+            return false;
         }
         
         //initialize client code

@@ -28,14 +28,14 @@ WHERE CSVERROR ='Updated Price Details']]>
 					<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#FFFFFF"/>
 				</box>
 				<textElement textAlignment="Left" verticalAlignment="Top" rotation="None" lineSpacing="Single">
-					<font fontName="Arial" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<font fontName="MS Song" size="14" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="Helvetica" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.title}]]></textFieldExpression>
 			</textField>
 			<textField evaluationTime="Report" pattern="dd/MM/yyyy h.mm a" isBlankWhenNull="false">
 				<reportElement key="textField" x="420" y="15" width="135" height="15"/>
 				<textElement textAlignment="Right">
-					<font fontName="Arial" size="10"/>
+					<font fontName="MS Song" size="10"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[new java.util.Date()]]></textFieldExpression>
 			</textField>
@@ -53,35 +53,35 @@ WHERE CSVERROR ='Updated Price Details']]>
 			<textField>
 				<reportElement x="0" y="0" width="53" height="20"/>
 				<textElement markup="none">
-					<font fontName="Arial"/>
+					<font fontName="MS Song"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.reference}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="136" y="0" width="208" height="20"/>
 				<textElement markup="none">
-					<font fontName="Arial"/>
+					<font fontName="MS Song"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.name}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="53" y="0" width="83" height="20"/>
 				<textElement markup="none">
-					<font fontName="Arial"/>
+					<font fontName="MS Song"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.barcode}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="399" y="0" width="52" height="20"/>
 				<textElement textAlignment="Right" markup="none">
-					<font fontName="Arial"/>
+					<font fontName="MS Song"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.pricebuy}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="451" y="0" width="52" height="20"/>
 				<textElement textAlignment="Right" markup="none">
-					<font fontName="Arial"/>
+					<font fontName="MS Song"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.previoussell}]]></textFieldExpression>
 			</textField>
@@ -91,14 +91,14 @@ WHERE CSVERROR ='Updated Price Details']]>
 			<textField>
 				<reportElement x="347" y="0" width="52" height="20"/>
 				<textElement textAlignment="Right" markup="none">
-					<font fontName="Arial"/>
+					<font fontName="MS Song"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.previousbuy}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement x="503" y="0" width="52" height="20"/>
 				<textElement textAlignment="Right" markup="none">
-					<font fontName="Arial"/>
+					<font fontName="MS Song"/>
 				</textElement>
 				<textFieldExpression class="java.lang.String"><![CDATA[$R{label.pricesell}]]></textFieldExpression>
 			</textField>

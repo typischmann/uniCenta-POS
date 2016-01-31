@@ -57,7 +57,8 @@ public final class PaymentsEditor extends javax.swing.JPanel implements EditorRe
        
         m_ReasonModel = new ComboBoxValModel();
         m_ReasonModel.add(new PaymentReasonPositive("cashin", AppLocal.getIntString("transpayment.cashin")));
-        m_ReasonModel.add(new PaymentReasonNegative("cashout", AppLocal.getIntString("transpayment.cashout")));              
+        m_ReasonModel.add(new PaymentReasonNegative("cashout", AppLocal.getIntString("transpayment.cashout"))); 
+        m_ReasonModel.add(new PaymentReasonNegative("delivery", AppLocal.getIntString("transpayment.delivery"))); 
         m_jreason.setModel(m_ReasonModel);
         
         jTotal.addEditorKeys(m_jKeys);
