@@ -334,9 +334,16 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         jButton3.setEnabled(false);
 
 // JG 3 Oct 2013 - for Transaction List table
-        transactionModel = new TransactionTableModel(getTransactionOfName((String) customer[3]));
-        jTable1.setModel(transactionModel);
-        jTable1.setEnabled(false);
+        //transactionModel = new TransactionTableModel(getTransactionOfName((String) customer[3]));
+        //jTable1.setModel(transactionModel);
+        //jTable1.setEnabled(false);
+        try{
+            transactionModel = new TransactionTableModel(dlSales.getTransactionsByCustomer((String) customer[3], (String) customer[1]));
+            jTable1.setModel(transactionModel);
+            jTable1.setEnabled(false);
+        }catch(BasicException e){
+            
+        }
         
      
     }
@@ -409,9 +416,16 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         jButton2.setEnabled(true);
         jButton3.setEnabled(true);
 
-        transactionModel = new TransactionTableModel(getTransactionOfName((String) customer[3]));
-        jTable1.setModel(transactionModel);
-        jTable1.setEnabled(true);
+        //transactionModel = new TransactionTableModel(getTransactionOfName((String) customer[3]));
+        //jTable1.setModel(transactionModel);
+        //jTable1.setEnabled(false);
+        try{
+            transactionModel = new TransactionTableModel(dlSales.getTransactionsByCustomer((String) customer[3], (String) customer[1]));
+            jTable1.setModel(transactionModel);
+            jTable1.setEnabled(false);
+        }catch(BasicException e){
+            
+        }
 
         txtCurdate.repaint();
         txtCurdebt.repaint();        
@@ -465,6 +479,7 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
     }
     
 // JG 3 Oct 2013 - Customer Transaction List
+    /*
     private List<CustomerTransaction> getTransactionOfName(String name) {
 
         List<CustomerTransaction> customerList = new ArrayList<>();
@@ -480,7 +495,8 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         repaint();
         refresh();        
         return customerList;
-    }
+    }*/
+    
 
     class TransactionTableModel extends AbstractTableModel {
 

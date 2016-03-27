@@ -15,12 +15,38 @@
         
         <fileSet>
             <directory>target</directory>
+	    <outputDirectory>/</outputDirectory>
             <includes>
                 <include>unicentaopos.jar</include>
                 <include>*.sh</include>
                 <include>*.bat</include>
             </includes>
         </fileSet>
+
+	<fileSet>
+	   <directory>target/locales</directory>
+	   <outputDirectory>/locales</outputDirectory>
+	   <includes>
+                <include>*</include>
+            </includes>
+	</fileSet>
+
+	<fileSet>
+	   <directory>target/Reports</directory>
+	   <outputDirectory>/reports</outputDirectory>
+	   <includes>
+                <include>*</include>
+            </includes>
+	</fileSet>
+	
+	<fileSet>
+	   <directory>target/lib</directory>
+	   <outputDirectory>/lib</outputDirectory>
+	   <includes>
+                <include>*</include>
+            </includes>
+	</fileSet>
+
     </fileSets>
     <!-- END SNIPPET: fileSets -->
 </assembly>

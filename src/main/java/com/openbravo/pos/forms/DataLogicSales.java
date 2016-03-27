@@ -1031,12 +1031,36 @@ public class DataLogicSales extends BeanFactoryDataSingle {
                 + "SUM(TICKETLINES.UNITS) AS UNITS, "
                 + "SUM(TICKETLINES.UNITS * TICKETLINES.PRICE) AS AMOUNT, "
                 + "SUM(TICKETLINES.UNITS * TICKETLINES.PRICE * (1.0 + TAXES.RATE)) AS TOTAL, "
-                + "RECEIPTS.DATENEW, CUSTOMERS.NAME AS CNAME "
+                + "RECEIPTS.DATENEW, CUSTOMERS.NAME AS CNAME, CUSTOMERS.TAXID as ACCOUNTID "
                 + "FROM RECEIPTS, CUSTOMERS, TICKETS, TICKETLINES "
                 + "LEFT OUTER JOIN PRODUCTS ON TICKETLINES.PRODUCT = PRODUCTS.ID "
                 + "LEFT OUTER JOIN TAXES ON TICKETLINES.TAXID = TAXES.ID  "
                 + "WHERE CUSTOMERS.ID = TICKETS.CUSTOMER AND TICKETLINES.PRODUCT = PRODUCTS.ID AND RECEIPTS.ID = TICKETS.ID AND TICKETS.ID = TICKETLINES.TICKET "
-                + "GROUP BY CUSTOMERS.NAME, RECEIPTS.DATENEW, TICKETS.TICKETID, PRODUCTS.NAME, TICKETS.TICKETTYPE "
+                + "GROUP BY CUSTOMERS.NAME, CUSTOMERS.TAXID,RECEIPTS.DATENEW, TICKETS.TICKETID, PRODUCTS.NAME, TICKETS.TICKETTYPE "
+                + "ORDER BY RECEIPTS.DATENEW DESC, PRODUCTS.NAME",
+                null,
+                CustomerTransaction.getSerializerRead()).list();
+    }
+    
+    /**
+     *
+     * @return
+     * @throws BasicException
+     */
+        @SuppressWarnings("unchecked")
+    public final List<CustomerTransaction> getTransactionsByCustomer(String name, String accountId) throws BasicException {
+        return new PreparedSentence(s,               
+                "SELECT TICKETS.TICKETID, PRODUCTS.NAME AS PNAME, "
+                + "SUM(TICKETLINES.UNITS) AS UNITS, "
+                + "SUM(TICKETLINES.UNITS * TICKETLINES.PRICE) AS AMOUNT, "
+                + "SUM(TICKETLINES.UNITS * TICKETLINES.PRICE * (1.0 + TAXES.RATE)) AS TOTAL, "
+                + "RECEIPTS.DATENEW, CUSTOMERS.NAME AS CNAME, CUSTOMERS.TAXID as ACCOUNTID "
+                + "FROM RECEIPTS, CUSTOMERS, TICKETS, TICKETLINES "
+                + "LEFT OUTER JOIN PRODUCTS ON TICKETLINES.PRODUCT = PRODUCTS.ID "
+                + "LEFT OUTER JOIN TAXES ON TICKETLINES.TAXID = TAXES.ID  "
+                + "WHERE CUSTOMERS.ID = TICKETS.CUSTOMER AND TICKETLINES.PRODUCT = PRODUCTS.ID AND RECEIPTS.ID = TICKETS.ID AND TICKETS.ID = TICKETLINES.TICKET "
+                + "AND CUSTOMERS.NAME = '"+name+"' AND CUSTOMERS.TAXID = '"+accountId+"' "
+                + "GROUP BY CUSTOMERS.NAME, CUSTOMERS.TAXID, RECEIPTS.DATENEW, TICKETS.TICKETID, PRODUCTS.NAME, TICKETS.TICKETTYPE "
                 + "ORDER BY RECEIPTS.DATENEW DESC, PRODUCTS.NAME",
                 null,
                 CustomerTransaction.getSerializerRead()).list();

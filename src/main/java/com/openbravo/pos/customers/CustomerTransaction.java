@@ -44,6 +44,7 @@ public class CustomerTransaction {
     Double total;
     Date transactionDate;
     String customerName;
+    String accountId;
 
     /**
      * Main method to return all customer's transactions 
@@ -61,7 +62,7 @@ public class CustomerTransaction {
      * @param transactionDate
      * @param name
      */
-    public CustomerTransaction(String ticketId, String productName, String unit, Double amount, Double total, Date transactionDate, String name) {
+    public CustomerTransaction(String ticketId, String productName, String unit, Double amount, Double total, Date transactionDate, String name, String accountId) {
         this.ticketId = ticketId;
         this.productName = productName;
         this.unit = unit;
@@ -69,6 +70,7 @@ public class CustomerTransaction {
         this.total = total;
         this.transactionDate = transactionDate;
         this.customerName = name;
+        this.accountId=accountId;
     }
 
     /**
@@ -200,6 +202,7 @@ public class CustomerTransaction {
                 Double total = dr.getDouble(5);
                 String dateValue = dr.getString(6);
                 String customerName = dr.getString(7);
+                String accountId = dr.getString(8);
 
 
                 SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
@@ -209,7 +212,7 @@ public class CustomerTransaction {
                 } catch (ParseException ex) {
                     Logger.getLogger(DataLogicSales.class.getName()).log(Level.SEVERE, null, ex);
                 }
-                return new CustomerTransaction(ticketId, productName, unit, amount, total, date, customerName);
+                return new CustomerTransaction(ticketId, productName, unit, amount, total, date, customerName, accountId);
             }
         };
     }
