@@ -244,52 +244,46 @@ System.out.println(l.getVariant());
 
         jPanel1.setPreferredSize(new java.awt.Dimension(600, 400));
 
-        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.locale")); // NOI18N
 
-        jcboLocale.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboLocale.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.integer")); // NOI18N
 
         jcboInteger.setEditable(true);
-        jcboInteger.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboInteger.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.double")); // NOI18N
 
         jcboDouble.setEditable(true);
-        jcboDouble.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboDouble.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.currency")); // NOI18N
 
         jcboCurrency.setEditable(true);
-        jcboCurrency.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboCurrency.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.percent")); // NOI18N
 
         jcboPercent.setEditable(true);
-        jcboPercent.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboPercent.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText(AppLocal.getIntString("label.date")); // NOI18N
 
         jcboDate.setEditable(true);
-        jcboDate.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboDate.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText(AppLocal.getIntString("label.time")); // NOI18N
 
         jcboTime.setEditable(true);
-        jcboTime.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboTime.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("label.datetime")); // NOI18N
 
         jcboDatetime.setEditable(true);
-        jcboDatetime.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboDatetime.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -367,7 +361,7 @@ System.out.println(l.getVariant());
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jcboDatetime, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(147, Short.MAX_VALUE))
+                .addContainerGap(148, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);

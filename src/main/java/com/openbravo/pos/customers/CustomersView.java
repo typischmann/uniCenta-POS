@@ -636,35 +636,25 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         txtTurnover = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
 
-        jLabel7.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel7.setText(AppLocal.getIntString("label.taxid")); // NOI18N
         jLabel7.setMaximumSize(new java.awt.Dimension(140, 25));
         jLabel7.setMinimumSize(new java.awt.Dimension(140, 25));
         jLabel7.setPreferredSize(new java.awt.Dimension(140, 25));
 
-        m_jTaxID.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("label.searchkey")); // NOI18N
 
-        m_jSearchkey.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.name")); // NOI18N
         jLabel3.setMaximumSize(new java.awt.Dimension(140, 25));
         jLabel3.setMinimumSize(new java.awt.Dimension(140, 25));
         jLabel3.setPreferredSize(new java.awt.Dimension(140, 25));
 
-        m_jName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel5.setText(AppLocal.getIntString("label.card")); // NOI18N
         jLabel5.setMaximumSize(new java.awt.Dimension(140, 25));
         jLabel5.setMinimumSize(new java.awt.Dimension(140, 25));
         jLabel5.setPreferredSize(new java.awt.Dimension(140, 25));
 
         jcard.setEditable(false);
-        jcard.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jcard.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/encrypted.png"))); // NOI18N
         jButton2.setToolTipText("Create Key");
@@ -688,47 +678,37 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
             }
         });
 
-        jLabel9.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel9.setText(AppLocal.getIntString("label.custtaxcategory")); // NOI18N
         jLabel9.setMaximumSize(new java.awt.Dimension(140, 25));
         jLabel9.setMinimumSize(new java.awt.Dimension(140, 25));
         jLabel9.setPreferredSize(new java.awt.Dimension(140, 25));
 
-        m_jCategory.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.visible")); // NOI18N
         jLabel4.setMaximumSize(new java.awt.Dimension(140, 25));
         jLabel4.setMinimumSize(new java.awt.Dimension(140, 25));
         jLabel4.setPreferredSize(new java.awt.Dimension(140, 25));
 
-        m_jVisible.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        m_jVisible.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("label.maxdebt")); // NOI18N
         jLabel1.setMaximumSize(new java.awt.Dimension(140, 25));
         jLabel1.setMinimumSize(new java.awt.Dimension(140, 25));
         jLabel1.setPreferredSize(new java.awt.Dimension(140, 25));
 
-        txtMaxdebt.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         txtMaxdebt.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.curdebt")); // NOI18N
         jLabel2.setMaximumSize(new java.awt.Dimension(140, 25));
         jLabel2.setMinimumSize(new java.awt.Dimension(140, 25));
         jLabel2.setPreferredSize(new java.awt.Dimension(140, 25));
 
         txtCurdebt.setEditable(false);
-        txtCurdebt.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         txtCurdebt.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
 
-        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText(AppLocal.getIntString("label.curdate")); // NOI18N
 
         txtCurdate.setEditable(false);
-        txtCurdate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         txtCurdate.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtCurdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -736,45 +716,27 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
             }
         });
 
-        jTabbedPane1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTabbedPane1.addPropertyChangeListener(new java.beans.PropertyChangeListener() {
             public void propertyChange(java.beans.PropertyChangeEvent evt) {
                 jTabbedPane1PropertyChange(evt);
             }
         });
 
-        jPanel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jPanel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        jLabel19.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel19.setText(AppLocal.getIntString("label.firstname")); // NOI18N
         jLabel19.setAlignmentX(0.5F);
 
-        txtFirstName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel15.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel15.setText(AppLocal.getIntString("label.lastname")); // NOI18N
 
-        txtLastName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel16.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel16.setText(AppLocal.getIntString("label.email")); // NOI18N
 
-        txtEmail.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel17.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel17.setText(AppLocal.getIntString("label.phone")); // NOI18N
 
-        txtPhone.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel18.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel18.setText(AppLocal.getIntString("label.phone2")); // NOI18N
 
-        txtPhone2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel14.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel14.setText(AppLocal.getIntString("label.fax")); // NOI18N
 
-        txtFax.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         txtFax.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtFaxActionPerformed(evt);
@@ -844,35 +806,19 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
 
         jTabbedPane1.addTab(AppLocal.getIntString("label.contact"), jPanel1); // NOI18N
 
-        jLabel13.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel13.setText(AppLocal.getIntString("label.address")); // NOI18N
 
-        txtAddress.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel20.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel20.setText(AppLocal.getIntString("label.country")); // NOI18N
 
-        txtCountry.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel21.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel21.setText(AppLocal.getIntString("label.address2")); // NOI18N
 
-        txtAddress2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel22.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel22.setText(AppLocal.getIntString("label.postal")); // NOI18N
 
-        txtPostal.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        txtPostal.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        jLabel23.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel23.setText(AppLocal.getIntString("label.city")); // NOI18N
 
-        txtCity.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
-
-        jLabel24.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel24.setText(AppLocal.getIntString("label.region")); // NOI18N
-
-        txtRegion.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -930,9 +876,8 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
 
         jTabbedPane1.addTab(AppLocal.getIntString("label.location"), jPanel2); // NOI18N
 
-        jPanel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jPanel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        jTable1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
@@ -974,7 +919,7 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
         jTabbedPane1.addTab(bundle.getString("label.Transactions"), jPanel4); // NOI18N
 
-        m_jImage.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        m_jImage.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -995,7 +940,7 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
 
         jTabbedPane1.addTab(bundle.getString("label.photo"), jPanel5); // NOI18N
 
-        m_jNotes.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        m_jNotes.setFont(new java.awt.Font("宋体", 0, 12)); // NOI18N
         jScrollPane1.setViewportView(m_jNotes);
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -1018,7 +963,6 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
         jTabbedPane1.addTab(AppLocal.getIntString("label.notes"), jPanel3); // NOI18N
 
         txtTurnover.setEditable(false);
-        txtTurnover.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         txtTurnover.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         txtTurnover.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1026,7 +970,6 @@ public final class CustomersView extends javax.swing.JPanel implements EditorRec
             }
         });
 
-        jLabel10.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText(AppLocal.getIntString("label.customerTotalSales")); // NOI18N
 

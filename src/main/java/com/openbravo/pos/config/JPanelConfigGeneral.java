@@ -246,33 +246,29 @@ public class JPanelConfigGeneral extends javax.swing.JPanel implements PanelConf
         jbtnLogoText = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
 
-        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         setPreferredSize(new java.awt.Dimension(650, 450));
 
         jPanel11.setPreferredSize(new java.awt.Dimension(650, 450));
 
-        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("Label.MachineName")); // NOI18N
         jLabel1.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.looknfeel")); // NOI18N
         jLabel2.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("Label.MachineScreen")); // NOI18N
         jLabel3.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("Label.Ticketsbag")); // NOI18N
         jLabel4.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jtxtMachineHostname.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jtxtMachineHostname.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jtxtMachineHostname.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jtxtMachineHostname.setMinimumSize(new java.awt.Dimension(130, 25));
         jtxtMachineHostname.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jcboLAF.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboLAF.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcboLAF.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboLAF.setPreferredSize(new java.awt.Dimension(200, 30));
         jcboLAF.addActionListener(new java.awt.event.ActionListener() {
@@ -281,15 +277,14 @@ public class JPanelConfigGeneral extends javax.swing.JPanel implements PanelConf
             }
         });
 
-        jcboMachineScreenmode.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboMachineScreenmode.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcboMachineScreenmode.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboMachineScreenmode.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jcboTicketsBag.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboTicketsBag.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcboTicketsBag.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         jcboTicketsBag.setPreferredSize(new java.awt.Dimension(200, 30));
 
-        jchkHideInfo.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
         jchkHideInfo.setText(bundle.getString("label.Infopanel")); // NOI18N
         jchkHideInfo.setToolTipText("");
@@ -304,10 +299,9 @@ public class JPanelConfigGeneral extends javax.swing.JPanel implements PanelConf
             }
         });
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.startuppanel"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.startuppanel"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         jPanel1.setLayout(null);
 
-        jLabel18.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel18.setText(bundle.getString("label.startuplogo")); // NOI18N
         jLabel18.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabel18.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -315,14 +309,13 @@ public class JPanelConfigGeneral extends javax.swing.JPanel implements PanelConf
         jPanel1.add(jLabel18);
         jLabel18.setBounds(10, 20, 90, 30);
 
-        jtxtStartupLogo.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jtxtStartupLogo.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jtxtStartupLogo.setMaximumSize(new java.awt.Dimension(0, 25));
         jtxtStartupLogo.setMinimumSize(new java.awt.Dimension(0, 0));
         jtxtStartupLogo.setPreferredSize(new java.awt.Dimension(350, 30));
         jPanel1.add(jtxtStartupLogo);
         jtxtStartupLogo.setBounds(110, 20, 350, 30);
 
-        jLabel19.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel19.setText(AppLocal.getIntString("label.startuptext")); // NOI18N
         jLabel19.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabel19.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -330,7 +323,7 @@ public class JPanelConfigGeneral extends javax.swing.JPanel implements PanelConf
         jPanel1.add(jLabel19);
         jLabel19.setBounds(10, 60, 70, 25);
 
-        jtxtStartupText.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jtxtStartupText.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jtxtStartupText.setMaximumSize(new java.awt.Dimension(0, 25));
         jtxtStartupText.setMinimumSize(new java.awt.Dimension(0, 0));
         jtxtStartupText.setPreferredSize(new java.awt.Dimension(350, 30));
@@ -361,7 +354,7 @@ public class JPanelConfigGeneral extends javax.swing.JPanel implements PanelConf
         jPanel1.add(jbtnLogoText);
         jbtnLogoText.setBounds(480, 60, 64, 32);
 
-        jButton1.setFont(new java.awt.Font("MS Song", 1, 12)); // NOI18N
+        jButton1.setFont(new java.awt.Font("宋体", 1, 12)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 0, 153));
         jButton1.setText("X");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -370,7 +363,7 @@ public class JPanelConfigGeneral extends javax.swing.JPanel implements PanelConf
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(60, 63, 40, 23);
+        jButton1.setBounds(60, 63, 40, 25);
 
         javax.swing.GroupLayout jPanel11Layout = new javax.swing.GroupLayout(jPanel11);
         jPanel11.setLayout(jPanel11Layout);

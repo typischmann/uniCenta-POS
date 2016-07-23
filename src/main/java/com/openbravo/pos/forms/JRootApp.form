@@ -255,9 +255,9 @@
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridLayout">
                             <Property name="columns" type="int" value="1"/>
+                            <Property name="verticalGap" type="int" value="5"/>
                             <Property name="horizontalGap" type="int" value="5"/>
                             <Property name="rows" type="int" value="0"/>
-                            <Property name="verticalGap" type="int" value="5"/>
                           </Layout>
                         </Container>
                       </SubComponents>
@@ -326,9 +326,6 @@
                     </Component>
                     <Component class="javax.swing.JButton" name="m_jClose">
                       <Properties>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Arial" size="12" style="0"/>
-                        </Property>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                           <Image iconType="3" name="/com/openbravo/images/exit.png"/>
                         </Property>

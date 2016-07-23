@@ -187,7 +187,6 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
             }
         });
 
-        jLabel18.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel18.setText(AppLocal.getIntString("label.dbdriverlib")); // NOI18N
 
         jtxtDbDriverLib.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -198,7 +197,6 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
         jbtnDbDriverLib.setMinimumSize(new java.awt.Dimension(64, 32));
         jbtnDbDriverLib.setPreferredSize(new java.awt.Dimension(64, 40));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel1.setText(AppLocal.getIntString("Label.DbDriver")); // NOI18N
 
         jtxtDbDriver.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -214,17 +212,14 @@ public class JPanelConfigDatabase extends javax.swing.JPanel implements PanelCon
         jtxtDbURL.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jtxtDbURL.setPreferredSize(new java.awt.Dimension(450, 25));
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("Label.DbUser")); // NOI18N
 
         jtxtDbUser.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("Label.DbPassword")); // NOI18N
 
         jtxtDbPassword.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
 
-        jButtonTest.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jButtonTest.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/database.png"))); // NOI18N
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
         jButtonTest.setText(bundle.getString("Button.Test")); // NOI18N

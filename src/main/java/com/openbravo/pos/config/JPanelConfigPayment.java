@@ -147,19 +147,18 @@ public class JPanelConfigPayment extends javax.swing.JPanel implements PanelConf
         jLabel11 = new javax.swing.JLabel();
         jcboCardReader = new javax.swing.JComboBox();
 
-        setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         setPreferredSize(new java.awt.Dimension(600, 450));
 
-        jPanel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jPanel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanel2.setPreferredSize(new java.awt.Dimension(500, 200));
         jPanel2.setLayout(new java.awt.GridLayout(1, 1));
 
-        jLabel13.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel13.setText(AppLocal.getIntString("label.paymentgateway")); // NOI18N
         jLabel13.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jLabel13.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jcboPaymentGateway.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboPaymentGateway.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcboPaymentGateway.setPreferredSize(new java.awt.Dimension(200, 30));
         jcboPaymentGateway.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -167,16 +166,15 @@ public class JPanelConfigPayment extends javax.swing.JPanel implements PanelConf
             }
         });
 
-        jchkPaymentTest.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jchkPaymentTest.setText(AppLocal.getIntString("label.paymenttestmode")); // NOI18N
         jchkPaymentTest.setPreferredSize(new java.awt.Dimension(80, 30));
 
-        jLabel11.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel11.setText(AppLocal.getIntString("label.magcardreader")); // NOI18N
         jLabel11.setHorizontalTextPosition(javax.swing.SwingConstants.LEFT);
         jLabel11.setPreferredSize(new java.awt.Dimension(100, 30));
 
-        jcboCardReader.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jcboCardReader.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jcboCardReader.setPreferredSize(new java.awt.Dimension(200, 30));
         jcboCardReader.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

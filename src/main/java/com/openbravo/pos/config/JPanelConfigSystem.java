@@ -195,10 +195,10 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         setPreferredSize(new java.awt.Dimension(650, 450));
 
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
-        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.autologoffpanel"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
+        jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.autologoffpanel"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         jPanel2.setLayout(null);
 
-        jchkAutoLogoff.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jchkAutoLogoff.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jchkAutoLogoff.setText(bundle.getString("label.autologonoff")); // NOI18N
         jchkAutoLogoff.setMaximumSize(new java.awt.Dimension(0, 25));
         jchkAutoLogoff.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -211,7 +211,6 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel2.add(jchkAutoLogoff);
         jchkAutoLogoff.setBounds(10, 20, 190, 25);
 
-        jchkAutoLogoffToTables.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jchkAutoLogoffToTables.setText(bundle.getString("label.autoloffrestaurant")); // NOI18N
         jchkAutoLogoffToTables.setMaximumSize(new java.awt.Dimension(0, 25));
         jchkAutoLogoffToTables.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -219,7 +218,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel2.add(jchkAutoLogoffToTables);
         jchkAutoLogoffToTables.setBounds(200, 20, 260, 25);
 
-        jTextAutoLogoffTime.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jTextAutoLogoffTime.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextAutoLogoffTime.setText("0");
         jTextAutoLogoffTime.setMaximumSize(new java.awt.Dimension(0, 25));
         jTextAutoLogoffTime.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -227,7 +226,6 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel2.add(jTextAutoLogoffTime);
         jTextAutoLogoffTime.setBounds(200, 50, 50, 25);
 
-        jLabelInactiveTime.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabelInactiveTime.setText(bundle.getString("label.autolofftime")); // NOI18N
         jLabelInactiveTime.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabelInactiveTime.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -235,7 +233,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel2.add(jLabelInactiveTime);
         jLabelInactiveTime.setBounds(30, 50, 170, 25);
 
-        jLabelTimedMessage.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabelTimedMessage.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabelTimedMessage.setText(bundle.getString("label.autologoffzero")); // NOI18N
         jLabelTimedMessage.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabelTimedMessage.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -243,10 +241,10 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel2.add(jLabelTimedMessage);
         jLabelTimedMessage.setBounds(260, 50, 190, 25);
 
-        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.tabledisplayoptions"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
+        jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.tabledisplayoptions"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         jPanel3.setLayout(null);
 
-        jchkShowCustomerDetails.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jchkShowCustomerDetails.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jchkShowCustomerDetails.setText(bundle.getString("label.tableshowcustomerdetails")); // NOI18N
         jchkShowCustomerDetails.setMaximumSize(new java.awt.Dimension(0, 25));
         jchkShowCustomerDetails.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -254,7 +252,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel3.add(jchkShowCustomerDetails);
         jchkShowCustomerDetails.setBounds(10, 20, 220, 25);
 
-        jchkShowWaiterDetails.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jchkShowWaiterDetails.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jchkShowWaiterDetails.setText(bundle.getString("label.tableshowwaiterdetails")); // NOI18N
         jchkShowWaiterDetails.setMaximumSize(new java.awt.Dimension(0, 25));
         jchkShowWaiterDetails.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -262,7 +260,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel3.add(jchkShowWaiterDetails);
         jchkShowWaiterDetails.setBounds(10, 60, 220, 23);
 
-        jLabelCustomerTextColour.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabelCustomerTextColour.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabelCustomerTextColour.setText(bundle.getString("label.textcolourcustomer")); // NOI18N
         jLabelCustomerTextColour.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabelCustomerTextColour.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -270,7 +268,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel3.add(jLabelCustomerTextColour);
         jLabelCustomerTextColour.setBounds(240, 20, 130, 25);
 
-        jCustomerColour.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jCustomerColour.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jCustomerColour.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "black", "blue", "grey", "green", "orange", "red", "white", "yellow" }));
         jCustomerColour.setMaximumSize(new java.awt.Dimension(0, 25));
         jCustomerColour.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -284,7 +282,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel3.add(jCustomerColour);
         jCustomerColour.setBounds(380, 20, 200, 30);
 
-        jLabelServerTextColour.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabelServerTextColour.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabelServerTextColour.setText(bundle.getString("label.textcolourwaiter")); // NOI18N
         jLabelServerTextColour.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabelServerTextColour.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -292,7 +290,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel3.add(jLabelServerTextColour);
         jLabelServerTextColour.setBounds(240, 60, 130, 25);
 
-        jWaiterColour.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jWaiterColour.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jWaiterColour.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "black", "blue", "grey", "green", "orange", "red", "white", "yellow" }));
         jWaiterColour.setMaximumSize(new java.awt.Dimension(0, 25));
         jWaiterColour.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -300,7 +298,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel3.add(jWaiterColour);
         jWaiterColour.setBounds(380, 60, 200, 30);
 
-        jLabelTableNameTextColour.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabelTableNameTextColour.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabelTableNameTextColour.setText(bundle.getString("label.textclourtablename")); // NOI18N
         jLabelTableNameTextColour.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabelTableNameTextColour.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -308,7 +306,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel3.add(jLabelTableNameTextColour);
         jLabelTableNameTextColour.setBounds(240, 100, 130, 30);
 
-        jTableNameColour.setFont(new java.awt.Font("MS Song", 0, 14)); // NOI18N
+        jTableNameColour.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jTableNameColour.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "black", "blue", "grey", "green", "orange", "red", "white", "yellow" }));
         jTableNameColour.setMaximumSize(new java.awt.Dimension(0, 25));
         jTableNameColour.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -316,10 +314,10 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel3.add(jTableNameColour);
         jTableNameColour.setBounds(380, 100, 200, 30);
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.general"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
+        jPanel4.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.general"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         jPanel4.setLayout(null);
 
-        jMarineOpt.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jMarineOpt.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jMarineOpt.setText(bundle.getString("label.marine")); // NOI18N
         jMarineOpt.setMaximumSize(new java.awt.Dimension(0, 25));
         jMarineOpt.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -327,7 +325,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel4.add(jMarineOpt);
         jMarineOpt.setBounds(10, 20, 180, 30);
 
-        jCloseCashbtn.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jCloseCashbtn.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jCloseCashbtn.setText(bundle.getString("message.systemclosecash")); // NOI18N
         jCloseCashbtn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jCloseCashbtn.setMaximumSize(new java.awt.Dimension(0, 25));
@@ -336,7 +334,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel4.add(jCloseCashbtn);
         jCloseCashbtn.setBounds(210, 20, 180, 30);
 
-        jCheckPrice00.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jCheckPrice00.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jCheckPrice00.setText(bundle.getString("label.pricewith00")); // NOI18N
         jCheckPrice00.setToolTipText("");
         jCheckPrice00.setMaximumSize(new java.awt.Dimension(0, 25));
@@ -350,7 +348,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel4.add(jCheckPrice00);
         jCheckPrice00.setBounds(410, 20, 180, 30);
 
-        jchkTextOverlay.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jchkTextOverlay.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jchkTextOverlay.setText(bundle.getString("label.currencybutton")); // NOI18N
         jchkTextOverlay.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jchkTextOverlay.setMaximumSize(new java.awt.Dimension(0, 25));
@@ -359,7 +357,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel4.add(jchkTextOverlay);
         jchkTextOverlay.setBounds(10, 50, 180, 30);
 
-        jTaxIncluded.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jTaxIncluded.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTaxIncluded.setText(bundle.getString("label.taxincluded")); // NOI18N
         jTaxIncluded.setMaximumSize(new java.awt.Dimension(0, 25));
         jTaxIncluded.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -367,7 +365,7 @@ public class JPanelConfigSystem extends javax.swing.JPanel implements PanelConfi
         jPanel4.add(jTaxIncluded);
         jTaxIncluded.setBounds(210, 50, 180, 30);
 
-        jMoveAMountBoxToTop.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jMoveAMountBoxToTop.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jMoveAMountBoxToTop.setText(bundle.getString("label.inputamount")); // NOI18N
         jMoveAMountBoxToTop.setMaximumSize(new java.awt.Dimension(0, 25));
         jMoveAMountBoxToTop.setMinimumSize(new java.awt.Dimension(0, 0));

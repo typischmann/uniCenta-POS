@@ -220,7 +220,6 @@ public class JPanelConfiguration extends JPanel implements JPanelView {
         setMinimumSize(new java.awt.Dimension(0, 0));
         setPreferredSize(new java.awt.Dimension(750, 500));
 
-        jTabbedPane1.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(730, 450));
 
         jPanelDatabase.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
@@ -258,7 +257,6 @@ public class JPanelConfiguration extends JPanel implements JPanelView {
         jPanelTicketSetup.setLayout(new javax.swing.BoxLayout(jPanelTicketSetup, javax.swing.BoxLayout.LINE_AXIS));
         jTabbedPane1.addTab("票据设置", jPanelTicketSetup);
 
-        jbtnRestore.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jbtnRestore.setText(AppLocal.getIntString("Button.Factory")); // NOI18N
         jbtnRestore.setMaximumSize(new java.awt.Dimension(103, 33));
         jbtnRestore.setMinimumSize(new java.awt.Dimension(103, 33));
@@ -269,7 +267,6 @@ public class JPanelConfiguration extends JPanel implements JPanelView {
             }
         });
 
-        jbtnExit.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jbtnExit.setText(AppLocal.getIntString("Button.Exit")); // NOI18N
         jbtnExit.setMaximumSize(new java.awt.Dimension(70, 33));
         jbtnExit.setMinimumSize(new java.awt.Dimension(70, 33));
@@ -280,7 +277,6 @@ public class JPanelConfiguration extends JPanel implements JPanelView {
             }
         });
 
-        jbtnSave.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jbtnSave.setText(AppLocal.getIntString("Button.Save")); // NOI18N
         jbtnSave.setMaximumSize(new java.awt.Dimension(70, 33));
         jbtnSave.setMinimumSize(new java.awt.Dimension(70, 33));

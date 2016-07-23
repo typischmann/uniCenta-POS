@@ -316,7 +316,6 @@ public class JTicketsBagTicket extends JTicketsBag {
 
         m_jButtons.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.LEFT));
 
-        m_jTicketId.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         m_jTicketId.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         m_jTicketId.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(javax.swing.UIManager.getDefaults().getColor("Button.darkShadow")), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
         m_jTicketId.setOpaque(true);
@@ -477,7 +476,7 @@ public class JTicketsBagTicket extends JTicketsBag {
         jPanel3.add(jPanel4, java.awt.BorderLayout.NORTH);
 
         buttonGroup1.add(jrbSales);
-        jrbSales.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jrbSales.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
         jrbSales.setText(AppLocal.getIntString("label.sales")); // NOI18N
         jrbSales.setToolTipText("Show Sales Only");
         jrbSales.setFocusPainted(false);
@@ -486,7 +485,7 @@ public class JTicketsBagTicket extends JTicketsBag {
         jPanel1.add(jrbSales);
 
         buttonGroup1.add(jrbRefunds);
-        jrbRefunds.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        jrbRefunds.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
         jrbRefunds.setForeground(new java.awt.Color(255, 0, 0));
         jrbRefunds.setText(AppLocal.getIntString("label.refunds")); // NOI18N
         jrbRefunds.setToolTipText("Show Refunds Only");

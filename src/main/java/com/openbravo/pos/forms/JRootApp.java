@@ -911,7 +911,6 @@ public class JRootApp extends JPanel implements AppView {
             }
         });
 
-        m_jClose.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         m_jClose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/exit.png"))); // NOI18N
         m_jClose.setText(AppLocal.getIntString("Button.Close")); // NOI18N
         m_jClose.setFocusPainted(false);

@@ -189,12 +189,11 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         setLayout(null);
 
         java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("pos_messages"); // NOI18N
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.configreceipt"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
-        jPanel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.configreceipt"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         jPanel1.setLayout(null);
 
-        jReceiptSize.setFont(new java.awt.Font("MS Song", 0, 18)); // NOI18N
-        jReceiptSize.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(0), Integer.valueOf(0), null, Integer.valueOf(1)));
+        jReceiptSize.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jReceiptSize.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jReceiptSize.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 jReceiptSizeStateChanged(evt);
@@ -203,13 +202,12 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         jPanel1.add(jReceiptSize);
         jReceiptSize.setBounds(190, 20, 50, 40);
 
-        jLabel1.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel1.setText(bundle.getString("Label.ticketsetupnumber")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(10, 20, 160, 40);
 
-        jTextReceiptPrefix.setFont(new java.awt.Font("MS Song", 0, 18)); // NOI18N
+        jTextReceiptPrefix.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jTextReceiptPrefix.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jTextReceiptPrefix.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -219,25 +217,24 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         jPanel1.add(jTextReceiptPrefix);
         jTextReceiptPrefix.setBounds(380, 20, 80, 40);
 
-        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(bundle.getString("Label.ticketsetupprefix")); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(250, 20, 130, 40);
 
-        jTicketExample.setFont(new java.awt.Font("MS Song", 0, 18)); // NOI18N
+        jTicketExample.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jTicketExample.setText("1");
         jTicketExample.setDisabledTextColor(new java.awt.Color(0, 0, 0));
         jTicketExample.setEnabled(false);
         jPanel1.add(jTicketExample);
         jTicketExample.setBounds(510, 20, 170, 40);
 
-        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabel2.setText(bundle.getString("label.pickupcodesize")); // NOI18N
         jPanel1.add(jLabel2);
         jLabel2.setBounds(10, 70, 160, 40);
 
-        jPickupSize.setFont(new java.awt.Font("MS Song", 0, 18)); // NOI18N
-        jPickupSize.setModel(new javax.swing.SpinnerNumberModel(Integer.valueOf(0), Integer.valueOf(0), null, Integer.valueOf(1)));
+        jPickupSize.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
+        jPickupSize.setModel(new javax.swing.SpinnerNumberModel(0, 0, null, 1));
         jPickupSize.setToolTipText("");
         jPickupSize.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -247,7 +244,6 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         jPanel1.add(jPickupSize);
         jPickupSize.setBounds(190, 70, 50, 40);
 
-        m_jReceiptPrintOff.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         m_jReceiptPrintOff.setText(bundle.getString("label.receiptprint")); // NOI18N
         m_jReceiptPrintOff.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -260,11 +256,9 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         add(jPanel1);
         jPanel1.setBounds(10, 10, 730, 160);
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.SChargepanel"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("MS Song", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
-        jPanel5.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createEtchedBorder(), bundle.getString("label.SChargepanel"), javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 1, 12), new java.awt.Color(102, 102, 102))); // NOI18N
         jPanel5.setLayout(null);
 
-        jchkSCOnOff.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jchkSCOnOff.setText(bundle.getString("label.SCOnOff")); // NOI18N
         jchkSCOnOff.setMaximumSize(new java.awt.Dimension(0, 25));
         jchkSCOnOff.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -277,7 +271,6 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         jPanel5.add(jchkSCOnOff);
         jchkSCOnOff.setBounds(10, 20, 190, 25);
 
-        jchkSCRestaurant.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jchkSCRestaurant.setText(bundle.getString("label.SCRestaurant")); // NOI18N
         jchkSCRestaurant.setMaximumSize(new java.awt.Dimension(0, 25));
         jchkSCRestaurant.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -285,7 +278,7 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         jPanel5.add(jchkSCRestaurant);
         jchkSCRestaurant.setBounds(200, 20, 160, 25);
 
-        jTextSCRate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jTextSCRate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jTextSCRate.setText("0");
         jTextSCRate.setMaximumSize(new java.awt.Dimension(0, 25));
         jTextSCRate.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -293,7 +286,6 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         jPanel5.add(jTextSCRate);
         jTextSCRate.setBounds(170, 50, 50, 25);
 
-        jLabelSCRate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabelSCRate.setText(bundle.getString("label.SCRate")); // NOI18N
         jLabelSCRate.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabelSCRate.setMinimumSize(new java.awt.Dimension(0, 0));
@@ -301,7 +293,7 @@ public class JPanelTicketSetup extends javax.swing.JPanel implements PanelConfig
         jPanel5.add(jLabelSCRate);
         jLabelSCRate.setBounds(10, 50, 150, 25);
 
-        jLabelSCRatePerCent.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jLabelSCRatePerCent.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jLabelSCRatePerCent.setText(bundle.getString("label.SCZero")); // NOI18N
         jLabelSCRatePerCent.setMaximumSize(new java.awt.Dimension(0, 25));
         jLabelSCRatePerCent.setMinimumSize(new java.awt.Dimension(0, 0));
