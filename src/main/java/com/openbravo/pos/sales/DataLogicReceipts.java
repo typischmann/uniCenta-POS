@@ -87,6 +87,21 @@ public class DataLogicReceipts extends BeanFactoryDataSingle {
                 , new SerializerReadClass(FindTicketsInfo.class)).list();
     }
     
+     /**
+     *
+     * @return
+     * @throws BasicException
+     */
+    public final List<FindTicketsInfo> getSharedTicketListById(String id) throws BasicException {
+        
+        return (List<FindTicketsInfo>) new StaticSentence(s
+// JG 20 Aug 13 Bug Fix: invalid SQL string
+//                , "SELECT ID, NAME, CONTENT PICKUPID FROM SHAREDTICKETS ORDER BY ID"                
+                , "SELECT ID, NAME, CONTENT, PICKUPID FROM SHAREDTICKETS WHERE APPUSER = ? ORDER BY ID"
+                , SerializerWriteString.INSTANCE
+                , new SerializerReadClass(FindTicketsInfo.class)).list(id);
+    }
+    
     /**
      *
      * @param id
@@ -130,23 +145,25 @@ public class DataLogicReceipts extends BeanFactoryDataSingle {
             id, 
             ticket.getName(), 
             ticket, pickupid, 
-            ticket.getUser()
+            ticket.getUser().getId()
         };
         Datas[] datas;
         datas = new Datas[] {
             Datas.STRING, 
             Datas.STRING, 
             Datas.SERIALIZABLE, 
-            Datas.INT
+            Datas.INT,
+            Datas.STRING
         };
         new PreparedSentence(s
             , "INSERT INTO SHAREDTICKETS ("
                 + "ID, "
                 + "NAME, "
                 + "CONTENT, "
-                + "PICKUPID) "
-                + "VALUES (?, ?, ?, ?)"
-            , new SerializerWriteBasicExt(datas, new int[] {0, 1, 2, 3})).exec(values);
+                + "PICKUPID, "
+                + "APPUSER)"
+                + "VALUES (?, ?, ?, ?, ?)"
+            , new SerializerWriteBasicExt(datas, new int[] {0, 1, 2, 3, 4})).exec(values);
     }
     
     /**

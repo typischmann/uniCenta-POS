@@ -152,6 +152,7 @@ public class JTicketsBagSharedList extends javax.swing.JDialog {
 
         setTitle(AppLocal.getIntString("caption.tickets")); // NOI18N
         setPreferredSize(new java.awt.Dimension(400, 100));
+        getContentPane().setLayout(new java.awt.BorderLayout());
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jPanel1.setLayout(new java.awt.BorderLayout());
@@ -171,7 +172,7 @@ public class JTicketsBagSharedList extends javax.swing.JDialog {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
-        jPanel3.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.RIGHT));
+        jPanel3.setLayout(new java.awt.FlowLayout(2));
         jPanel3.add(jPanel4);
 
         m_jButtonCancel.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/openbravo/images/cancel.png"))); // NOI18N

@@ -82,7 +82,8 @@ public class DataLogicSales extends BeanFactoryDataSingle {
             Datas.STRING, 
             Datas.DOUBLE, 
             Datas.DOUBLE, 
-            Datas.STRING};
+            Datas.STRING,
+            Datas.INT};
 //JG Added final Datas.STRING to paymenttabledatas/
         paymenttabledatas = new Datas[] {
             Datas.STRING, 
@@ -1331,9 +1332,11 @@ public Object transact() throws BasicException {
             );
 
     final Integer status = (isWarehouse ? 1 : 0);
+    
+    final Integer locationCode = getLocationCodeById(location);
     // new ticket
     new PreparedSentence(s
-        , "INSERT INTO TICKETS (ID, TICKETTYPE, TICKETID, PERSON, CUSTOMER, STATUS) VALUES (?, ?, ?, ?, ?, ?)"
+        , "INSERT INTO TICKETS (ID, TICKETTYPE, TICKETID, PERSON, CUSTOMER, STATUS, LOCATION) VALUES (?, ?, ?, ?, ?, ?, ?)"
         , SerializerWriteParams.INSTANCE
         ).exec(new DataParams() {
             @Override
@@ -1344,6 +1347,7 @@ public Object transact() throws BasicException {
             setString(4, ticket.getUser().getId());
             setString(5, ticket.getCustomerId());
             setInt(6, status);
+            setInt(7, locationCode);
         }
     }
             );
@@ -1355,6 +1359,7 @@ public Object transact() throws BasicException {
     for (TicketLineInfo l : ticket.getLines()) {
 
         ticketlineinsert.exec(l);
+        Integer ticketLineId = findTicketLineId(ticket.getId(), l.getTicketLine());
         
 // JG 25.06.2011 if (l.getProductID() != null) //
         if (l.getProductID() != null && l.isProductService() != true)  {
@@ -1368,7 +1373,8 @@ public Object transact() throws BasicException {
                 location,
                 l.getProductID(),
                 l.getProductAttSetInstId(), -l.getMultiply(), l.getPrice(),
-                ticket.getUser().getName()                         
+                ticket.getUser().getName(),
+                ticketLineId
             });
         }
        
@@ -1458,8 +1464,9 @@ public Object transact() throws BasicException {
 
                 // update the inventory
                 Date d = new Date();
-                for (int i = 0; i < ticket.getLinesCount(); i++) {
+                for (int i = 0; i < ticket.getLinesCount(); i++) {                  
                     if (ticket.getLine(i).getProductID() != null)  {
+                        Integer ticketLineId = findTicketLineId(ticket.getId(), ticket.getLine(i).getTicketLine());
                         // Hay que actualizar el stock si el hay producto
                         getStockDiaryInsert().exec( new Object[] {
                             UUID.randomUUID().toString(),
@@ -1470,7 +1477,8 @@ public Object transact() throws BasicException {
                             location,
                             ticket.getLine(i).getProductID(),
                             ticket.getLine(i).getProductAttSetInstId(), ticket.getLine(i).getMultiply(), ticket.getLine(i).getPrice(),
-                            ticket.getUser().getName() 
+                            ticket.getUser().getName() ,
+                            ticketLineId
                         });
                     }
                 }
@@ -1549,6 +1557,14 @@ public Object transact() throws BasicException {
      */
     public final Integer getNextTicketPaymentIndex() throws BasicException {
         return (Integer) s.DB.getSequenceSentence(s, "TICKETSNUM_PAYMENT").find();
+    }
+    
+    public final Integer getLocationCodeById(String id) throws BasicException {
+        SentenceFind m_locationfindcode = new StaticSentence(s
+                , "SELECT CODE FROM LOCATIONS WHERE ID = ?"
+                , SerializerWriteString.INSTANCE
+                , SerializerReadInteger.INSTANCE);
+        return (Integer)m_locationfindcode.find(id);
     }
 
 // ADDED JG 20.12.10 ISKITCHEN - Kitchen Print + 25.06.2011 ISSERVICE - ISSERVICE
@@ -1782,6 +1798,7 @@ public Object transact() throws BasicException {
      *
      * @return
      */
+    
     public final SentenceExec getStockDiaryInsert() {
         return new SentenceExecTransaction(s) {
             @Override
@@ -1799,9 +1816,15 @@ public Object transact() throws BasicException {
                         , "INSERT INTO STOCKCURRENT (LOCATION, PRODUCT, ATTRIBUTESETINSTANCE_ID, UNITS) VALUES (?, ?, ?, ?)"
                         , new SerializerWriteBasicExt(stockdiaryDatas, new int[] {3, 4, 5, 6})).exec(params);
                 }
-                return new PreparedSentence(s
-                    , "INSERT INTO STOCKDIARY (ID, DATENEW, REASON, LOCATION, PRODUCT, ATTRIBUTESETINSTANCE_ID, UNITS, PRICE, AppUser) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"
-                    , new SerializerWriteBasicExt(stockdiaryDatas, new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8})).exec(params);
+                if(((Object[])params).length == 9){
+                    return new PreparedSentence(s
+                            , "INSERT INTO STOCKDIARY (ID, DATENEW, REASON, LOCATION, PRODUCT, ATTRIBUTESETINSTANCE_ID, UNITS, PRICE, AppUser) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"
+                            , new SerializerWriteBasicExt(stockdiaryDatas, new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8})).exec(params);             
+                }else{
+                    return new PreparedSentence(s
+                            , "INSERT INTO STOCKDIARY (ID, DATENEW, REASON, LOCATION, PRODUCT, ATTRIBUTESETINSTANCE_ID, UNITS, PRICE, AppUser, TICKETLINE) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+                            , new SerializerWriteBasicExt(stockdiaryDatas, new int[] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9})).exec(params);  
+                }
             }
         };
     }
@@ -1892,6 +1915,13 @@ public Object transact() throws BasicException {
 
         Double d = (Double) p.find(warehouse, id, attsetinstid);
         return d == null ? 0.0 : d;
+    }
+    
+    public final Integer findTicketLineId(String ticket, Integer line) throws BasicException {
+        PreparedSentence p = new PreparedSentence(s, "SELECT ID FROM TICKETLINES WHERE TICKET = ? AND LINE = ?",
+        new SerializerWriteBasic(Datas.STRING, Datas.INT), SerializerReadInteger.INSTANCE);
+        Integer id = (Integer)p.find(ticket, line);
+        return id;
     }
 
     /**

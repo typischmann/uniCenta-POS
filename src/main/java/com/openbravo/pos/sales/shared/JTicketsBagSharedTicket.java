@@ -275,7 +275,8 @@ public class JTicketsBagSharedTicket extends JTicketsBag {
             public void run() {
                 
                 try {
-                    List<FindTicketsInfo> l = dlReceipts.getSharedTicketList();
+                    List<FindTicketsInfo> l = dlReceipts.getSharedTicketListById(m_App.getAppUserView().getUser().getId());
+                    //List<FindTicketsInfo> l = dlReceipts.getSharedTicketList();
 //                    String itemCount = Integer.toString(l.size());
 //                    m_jListTickets.setText(itemCount);
 //                    m_jListTickets.setIcon(null);

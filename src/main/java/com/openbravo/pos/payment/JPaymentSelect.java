@@ -836,8 +836,9 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle(AppLocal.getIntString("payment.title")); // NOI18N
         setResizable(false);
+        getContentPane().setLayout(new java.awt.BorderLayout());
 
-        m_jLblTotalEuros1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        m_jLblTotalEuros1.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
         m_jLblTotalEuros1.setText(AppLocal.getIntString("label.totalcash")); // NOI18N
         jPanel4.add(m_jLblTotalEuros1);
 
@@ -849,9 +850,9 @@ public abstract class JPaymentSelect extends javax.swing.JDialog
         m_jPayTotal.setRequestFocusEnabled(false);
         jPanel4.add(m_jPayTotal);
 
-        jPanel6.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 0));
+        jPanel6.setLayout(new java.awt.FlowLayout(1, 5, 0));
 
-        m_jLblRemainingEuros.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
+        m_jLblRemainingEuros.setFont(new java.awt.Font("宋体", 1, 14)); // NOI18N
         m_jLblRemainingEuros.setText(AppLocal.getIntString("label.remainingcash")); // NOI18N
         jPanel6.add(m_jLblRemainingEuros);
 

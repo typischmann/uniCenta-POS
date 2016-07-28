@@ -40,7 +40,7 @@
         <Component class="javax.swing.JLabel" name="m_jLblTotalEuros1">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Arial" size="14" style="1"/>
+              <Font name="&#x5b8b;&#x4f53;" size="14" style="1"/>
             </Property>
             <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
               <ResourceString bundle="pos_messages.properties" key="label.totalcash" replaceFormat="AppLocal.getIntString(&quot;{key}&quot;)"/>
@@ -86,7 +86,7 @@
             <Component class="javax.swing.JLabel" name="m_jLblRemainingEuros">
               <Properties>
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                  <Font name="Arial" size="14" style="1"/>
+                  <Font name="&#x5b8b;&#x4f53;" size="14" style="1"/>
                 </Property>
                 <Property name="text" type="java.lang.String" editor="org.netbeans.modules.i18n.form.FormI18nStringEditor">
                   <ResourceString bundle="pos_messages.properties" key="label.remainingcash" replaceFormat="AppLocal.getIntString(&quot;{key}&quot;)"/>

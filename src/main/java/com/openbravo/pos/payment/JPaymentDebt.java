@@ -181,9 +181,7 @@ public class JPaymentDebt extends javax.swing.JPanel implements JPaymentInterfac
         jlblMessage = new javax.swing.JTextArea();
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        m_jKeys = new com.openbravo.editor.JEditorKeys();
         jPanel3 = new javax.swing.JPanel();
-        m_jTendered = new com.openbravo.editor.JEditorCurrencyPositive();
 
         setLayout(new java.awt.BorderLayout());
 
@@ -191,13 +189,12 @@ public class JPaymentDebt extends javax.swing.JPanel implements JPaymentInterfac
 
         jPanel4.setLayout(null);
 
-        jLabel8.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("label.debt")); // NOI18N
         jPanel4.add(jLabel8);
         jLabel8.setBounds(20, 20, 100, 25);
 
         m_jMoneyEuros.setBackground(new java.awt.Color(204, 255, 51));
-        m_jMoneyEuros.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
+        m_jMoneyEuros.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         m_jMoneyEuros.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         m_jMoneyEuros.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(javax.swing.UIManager.getDefaults().getColor("Button.darkShadow")), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
         m_jMoneyEuros.setOpaque(true);
@@ -205,57 +202,52 @@ public class JPaymentDebt extends javax.swing.JPanel implements JPaymentInterfac
         jPanel4.add(m_jMoneyEuros);
         m_jMoneyEuros.setBounds(120, 20, 200, 30);
 
-        jLabel3.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel3.setText(AppLocal.getIntString("label.name")); // NOI18N
         jPanel4.add(jLabel3);
         jLabel3.setBounds(20, 60, 100, 25);
 
         m_jName.setEditable(false);
-        m_jName.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        m_jName.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jPanel4.add(m_jName);
         m_jName.setBounds(120, 60, 200, 25);
 
-        jLabel12.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel12.setText(AppLocal.getIntString("label.notes")); // NOI18N
         jPanel4.add(jLabel12);
         jLabel12.setBounds(20, 90, 100, 25);
 
-        jLabel2.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel2.setText(AppLocal.getIntString("label.maxdebt")); // NOI18N
         jPanel4.add(jLabel2);
         jLabel2.setBounds(20, 150, 100, 25);
 
         txtMaxdebt.setEditable(false);
-        txtMaxdebt.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        txtMaxdebt.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtMaxdebt.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jPanel4.add(txtMaxdebt);
         txtMaxdebt.setBounds(120, 150, 130, 25);
 
-        jLabel4.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel4.setText(AppLocal.getIntString("label.curdebt")); // NOI18N
         jPanel4.add(jLabel4);
         jLabel4.setBounds(20, 180, 100, 25);
 
         txtCurdebt.setEditable(false);
-        txtCurdebt.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        txtCurdebt.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtCurdebt.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
         jPanel4.add(txtCurdebt);
         txtCurdebt.setBounds(120, 180, 130, 25);
 
-        jLabel6.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
         jLabel6.setText(AppLocal.getIntString("label.curdate")); // NOI18N
         jPanel4.add(jLabel6);
         jLabel6.setBounds(20, 210, 100, 25);
 
         txtCurdate.setEditable(false);
-        txtCurdate.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        txtCurdate.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         txtCurdate.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         jPanel4.add(txtCurdate);
         txtCurdate.setBounds(120, 210, 130, 25);
 
         m_jNotes.setEditable(false);
         m_jNotes.setBackground(new java.awt.Color(240, 240, 240));
-        m_jNotes.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        m_jNotes.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         m_jNotes.setEnabled(false);
         jScrollPane1.setViewportView(m_jNotes);
 
@@ -265,7 +257,7 @@ public class JPaymentDebt extends javax.swing.JPanel implements JPaymentInterfac
         jPanel5.add(jPanel4, java.awt.BorderLayout.CENTER);
 
         jlblMessage.setEditable(false);
-        jlblMessage.setFont(new java.awt.Font("MS Song", 0, 12)); // NOI18N
+        jlblMessage.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
         jlblMessage.setForeground(new java.awt.Color(255, 0, 51));
         jlblMessage.setLineWrap(true);
         jlblMessage.setWrapStyleWord(true);
@@ -283,19 +275,8 @@ public class JPaymentDebt extends javax.swing.JPanel implements JPaymentInterfac
 
         jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.Y_AXIS));
 
-        m_jKeys.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                m_jKeysActionPerformed(evt);
-            }
-        });
-        jPanel1.add(m_jKeys);
-
         jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jPanel3.setLayout(new java.awt.BorderLayout());
-
-        m_jTendered.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jPanel3.add(m_jTendered, java.awt.BorderLayout.CENTER);
-
         jPanel1.add(jPanel3);
 
         jPanel2.add(jPanel1, java.awt.BorderLayout.NORTH);
@@ -322,11 +303,9 @@ public class JPaymentDebt extends javax.swing.JPanel implements JPaymentInterfac
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jlblMessage;
-    private com.openbravo.editor.JEditorKeys m_jKeys;
     private javax.swing.JLabel m_jMoneyEuros;
     private javax.swing.JTextField m_jName;
     private javax.swing.JTextArea m_jNotes;
-    private com.openbravo.editor.JEditorCurrencyPositive m_jTendered;
     private javax.swing.JTextField txtCurdate;
     private javax.swing.JTextField txtCurdebt;
     private javax.swing.JTextField txtMaxdebt;

@@ -136,9 +136,7 @@ public class JPaymentCheque extends javax.swing.JPanel implements JPaymentInterf
 
         jPanel2 = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
-        m_jKeys = new com.openbravo.editor.JEditorKeys();
         jPanel3 = new javax.swing.JPanel();
-        m_jTendered = new com.openbravo.editor.JEditorCurrencyPositive();
         jPanel4 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         m_jMoneyEuros = new javax.swing.JLabel();
@@ -148,15 +146,10 @@ public class JPaymentCheque extends javax.swing.JPanel implements JPaymentInterf
         jPanel2.setLayout(new java.awt.BorderLayout());
 
         jPanel1.setLayout(new javax.swing.BoxLayout(jPanel1, javax.swing.BoxLayout.Y_AXIS));
-        jPanel1.add(m_jKeys);
 
         jPanel3.setBorder(javax.swing.BorderFactory.createEmptyBorder(5, 5, 5, 5));
         jPanel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jPanel3.setLayout(new java.awt.BorderLayout());
-
-        m_jTendered.setFont(new java.awt.Font("MS Song", 1, 16)); // NOI18N
-        jPanel3.add(m_jTendered, java.awt.BorderLayout.CENTER);
-
         jPanel1.add(jPanel3);
 
         jPanel2.add(jPanel1, java.awt.BorderLayout.NORTH);
@@ -165,14 +158,14 @@ public class JPaymentCheque extends javax.swing.JPanel implements JPaymentInterf
 
         jPanel4.setLayout(null);
 
-        jLabel8.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("宋体", 1, 18)); // NOI18N
         jLabel8.setText(AppLocal.getIntString("Label.InputCash")); // NOI18N
         jLabel8.setPreferredSize(new java.awt.Dimension(100, 30));
         jPanel4.add(jLabel8);
         jLabel8.setBounds(10, 4, 100, 30);
 
         m_jMoneyEuros.setBackground(new java.awt.Color(204, 255, 51));
-        m_jMoneyEuros.setFont(new java.awt.Font("MS Song", 1, 18)); // NOI18N
+        m_jMoneyEuros.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         m_jMoneyEuros.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         m_jMoneyEuros.setBorder(javax.swing.BorderFactory.createCompoundBorder(javax.swing.BorderFactory.createLineBorder(javax.swing.UIManager.getDefaults().getColor("Button.darkShadow")), javax.swing.BorderFactory.createEmptyBorder(1, 4, 1, 4)));
         m_jMoneyEuros.setOpaque(true);
@@ -190,9 +183,7 @@ public class JPaymentCheque extends javax.swing.JPanel implements JPaymentInterf
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private com.openbravo.editor.JEditorKeys m_jKeys;
     private javax.swing.JLabel m_jMoneyEuros;
-    private com.openbravo.editor.JEditorCurrencyPositive m_jTendered;
     // End of variables declaration//GEN-END:variables
     
 }
